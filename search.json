@@ -504,74 +504,46 @@
     "text": "Manufacturing and distribution companies seeking supply chain optimization.\nEnvironmental organizations aiming for sustainable practices.\nAcademic institutions looking for practical applications of research.\nLocal communities affected by supply chain practices."
   },
   {
-    "objectID": "ai/Prompt_Extraction_preprocess.html",
-    "href": "ai/Prompt_Extraction_preprocess.html",
-    "title": "Pre-Processing prompt",
+    "objectID": "ai/Prompt_Extraction_validation.html",
+    "href": "ai/Prompt_Extraction_validation.html",
+    "title": "Validation prompt",
     "section": "",
-    "text": "You are a Knowledge Extraction Agent tasked with summarizing and extracting relevant information from a given text document, specifically within the context of supply chains. Your goal is to reduce the amount text while maintaining a maximum of information and context, all factual details should be captured. Make sure focus on information related to the company and the Supply Chain Ontology. Adhere strictly to the following guidelines:"
+    "text": "You are a Knowledge Validation Agent tasked with validating and double-checking the extracted nodes from a text document."
   },
   {
-    "objectID": "ai/Prompt_Extraction_preprocess.html#extraction-preprocess-prompt",
-    "href": "ai/Prompt_Extraction_preprocess.html#extraction-preprocess-prompt",
-    "title": "Pre-Processing prompt",
+    "objectID": "ai/Prompt_Extraction_validation.html#validation-prompt",
+    "href": "ai/Prompt_Extraction_validation.html#validation-prompt",
+    "title": "Validation prompt",
     "section": "",
-    "text": "You are a Knowledge Extraction Agent tasked with summarizing and extracting relevant information from a given text document, specifically within the context of supply chains. Your goal is to reduce the amount text while maintaining a maximum of information and context, all factual details should be captured. Make sure focus on information related to the company and the Supply Chain Ontology. Adhere strictly to the following guidelines:"
+    "text": "You are a Knowledge Validation Agent tasked with validating and double-checking the extracted nodes from a text document."
   },
   {
-    "objectID": "ai/Prompt_Extraction_preprocess.html#instructions",
-    "href": "ai/Prompt_Extraction_preprocess.html#instructions",
-    "title": "Pre-Processing prompt",
+    "objectID": "ai/Prompt_Extraction_validation.html#instructions",
+    "href": "ai/Prompt_Extraction_validation.html#instructions",
+    "title": "Validation prompt",
     "section": "Instructions:",
-    "text": "Instructions:\n\nSummary and Extraction Goals:\n\nDO Summarize the given text by extracting key facts, names of persons, brands, names, companies, subsidiaries, accomplishments, locations, affiliates, partnerships, take-aways, and any other relevant context information related to the company and it’s supplychain.\nDO Capture all relevant and valuable information related to supply chains, focusing on the relationships and hierarchies between entities.\nDO NOT add irrelevant details. Ensure all extracted information is directly present in the text.\n\nInformation Categories:\n\nFacts: Extract core facts about supply chain activities, relationships, and processes.\nPersons: Extract names and roles of persons mentioned in the text, their role, position and any other relevant information.\nBrands: Extract names of brands, product-lines, categories as well as the products, their manufacturing process, ingredients or components.\nNames: Extract names of companies, subsidiaries, holdings, organizations, legal entities, affiliates, competitors, and other key entities.\nLocations: Extract locations, addresses, and any other geographical information about plants, offices, headquarters, stores, transportation hubs, routes, warehouses and distribution centers.\nTake-aways: Identify main points, conclusions, or insights presented in the text.\nContext: Extract any additional context that provides clues of indications on the supply chain operations.\n\nFormat:\n\nUse markdown syntaxt with headings and sections.\nDO only use headings corresponding to classes in the ontology.\nEnsure that the information is concise and to the point.\nExtract tables as markdown tables where appropriate.\nUse lists to enumerate elements that are part of groups of collections.\n\nOntology Alignment:\n\nEnsure that the extracted information reffers and can be used to futher extract information with regard to the ontology below:\n\nOutput:\n\nThe output should be organized in markdown format as described in the above mentioned Format instructions.\n\n\n\nTask:\nDO follow the above instructions meticulously to extract and summarize the information from the given text. DO verify the accuracy and relevance of your extractions, if unsure do not extract the information. DO ensure all relevant context information is included when extracting entities or facts. DO NOT invent or guess information, if the information is not explicitelly clear do not extract it. DO NOT start you response with an introduction, do not repeat the task or the above instructions just ouput the required text."
+    "text": "Instructions:\n\nValidation Format:\n\nEnsure the extracted knowledge graph is in valid Turtle format.\nVerify that only classes and properties defined in the ontology are used.\nEnsure only prefixes defined and namespaces declared in the ontology are used.\nEnsure identifiers are unique and meaningful. Use underscores instead of spaces.\nMaintain a consistent order for properties within each entity, preferably alphabetical or as defined in the ontology.\n\nRelevance:\n\nConfirm that only information relevant to the company is extracted.\nEnsure no irrelevant details are included and all extracted information is directly present in the text.\n\nObject Details:\n\nUse the rdfs:comment field for additional descriptions or specifics where available.\n\nAccuracy and Completeness:\n\nVerify that all extracted information is accurate and complete.\nDouble-check for any missing relevant details.\n\nOutput:\n\nEnsure the output is valid Turtle format.\nEnsure no additional fields or change of field names are included.\nEnsure that each instance or tuple is separated by double whitelines.\nConfirm only instances are extracted; no new classes or properties are created.\nEnsure identifiers are meaningful and no spaces are used in the identifiers.\nConfirm special characters are properly escaped within literals.\nVerify hierarchical relationships between entities are correctly represented using properties as defined in the ontology.\n\nError Handling:\n\nIf there is ambiguity or an error in the text, do not invent or guess information.\nEnsure only information that is directly present in the text is extracted.\nPrioritize accuracy and completeness of the information.\n\n\n\nTask:\n\nValidate and correct the provided Turtle code.\nOutput only the corrected Turtle code within a turtle code block.\nDO NOT include any explanations, notes, or text outside the Turtle structure.\nDO NOT output the ontology iteself just output instances.\n\nProvide the corrected Turtle code based on the validation. Ensure the output is only within a turtle code block."
   },
   {
-    "objectID": "ai/KnowledgeExtraction.html",
-    "href": "ai/KnowledgeExtraction.html",
-    "title": "Knowledge Extraction Pipeline",
+    "objectID": "ai/Prompt_Extraction.html",
+    "href": "ai/Prompt_Extraction.html",
+    "title": "Knowledge Extraction Prompt",
     "section": "",
-    "text": "Extracting knowledge from large text documents is not a single step. To retrieve valuable information from these a large document or corpus needs to be chuncked and the task needs to be subdivided in multiple sub-tasks.\ngraph LR\n    Chunks ---&gt; Preprocess ---&gt; Extract\n    Extract ---&gt; Validate ---&gt; Ingest"
+    "text": "You are a Knowledge Extraction Agent tasked with building a comprehensive knowledge graph from a text document using the classes and properties of the Supply Chain Ontology. Your goal is to extract relevant information and represent it in the rdf format."
   },
   {
-    "objectID": "ai/KnowledgeExtraction.html#chunks-chunkin-a-large-document-in-pieces",
-    "href": "ai/KnowledgeExtraction.html#chunks-chunkin-a-large-document-in-pieces",
-    "title": "Knowledge Extraction Pipeline",
-    "section": "Chunks : Chunkin a large document in pieces",
-    "text": "Chunks : Chunkin a large document in pieces\nThis step will take a large document and chuck it in parts using some overlap to ensure that paragraph that would be cut in their middle are also present in the next chunk of text."
-  },
-  {
-    "objectID": "ai/KnowledgeExtraction.html#preprocess-remove-the-grease",
-    "href": "ai/KnowledgeExtraction.html#preprocess-remove-the-grease",
-    "title": "Knowledge Extraction Pipeline",
-    "section": "Preprocess : Remove the grease",
-    "text": "Preprocess : Remove the grease\nThis step will tranform the larger text chunks to sentences that are focused on facts, named entities, take-aways and essential points removing the grease of what is not relevant to the extraction process, but present in the textual form of the document.\nPre-Process Prompt"
-  },
-  {
-    "objectID": "ai/KnowledgeExtraction.html#extract-get-tuples-of-knowledge-from-the-text",
-    "href": "ai/KnowledgeExtraction.html#extract-get-tuples-of-knowledge-from-the-text",
-    "title": "Knowledge Extraction Pipeline",
-    "section": "Extract : Get tuples of knowledge from the text",
-    "text": "Extract : Get tuples of knowledge from the text\nWith the reduced text now the model will attempt to make tuples and nodes according to the ontology. Here too divide and conquer will be used, in order to reduce hallucianations it’s better to invoke the model multiple times using a subset of the ontlogy each time. This will yield better results and avoid the model to try to makeup nodes for each class of the ontology.\nExtracting Prompt"
-  },
-  {
-    "objectID": "ai/KnowledgeExtraction.html#validate-check-facts-deduplicate-ensure-proper-syntax",
-    "href": "ai/KnowledgeExtraction.html#validate-check-facts-deduplicate-ensure-proper-syntax",
-    "title": "Knowledge Extraction Pipeline",
-    "section": "Validate : Check facts, deduplicate ensure proper syntax",
-    "text": "Validate : Check facts, deduplicate ensure proper syntax\nNow we have extracted nodes, we will invoke antoher model to do a quality check on each node, by adding a rag on the actual document this step is able to search back in the document and coroborate different pieces of the document to make the most complete set of tuples and nodes, suppressing normally any hallucinated facts that might have produced by previous steps.\nValidation Prompt"
-  },
-  {
-    "objectID": "ai/KnowledgeExtraction.html#ingest-incorporate-tuples-and-nodes-to-the-global-graph",
-    "href": "ai/KnowledgeExtraction.html#ingest-incorporate-tuples-and-nodes-to-the-global-graph",
-    "title": "Knowledge Extraction Pipeline",
-    "section": "Ingest : Incorporate tuples and nodes to the global graph",
-    "text": "Ingest : Incorporate tuples and nodes to the global graph\nWith our appured nodes being now filtered and checked for quality we will now query the graph for each of them and add them if they are not a perfect duplicate and reject the nodes that might be too similar using cosine similarity and clustering techniques."
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
+    "objectID": "ai/Prompt_Extraction.html#extraction-prompt",
+    "href": "ai/Prompt_Extraction.html#extraction-prompt",
+    "title": "Knowledge Extraction Prompt",
     "section": "",
-    "text": "About this site"
+    "text": "You are a Knowledge Extraction Agent tasked with building a comprehensive knowledge graph from a text document using the classes and properties of the Supply Chain Ontology. Your goal is to extract relevant information and represent it in the rdf format."
+  },
+  {
+    "objectID": "ai/Prompt_Extraction.html#instructions",
+    "href": "ai/Prompt_Extraction.html#instructions",
+    "title": "Knowledge Extraction Prompt",
+    "section": "Instructions:",
+    "text": "Instructions:\n\nExtraction Format:\n\nUse RDF Format:\n\nAdhere strictly to the RDF format for the extracted knowledge graph.\nUse only the classes and properties defined in the provided ontology.\nEnsure identifiers are unique and meaningful, using underscores instead of spaces (e.g., ABC_Company instead of Company1).\n\nPrefixes and Namespaces:\n\nUse only the prefixes and namespaces declared in the ontology.\nDo not include classes from other ontologies, schemas, or vocabularies.\nDO not create new ObjectProperty of Class objects, only refer to classes existing in the scm ontology.\nDo only create individuals in in the namespace : {namespace} using the {prefix}.\nDo not use : as default prefix always use the {prefix} for the namespace : {namespace}\n\nProperties Order:\n\nMaintain a consistent order for properties within each entity, preferably alphabetical or as defined in the ontology.\n\nExtract Relevant Information:\n\nExtract only information that is relevant to the company and the ontology classes.\nDo not include irrelevant details. Ensure all extracted information is explicitly present in the text.\nMaske sure to include the prefix of the scm ontology.\nIf in doubt about the truthfulness of your extraction, skip the node.\nDO not create individuals for the documents.\nDO not reference or mention the documents only use the information present in the documents.\nSummarize the information in the document and only keep information that will serve to create individuals in the ontology.\n\nUse rdfs:comment:\n\nUse the rdfs:comment field for additional descriptions or specific comments where desirable.\n\nEnsure Accuracy and Completeness:\n\nDouble-check for missing relevant details.\nDo not extract information not explicitly present in the text of that is not relevant to the Ontology.\n\nValid RDF Format:\n\nOutput should be in valid RDF format.\nDo not include any additional explanations or notes outside the RDF structure.\nOnly output the RDF with RDF code blocks.\nEscape any special characters appropriately in the output.\nIf no valuable entities can be extracted, output the message ‘No valuable information’.\n\nHandle Special Characters:\n\nEscape special characters such as quotes, backslashes, and newlines within literals.\nEnsure proper formatting and quoting of literals.\n\nHandle Ambiguities:\n\nIf there is ambiguity or an error in the text, skip the extraction.\nDo not invent or guess any information.\nOnly extract information directly present in the text.\nPrioritize accuracy and completeness. If in doubt, return ‘No valuable information’.\n\n\n\n\nFinal Instructions:\n\nFollow these instructions meticulously to extract and construct the knowledge graph.\nVerify the accuracy and relevance of your extractions.\nDo not include any text outside the RDF code block.\nAvoid using abbreviations or acronyms in the identifiers; use full names for clarity.\nTake your time and ensure the quality of your work.\nMake sure your output is exhaustive and definitive.\n\nIf you follow these guidelines correctly, you will significantly contribute to the success of this task."
   },
   {
     "objectID": "ai/index.html",
@@ -623,46 +595,116 @@
     "text": "Ingest : Incorporate tuples and nodes to the global graph\nWith our appured nodes being now filtered and checked for quality we will now query the graph for each of them and add them if they are not a perfect duplicate and reject the nodes that might be too similar using cosine similarity and clustering techniques."
   },
   {
-    "objectID": "ai/Prompt_Extraction.html",
-    "href": "ai/Prompt_Extraction.html",
-    "title": "Knowledge Extraction Prompt",
-    "section": "",
-    "text": "You are a Knowledge Extraction Agent tasked with building a comprehensive knowledge graph from a text document using the classes and properties of the Supply Chain Ontology. Your goal is to extract relevant information and represent it in the rdf format."
+    "objectID": "ai/index.html#technical-budget",
+    "href": "ai/index.html#technical-budget",
+    "title": "Supply Chain Mapping",
+    "section": "Technical Budget",
+    "text": "Technical Budget\ntechnical budget"
   },
   {
-    "objectID": "ai/Prompt_Extraction.html#extraction-prompt",
-    "href": "ai/Prompt_Extraction.html#extraction-prompt",
-    "title": "Knowledge Extraction Prompt",
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
     "section": "",
-    "text": "You are a Knowledge Extraction Agent tasked with building a comprehensive knowledge graph from a text document using the classes and properties of the Supply Chain Ontology. Your goal is to extract relevant information and represent it in the rdf format."
+    "text": "About this site"
   },
   {
-    "objectID": "ai/Prompt_Extraction.html#instructions",
-    "href": "ai/Prompt_Extraction.html#instructions",
-    "title": "Knowledge Extraction Prompt",
+    "objectID": "ai/KnowledgeExtraction.html",
+    "href": "ai/KnowledgeExtraction.html",
+    "title": "Knowledge Extraction Pipeline",
+    "section": "",
+    "text": "Extracting knowledge from large text documents is not a single step. To retrieve valuable information from these a large document or corpus needs to be chuncked and the task needs to be subdivided in multiple sub-tasks.\ngraph LR\n    Chunks ---&gt; Preprocess ---&gt; Extract\n    Extract ---&gt; Validate ---&gt; Ingest"
+  },
+  {
+    "objectID": "ai/KnowledgeExtraction.html#chunks-chunkin-a-large-document-in-pieces",
+    "href": "ai/KnowledgeExtraction.html#chunks-chunkin-a-large-document-in-pieces",
+    "title": "Knowledge Extraction Pipeline",
+    "section": "Chunks : Chunkin a large document in pieces",
+    "text": "Chunks : Chunkin a large document in pieces\nThis step will take a large document and chuck it in parts using some overlap to ensure that paragraph that would be cut in their middle are also present in the next chunk of text."
+  },
+  {
+    "objectID": "ai/KnowledgeExtraction.html#preprocess-remove-the-grease",
+    "href": "ai/KnowledgeExtraction.html#preprocess-remove-the-grease",
+    "title": "Knowledge Extraction Pipeline",
+    "section": "Preprocess : Remove the grease",
+    "text": "Preprocess : Remove the grease\nThis step will tranform the larger text chunks to sentences that are focused on facts, named entities, take-aways and essential points removing the grease of what is not relevant to the extraction process, but present in the textual form of the document.\nPre-Process Prompt"
+  },
+  {
+    "objectID": "ai/KnowledgeExtraction.html#extract-get-tuples-of-knowledge-from-the-text",
+    "href": "ai/KnowledgeExtraction.html#extract-get-tuples-of-knowledge-from-the-text",
+    "title": "Knowledge Extraction Pipeline",
+    "section": "Extract : Get tuples of knowledge from the text",
+    "text": "Extract : Get tuples of knowledge from the text\nWith the reduced text now the model will attempt to make tuples and nodes according to the ontology. Here too divide and conquer will be used, in order to reduce hallucianations it’s better to invoke the model multiple times using a subset of the ontlogy each time. This will yield better results and avoid the model to try to makeup nodes for each class of the ontology.\nExtracting Prompt"
+  },
+  {
+    "objectID": "ai/KnowledgeExtraction.html#validate-check-facts-deduplicate-ensure-proper-syntax",
+    "href": "ai/KnowledgeExtraction.html#validate-check-facts-deduplicate-ensure-proper-syntax",
+    "title": "Knowledge Extraction Pipeline",
+    "section": "Validate : Check facts, deduplicate ensure proper syntax",
+    "text": "Validate : Check facts, deduplicate ensure proper syntax\nNow we have extracted nodes, we will invoke antoher model to do a quality check on each node, by adding a rag on the actual document this step is able to search back in the document and coroborate different pieces of the document to make the most complete set of tuples and nodes, suppressing normally any hallucinated facts that might have produced by previous steps.\nValidation Prompt"
+  },
+  {
+    "objectID": "ai/KnowledgeExtraction.html#ingest-incorporate-tuples-and-nodes-to-the-global-graph",
+    "href": "ai/KnowledgeExtraction.html#ingest-incorporate-tuples-and-nodes-to-the-global-graph",
+    "title": "Knowledge Extraction Pipeline",
+    "section": "Ingest : Incorporate tuples and nodes to the global graph",
+    "text": "Ingest : Incorporate tuples and nodes to the global graph\nWith our appured nodes being now filtered and checked for quality we will now query the graph for each of them and add them if they are not a perfect duplicate and reject the nodes that might be too similar using cosine similarity and clustering techniques."
+  },
+  {
+    "objectID": "ai/Prompt_Extraction_preprocess.html",
+    "href": "ai/Prompt_Extraction_preprocess.html",
+    "title": "Pre-Processing prompt",
+    "section": "",
+    "text": "You are a Knowledge Extraction Agent tasked with summarizing and extracting relevant information from a given text document, specifically within the context of supply chains. Your goal is to reduce the amount text while maintaining a maximum of information and context, all factual details should be captured. Make sure focus on information related to the company and the Supply Chain Ontology. Adhere strictly to the following guidelines:"
+  },
+  {
+    "objectID": "ai/Prompt_Extraction_preprocess.html#extraction-preprocess-prompt",
+    "href": "ai/Prompt_Extraction_preprocess.html#extraction-preprocess-prompt",
+    "title": "Pre-Processing prompt",
+    "section": "",
+    "text": "You are a Knowledge Extraction Agent tasked with summarizing and extracting relevant information from a given text document, specifically within the context of supply chains. Your goal is to reduce the amount text while maintaining a maximum of information and context, all factual details should be captured. Make sure focus on information related to the company and the Supply Chain Ontology. Adhere strictly to the following guidelines:"
+  },
+  {
+    "objectID": "ai/Prompt_Extraction_preprocess.html#instructions",
+    "href": "ai/Prompt_Extraction_preprocess.html#instructions",
+    "title": "Pre-Processing prompt",
     "section": "Instructions:",
-    "text": "Instructions:\n\nExtraction Format:\n\nUse RDF Format:\n\nAdhere strictly to the RDF format for the extracted knowledge graph.\nUse only the classes and properties defined in the provided ontology.\nEnsure identifiers are unique and meaningful, using underscores instead of spaces (e.g., ABC_Company instead of Company1).\n\nPrefixes and Namespaces:\n\nUse only the prefixes and namespaces declared in the ontology.\nDo not include classes from other ontologies, schemas, or vocabularies.\nDO not create new ObjectProperty of Class objects, only refer to classes existing in the scm ontology.\nDo only create individuals in in the namespace : {namespace} using the {prefix}.\nDo not use : as default prefix always use the {prefix} for the namespace : {namespace}\n\nProperties Order:\n\nMaintain a consistent order for properties within each entity, preferably alphabetical or as defined in the ontology.\n\nExtract Relevant Information:\n\nExtract only information that is relevant to the company and the ontology classes.\nDo not include irrelevant details. Ensure all extracted information is explicitly present in the text.\nMaske sure to include the prefix of the scm ontology.\nIf in doubt about the truthfulness of your extraction, skip the node.\nDO not create individuals for the documents.\nDO not reference or mention the documents only use the information present in the documents.\nSummarize the information in the document and only keep information that will serve to create individuals in the ontology.\n\nUse rdfs:comment:\n\nUse the rdfs:comment field for additional descriptions or specific comments where desirable.\n\nEnsure Accuracy and Completeness:\n\nDouble-check for missing relevant details.\nDo not extract information not explicitly present in the text of that is not relevant to the Ontology.\n\nValid RDF Format:\n\nOutput should be in valid RDF format.\nDo not include any additional explanations or notes outside the RDF structure.\nOnly output the RDF with RDF code blocks.\nEscape any special characters appropriately in the output.\nIf no valuable entities can be extracted, output the message ‘No valuable information’.\n\nHandle Special Characters:\n\nEscape special characters such as quotes, backslashes, and newlines within literals.\nEnsure proper formatting and quoting of literals.\n\nHandle Ambiguities:\n\nIf there is ambiguity or an error in the text, skip the extraction.\nDo not invent or guess any information.\nOnly extract information directly present in the text.\nPrioritize accuracy and completeness. If in doubt, return ‘No valuable information’.\n\n\n\n\nFinal Instructions:\n\nFollow these instructions meticulously to extract and construct the knowledge graph.\nVerify the accuracy and relevance of your extractions.\nDo not include any text outside the RDF code block.\nAvoid using abbreviations or acronyms in the identifiers; use full names for clarity.\nTake your time and ensure the quality of your work.\nMake sure your output is exhaustive and definitive.\n\nIf you follow these guidelines correctly, you will significantly contribute to the success of this task."
+    "text": "Instructions:\n\nSummary and Extraction Goals:\n\nDO Summarize the given text by extracting key facts, names of persons, brands, names, companies, subsidiaries, accomplishments, locations, affiliates, partnerships, take-aways, and any other relevant context information related to the company and it’s supplychain.\nDO Capture all relevant and valuable information related to supply chains, focusing on the relationships and hierarchies between entities.\nDO NOT add irrelevant details. Ensure all extracted information is directly present in the text.\n\nInformation Categories:\n\nFacts: Extract core facts about supply chain activities, relationships, and processes.\nPersons: Extract names and roles of persons mentioned in the text, their role, position and any other relevant information.\nBrands: Extract names of brands, product-lines, categories as well as the products, their manufacturing process, ingredients or components.\nNames: Extract names of companies, subsidiaries, holdings, organizations, legal entities, affiliates, competitors, and other key entities.\nLocations: Extract locations, addresses, and any other geographical information about plants, offices, headquarters, stores, transportation hubs, routes, warehouses and distribution centers.\nTake-aways: Identify main points, conclusions, or insights presented in the text.\nContext: Extract any additional context that provides clues of indications on the supply chain operations.\n\nFormat:\n\nUse markdown syntaxt with headings and sections.\nDO only use headings corresponding to classes in the ontology.\nEnsure that the information is concise and to the point.\nExtract tables as markdown tables where appropriate.\nUse lists to enumerate elements that are part of groups of collections.\n\nOntology Alignment:\n\nEnsure that the extracted information reffers and can be used to futher extract information with regard to the ontology below:\n\nOutput:\n\nThe output should be organized in markdown format as described in the above mentioned Format instructions.\n\n\n\nTask:\nDO follow the above instructions meticulously to extract and summarize the information from the given text. DO verify the accuracy and relevance of your extractions, if unsure do not extract the information. DO ensure all relevant context information is included when extracting entities or facts. DO NOT invent or guess information, if the information is not explicitelly clear do not extract it. DO NOT start you response with an introduction, do not repeat the task or the above instructions just ouput the required text."
   },
   {
-    "objectID": "ai/Prompt_Extraction_validation.html",
-    "href": "ai/Prompt_Extraction_validation.html",
-    "title": "Validation prompt",
+    "objectID": "ai/technicalbudget.html",
+    "href": "ai/technicalbudget.html",
+    "title": "Cost-Effective Server Setup for AI Models in Supply Chain Mapping",
     "section": "",
-    "text": "You are a Knowledge Validation Agent tasked with validating and double-checking the extracted nodes from a text document."
+    "text": "Deploying AI models for supply chain mapping requires robust hardware and software configurations. Given a budget of 10,000 euros, this analysis provides multiple server setup options, balancing cost and performance to ensure efficient AI model deployment and operation.\n\n\n\n\n\nComponents: - CPU: AMD Ryzen 9 5950X (16 cores, 32 threads) - €700 - GPU: 2 x NVIDIA RTX 3080 - €2,000 - Memory: 128GB DDR4 RAM - €600 - Storage: 2TB NVMe SSD - €300 - Motherboard: ASUS ROG Crosshair VIII Hero - €400 - Power Supply: Corsair RM850x 850W - €150 - Cooling: Noctua NH-D15 - €100 - Case: Fractal Design Meshify C - €100 - Networking: Gigabit Ethernet Card - €50 - UPS: APC Back-UPS Pro - €200\nTotal Cost: €4,600\nAnalysis: This configuration provides a balanced and powerful setup, ideal for handling intensive AI computations required for supply chain mapping. The dual RTX 3080 GPUs offer significant parallel processing power, ensuring efficient model training and inference.\n\n\n\nComponents: - CPU: AMD Ryzen 7 5800X (8 cores, 16 threads) - €400 - GPU: NVIDIA RTX 3070 - €800 - Memory: 64GB DDR4 RAM - €300 - Storage: 1TB NVMe SSD - €150 - Motherboard: MSI B550-A PRO - €150 - Power Supply: EVGA 750W - €100 - Cooling: Cooler Master Hyper 212 - €50 - Case: NZXT H510 - €80 - Networking: Gigabit Ethernet Card - €50 - UPS: APC Back-UPS Pro - €200\nTotal Cost: €2,280\nAnalysis: This budget-friendly configuration is suitable for smaller AI models or less intensive workloads. While it offers less computational power compared to the high-performance option, it still provides a solid foundation for running AI models efficiently.\n\n\n\n\n\nOperating System: Ubuntu Server (Free)\nAI Frameworks: TensorFlow, PyTorch, Hugging Face Transformers (Free)\nModel Management: NVIDIA NGC or Ollama (Free or subscription-based services)\n\n\n\n\nSelecting the right server setup depends on the specific needs and scale of your AI models. The high-performance configuration is recommended for extensive and intensive AI workloads, providing robust performance and scalability. The budget-friendly option is suitable for smaller-scale operations, offering a cost-effective solution without compromising too much on performance.\n\n\n\nFuture Upgrades: Both configurations allow for future upgrades, such as adding more GPUs or increasing RAM, to accommodate growing computational needs.\nEnergy Efficiency: Consider the power consumption of the components, especially if operating in an environment with limited cooling capabilities.\n\nFor more details on setting up and managing your AI models, please consult our full guide."
   },
   {
-    "objectID": "ai/Prompt_Extraction_validation.html#validation-prompt",
-    "href": "ai/Prompt_Extraction_validation.html#validation-prompt",
-    "title": "Validation prompt",
+    "objectID": "ai/technicalbudget.html#introduction",
+    "href": "ai/technicalbudget.html#introduction",
+    "title": "Cost-Effective Server Setup for AI Models in Supply Chain Mapping",
     "section": "",
-    "text": "You are a Knowledge Validation Agent tasked with validating and double-checking the extracted nodes from a text document."
+    "text": "Deploying AI models for supply chain mapping requires robust hardware and software configurations. Given a budget of 10,000 euros, this analysis provides multiple server setup options, balancing cost and performance to ensure efficient AI model deployment and operation."
   },
   {
-    "objectID": "ai/Prompt_Extraction_validation.html#instructions",
-    "href": "ai/Prompt_Extraction_validation.html#instructions",
-    "title": "Validation prompt",
-    "section": "Instructions:",
-    "text": "Instructions:\n\nValidation Format:\n\nEnsure the extracted knowledge graph is in valid Turtle format.\nVerify that only classes and properties defined in the ontology are used.\nEnsure only prefixes defined and namespaces declared in the ontology are used.\nEnsure identifiers are unique and meaningful. Use underscores instead of spaces.\nMaintain a consistent order for properties within each entity, preferably alphabetical or as defined in the ontology.\n\nRelevance:\n\nConfirm that only information relevant to the company is extracted.\nEnsure no irrelevant details are included and all extracted information is directly present in the text.\n\nObject Details:\n\nUse the rdfs:comment field for additional descriptions or specifics where available.\n\nAccuracy and Completeness:\n\nVerify that all extracted information is accurate and complete.\nDouble-check for any missing relevant details.\n\nOutput:\n\nEnsure the output is valid Turtle format.\nEnsure no additional fields or change of field names are included.\nEnsure that each instance or tuple is separated by double whitelines.\nConfirm only instances are extracted; no new classes or properties are created.\nEnsure identifiers are meaningful and no spaces are used in the identifiers.\nConfirm special characters are properly escaped within literals.\nVerify hierarchical relationships between entities are correctly represented using properties as defined in the ontology.\n\nError Handling:\n\nIf there is ambiguity or an error in the text, do not invent or guess information.\nEnsure only information that is directly present in the text is extracted.\nPrioritize accuracy and completeness of the information.\n\n\n\nTask:\n\nValidate and correct the provided Turtle code.\nOutput only the corrected Turtle code within a turtle code block.\nDO NOT include any explanations, notes, or text outside the Turtle structure.\nDO NOT output the ontology iteself just output instances.\n\nProvide the corrected Turtle code based on the validation. Ensure the output is only within a turtle code block."
+    "objectID": "ai/technicalbudget.html#hardware-options",
+    "href": "ai/technicalbudget.html#hardware-options",
+    "title": "Cost-Effective Server Setup for AI Models in Supply Chain Mapping",
+    "section": "",
+    "text": "Components: - CPU: AMD Ryzen 9 5950X (16 cores, 32 threads) - €700 - GPU: 2 x NVIDIA RTX 3080 - €2,000 - Memory: 128GB DDR4 RAM - €600 - Storage: 2TB NVMe SSD - €300 - Motherboard: ASUS ROG Crosshair VIII Hero - €400 - Power Supply: Corsair RM850x 850W - €150 - Cooling: Noctua NH-D15 - €100 - Case: Fractal Design Meshify C - €100 - Networking: Gigabit Ethernet Card - €50 - UPS: APC Back-UPS Pro - €200\nTotal Cost: €4,600\nAnalysis: This configuration provides a balanced and powerful setup, ideal for handling intensive AI computations required for supply chain mapping. The dual RTX 3080 GPUs offer significant parallel processing power, ensuring efficient model training and inference.\n\n\n\nComponents: - CPU: AMD Ryzen 7 5800X (8 cores, 16 threads) - €400 - GPU: NVIDIA RTX 3070 - €800 - Memory: 64GB DDR4 RAM - €300 - Storage: 1TB NVMe SSD - €150 - Motherboard: MSI B550-A PRO - €150 - Power Supply: EVGA 750W - €100 - Cooling: Cooler Master Hyper 212 - €50 - Case: NZXT H510 - €80 - Networking: Gigabit Ethernet Card - €50 - UPS: APC Back-UPS Pro - €200\nTotal Cost: €2,280\nAnalysis: This budget-friendly configuration is suitable for smaller AI models or less intensive workloads. While it offers less computational power compared to the high-performance option, it still provides a solid foundation for running AI models efficiently."
+  },
+  {
+    "objectID": "ai/technicalbudget.html#software-requirements",
+    "href": "ai/technicalbudget.html#software-requirements",
+    "title": "Cost-Effective Server Setup for AI Models in Supply Chain Mapping",
+    "section": "",
+    "text": "Operating System: Ubuntu Server (Free)\nAI Frameworks: TensorFlow, PyTorch, Hugging Face Transformers (Free)\nModel Management: NVIDIA NGC or Ollama (Free or subscription-based services)"
+  },
+  {
+    "objectID": "ai/technicalbudget.html#conclusion",
+    "href": "ai/technicalbudget.html#conclusion",
+    "title": "Cost-Effective Server Setup for AI Models in Supply Chain Mapping",
+    "section": "",
+    "text": "Selecting the right server setup depends on the specific needs and scale of your AI models. The high-performance configuration is recommended for extensive and intensive AI workloads, providing robust performance and scalability. The budget-friendly option is suitable for smaller-scale operations, offering a cost-effective solution without compromising too much on performance.\n\n\n\nFuture Upgrades: Both configurations allow for future upgrades, such as adding more GPUs or increasing RAM, to accommodate growing computational needs.\nEnergy Efficiency: Consider the power consumption of the components, especially if operating in an environment with limited cooling capabilities.\n\nFor more details on setting up and managing your AI models, please consult our full guide."
   },
   {
     "objectID": "BusinessCase/Userstories.html",
@@ -753,21 +795,42 @@
     "href": "presentations/13-05-2024 planning.html#last-sprint",
     "title": "Sprint planning",
     "section": "Last Sprint",
-    "text": "Last Sprint\nWhat Went Well\n\nOntology Implementation:\n\nSuccessfully integrated the ontology framework.\nEnhanced the system’s understanding and extensibility by replacing traditional relational database structures.\n\nFunctionality Development:\n\nProgress in developing the supply chain mapping feature.\nEnabled system to guess nodes using first-order logic and automate the search process.\n\nAI Segmentation:\n\nDivided process into three distinct AI components:\n\nAI for searching information.\nAI for making connections and data mashing.\nAI for creating displays, widgets, and tables.\n\n\nFeature Requests Addressed:\n\nNoted and planned important feature requests like the accuracy counter for supply chain mapping.\n\nInitial MVP:\n\nDemonstrated an initial version of a minimally viable product (MVP).\n\n\nWhat Could Be Improved\n\nAccuracy and Quality Assurance:\n\nEnsure the system’s accuracy and address concerns about missing small, vital components.\nRequested a feature to improve accuracy.\n\nFocus and Scope Management:\n\nAvoid getting into “rabbit holes”.\nFocus on achieving a functional product that provides reasonably accurate mappings.\n\nBalancing Development Efforts:\n\nBalance efforts between creating a usable product and maintaining high accuracy."
+    "text": "Last Sprint"
+  },
+  {
+    "objectID": "presentations/13-05-2024 planning.html#what-went-well",
+    "href": "presentations/13-05-2024 planning.html#what-went-well",
+    "title": "Sprint planning",
+    "section": "What Went Well",
+    "text": "What Went Well\n\nOntology Implementation:\n\nSuccessfully integrated the ontology framework.\nEnhanced the system’s understanding and extensibility by replacing traditional relational database structures.\nEnabled system to guess nodes using first-order logic and automate the search process.\n\nAI Segmentation:\n\nDivided process into three distinct AI components:\n\nAI for searching information.\nAI for making connections and data mashing.\nAI for creating displays, widgets, and tables.\n\n\nFeature Requests Addressed:\n\nNoted and planned important feature requests like the accuracy counter for supply chain mapping.\n\nInitial MVP:\n\nDemonstrated an initial version of a minimally viable product (MVP)."
+  },
+  {
+    "objectID": "presentations/13-05-2024 planning.html#what-could-be-improved",
+    "href": "presentations/13-05-2024 planning.html#what-could-be-improved",
+    "title": "Sprint planning",
+    "section": "What Could Be Improved",
+    "text": "What Could Be Improved\n\nAccuracy and Quality Assurance:\n\nEnsure the system’s accuracy and address concerns about missing small, vital components.\nRequested a feature to improve accuracy.\n\nFocus and Scope Management:\n\nAvoid getting into “rabbit holes”.\nFocus on achieving a functional product that provides reasonably accurate mappings.\n\nBalancing Development Efforts:\n\nBalance efforts between creating a usable product and maintaining high accuracy."
   },
   {
     "objectID": "presentations/13-05-2024 planning.html#work-done",
     "href": "presentations/13-05-2024 planning.html#work-done",
     "title": "Sprint planning",
     "section": "Work done",
-    "text": "Work done\n\nCreate a protocol to allow the AI to control the UI elements and dynamically render various visualizations.\nCREWS need to start working to crawl the internet for subquestions.\nFinetune: protocol to allow the AI to control the UI elements and dynamically render various visualizations.\nCreate an ontology to describe the supply chain elements as a schema to help the AI structurize knowledge.\nChat system needs to work and update map upon prompt.\nCreating a digital environment and bringing it online."
+    "text": "Work done\n\nCreate a protocol to allow the AI to control the UI elements and dynamically render various visualizations.\nCREWS need to start working to crawl the internet for subquestions.\nFinetune: protocol to allow the AI to control the UI elements and dynamically render various visualizations.\nCreate an ontology to describe the supply chain elements as a schema to help the AI structurize knowledge.\nChat system needs to work and update map upon prompt.\nCreating a digital environment and bringing it online.\nUpdating the contacts sheet, making it into markdown.\nRecruiting text for students\nMaking a website"
   },
   {
-    "objectID": "presentations/13-05-2024 planning.html#work-unfinished",
-    "href": "presentations/13-05-2024 planning.html#work-unfinished",
+    "objectID": "presentations/13-05-2024 planning.html#backlog",
+    "href": "presentations/13-05-2024 planning.html#backlog",
     "title": "Sprint planning",
-    "section": "Work unfinished",
-    "text": "Work unfinished\n\nAsk multiple AIs and multiple prompts to identify which data is correct.\n[in progress] Need to build the task scheduler for the A.I Crews.\nVisual updates about the crews in the interface.\n[in progress] Load significantly more data into the model to parse.\n[in progress] Built an initial dataset to train AI models, improving accuracy from 40% to 70%.\nFirst version of the application online.\nUpdating the contacts sheet, making it into markdown.\nSetup of LinkedIn Page.\nTexts for students, onboarding process.\nOrganisation Starting: Creation of a B.V or Non-Profit.\nSetup recruitment process for students, CRM.\nCreation of online content for students to learn, LMS.\nFiling for public grants.\nGoing to several events on behalf of Value Chain Hackers.\nSetup of social media for Value Chain Hackers.\nMaking a website, getting a domain.\nServer setup and config budget for production.\nSetup scripts.\nSplitting the minds over multiple machines."
+    "section": "Backlog",
+    "text": "Backlog\n\nAsk multiple AIs and multiple prompts to identify which data is correct.\n[in progress] Need to build the task scheduler for the A.I Crews.\nVisual updates about the crews in the interface.\n[in progress] Load significantly more data into the model to parse.\n[in progress] Built an initial dataset to train AI models, improving accuracy from 40% to 70%.\nFirst version of the application online."
+  },
+  {
+    "objectID": "presentations/13-05-2024 planning.html#backlog-2",
+    "href": "presentations/13-05-2024 planning.html#backlog-2",
+    "title": "Sprint planning",
+    "section": "Backlog #2",
+    "text": "Backlog #2\n\nSetup of LinkedIn Page.\nGetting a Domain.\nOnboarding Process for students.\nOrganisation Starting: Creation of a B.V or Non-Profit.\nSetup recruitment process for students, CRM.\nCreation of online content for students to learn, LMS.\nFiling for public grants.\nGoing to several events on behalf of Value Chain Hackers.\nSetup of social media for Value Chain Hackers.\nMaking a nicer looking website.\nServer setup and config budget for production.\nSetup scripts.\nSplitting the minds over multiple machines."
   },
   {
     "objectID": "presentations/13-05-2024 planning.html#next-sprint",
@@ -879,7 +942,7 @@
     "href": "presentations/presentations.html",
     "title": "Presentations",
     "section": "",
-    "text": "13-06-2024 planning\n\nDate: june 13, 2024\nDescription: This presentation coveres the first infrastucture launch.\nView Slides\n\n\n\n30-05-2024 Planning\n\nDate: May 30, 2024\nDescription: planning from Sprint 1 with sebastien\nView Slides\n\n\n\n22-05-2024 presentation\n\nDate: May 30, 2024\nDescription: This presentation covers the planning phase for our upcoming projects.\nView Slides"
+    "text": "13-06-2024 planning\n\nDate: june 13, 2024\nDescription: This presentation coveres the planning to do the first infrastructure launch\nView Slides\n\n\n\n30-05-2024 Planning\n\nDate: May 30, 2024\nDescription: planning from Sprint 1 with sebastien\nView Slides\n\n\n\n22-05-2024 presentation\n\nDate: May 30, 2024\nDescription: This presentation covers the planning phase for our upcoming projects.\nView Slides\n\ngraph TD\nstyle Requirements fill:#ffa500, stroke:#000000\nstyle Backlog fill:#ffff00, stroke:#000000\nstyle SprintPlanning fill:#ffa500, stroke:#000000\nstyle Sprint fill:#008000, stroke:#000000\nstyle DailyScrum fill:#ffa500, stroke:#000000\nstyle Development fill:#008000, stroke:#000000\nstyle Testing fill:#008000, stroke:#000000\nstyle Review fill:#ffa500, stroke:#000000\nstyle Retrospective fill:#ffa500, stroke:#000000\nstyle ProductRelease fill:#ff0000, stroke:#000000\n\nsubgraph AgileDevelopment\n    Requirements[Requirements] --&gt; Backlog[Product Backlog]\n    Backlog --&gt; SprintPlanning[Sprint Planning]\n    SprintPlanning --&gt; Sprint[Sprint]\n    Sprint --&gt; DailyScrum[Daily Scrum]\n    Sprint --&gt; Development[Development]\n    Development --&gt; Testing[Testing]\n    Testing --&gt; Review[Sprint Review]\n    Review --&gt; Retrospective[Sprint Retrospective]\n    Retrospective --&gt; Backlog\n    Review --&gt; ProductRelease[Product Release]\nend"
   },
   {
     "objectID": "presentations/test.html",
