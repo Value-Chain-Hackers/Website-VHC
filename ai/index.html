@@ -104,6 +104,10 @@ ul.task-list li input[type="checkbox"] {
     <a class="nav-link" href="../presentations/presentations.html"> 
 <span class="menu-text">Presentations</span></a>
   </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../BusinessCase.index.qmd"> 
+<span class="menu-text">businesscase</span></a>
+  </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item compact">
@@ -169,8 +173,81 @@ ul.task-list li input[type="checkbox"] {
 <p></p><figure class="figure"><p></p>
 <div>
 <pre class="mermaid mermaid-js">graph LR
-    Chunks ---&gt; Preprocess ---&gt; Extract
-    Extract ---&gt; Validate ---&gt; Ingest
+style PDF fill:#008000, stroke:#000000
+style Crawling fill:#ffa500, stroke:#000000
+style SEC fill:#ff0000, stroke:#000000
+style Wikipedia fill:#ffa500, stroke:#000000
+style DuckDuckGo fill:#ffa500, stroke:#000000
+style Store fill:#ffff00, stroke:#000000
+style Ingestion fill:#008000, stroke:#000000
+style Transform fill:#ffff00, stroke:#000000
+style Extract fill:#008000, stroke:#000000
+style LLM fill:#008000, stroke:#000000
+style IndexGraph fill:#ffa500, stroke:#000000
+style IndexFact fill:#ffa500, stroke:#000000
+style Neo4j fill:#ffa500, stroke:#000000
+style Sqlite fill:#ffff00, stroke:#000000
+style Markdown fill:#008000, stroke:#000000
+style Faiss fill:#ffa500, stroke:#000000
+style Chroma fill:#008000, stroke:#000000
+style RAG fill:#ffff00, stroke:#000000
+style UIAI fill:#ffa500, stroke:#000000
+style Query fill:#ffa500, stroke:#000000
+style Retrievers fill:#ffa500, stroke:#000000
+style Results fill:#ffa500, stroke:#000000
+style Visualize fill:#ffa500, stroke:#000000
+style Embeddings fill:#ffa500
+style Structurize fill:#ffa500
+
+subgraph Collect
+PDF[PDF\nannual reports] --&gt; Store
+Crawling[
+    Crawling:\nWeb Site\nBrand Site\nProduct Pages
+] --&gt; Store
+SEC[
+    US SEC\nFilings\n10&lt;wbr&gt;-K\n10-Q
+] --&gt; Store
+Wikipedia[Wiki\n&lt;wbr&gt;Company Pages\nIngredien&lt;wbr&gt;s\nChemicals] --&gt; Store
+
+DuckDuckGo[Searc&lt;wbr&gt;h\nDuckDuckGo] --&gt; Store
+
+Store --&gt; Ingestion['Proce&lt;wbr&gt;ssing\nIngestion&lt;wbr&gt;']
+end
+subgraph Ingest
+    Ingestion --&gt; Transform &lt;--&gt; Extract[Extract:&lt;wbr&gt;\n Nodes, Edges]
+    Transform &lt;--&gt; Structurize[Stru&lt;wbr&gt;cturize:\n CSV, JSON, Markdown]
+    Transform --&gt; Embeddings
+    Structurize --&gt; Knowledge
+end
+subgraph Knowledge
+    Transform --&gt; LLM
+    Extract &lt;--&gt; IndexGraph
+    Extract &lt;--&gt; IndexFact
+    LLM --&gt; Structurize
+end
+RAG --&gt; Retrievers
+subgraph GraphDatabase
+    IndexGraph[Graph&lt;wbr&gt;\nNodes\nLinks] --&gt; Neo4j 
+    RAG --&gt; Neo4j
+end
+subgraph FactDatabase
+    IndexFact --&gt; Sqlite 
+    IndexFact --&gt; Markdown
+    Markdown --&gt; RAG
+    Sqlite --&gt; RAG
+end
+
+subgraph VectorStores
+    Embeddings --&gt; Faiss
+    Embeddings --&gt; Chroma
+    Faiss --&gt; RAG
+    Chroma --&gt; RAG
+end
+
+subgraph UI
+    UIAI --&gt; Query --&gt; Retrievers --&gt; Results --&gt; Visualize
+    Query --&gt; Visualize
+end
 </pre>
 </div>
 <p></p></figure><p></p>
