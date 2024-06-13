@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Value Chain Hackers Team">
+<meta name="dcterms.date" content="2024-06-13">
 
-<title>Value Chain Hackers - Knowledge Extraction Pipeline</title>
+<title>Value Chain Hackers - Business Case: Value Chain Hackers</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -65,9 +67,6 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script src="../site_libs/quarto-diagram/mermaid.min.js"></script>
-<script src="../site_libs/quarto-diagram/mermaid-init.js"></script>
-<link href="../site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 
 
 </head>
@@ -105,7 +104,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Presentations</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../BusinessCase/index.html"> 
+    <a class="nav-link active" href="../BusinessCase/index.html" aria-current="page"> 
 <span class="menu-text">businesscase</span></a>
   </li>  
 </ul>
@@ -147,14 +146,26 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Knowledge Extraction Pipeline</h1>
+<h1 class="title">Business Case: Value Chain Hackers</h1>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Value Chain Hackers Team </p>
+          </div>
+  </div>
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">June 13, 2024</p>
+    </div>
+  </div>
   
     
   </div>
@@ -164,45 +175,141 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Extracting knowledge from large text documents is not a single step. To retrieve valuable information from these a large document or corpus needs to be chuncked and the task needs to be subdivided in multiple sub-tasks.</p>
-<div class="cell" data-layout-align="default">
-<div class="cell-output-display">
-<div>
-<p></p><figure class="figure"><p></p>
-<div>
-<pre class="mermaid mermaid-js">graph LR
-    Chunks ---&gt; Preprocess ---&gt; Extract
-    Extract ---&gt; Validate ---&gt; Ingest
-</pre>
-</div>
-<p></p></figure><p></p>
-</div>
-</div>
-</div>
-<section id="chunks-chunkin-a-large-document-in-pieces" class="level2">
-<h2 class="anchored" data-anchor-id="chunks-chunkin-a-large-document-in-pieces">Chunks : Chunkin a large document in pieces</h2>
-<p>This step will take a large document and chuck it in parts using some overlap to ensure that paragraph that would be cut in their middle are also present in the next chunk of text.</p>
+<section id="business-case-value-chain-hackers" class="level1">
+<h1>Business Case: Value Chain Hackers</h1>
+<section id="executive-summary" class="level2">
+<h2 class="anchored" data-anchor-id="executive-summary">Executive Summary</h2>
+<ul>
+<li><strong>Project Name</strong>: Value Chain Hackers</li>
+<li><strong>Project Owner</strong>: Value Chain Hackers Team</li>
+<li><strong>Date</strong>: 2024-06-13</li>
+</ul>
+<section id="problem-statement" class="level3">
+<h3 class="anchored" data-anchor-id="problem-statement">Problem Statement</h3>
+<p>The lack of transparency and collaboration in supply chains leads to inefficiencies, economic losses, and missed opportunities for sustainable practices. No neutral party currently exists to facilitate the improvement of supply chains while safeguarding confidential business information.</p>
 </section>
-<section id="preprocess-remove-the-grease" class="level2">
-<h2 class="anchored" data-anchor-id="preprocess-remove-the-grease">Preprocess : Remove the grease</h2>
-<p>This step will tranform the larger text chunks to sentences that are focused on facts, named entities, take-aways and essential points removing the grease of what is not relevant to the extraction process, but present in the textual form of the document.</p>
-<p><a href="../ai/Prompt_Extraction_preprocess.html">Pre-Process Prompt</a></p>
+<section id="objectives" class="level3">
+<h3 class="anchored" data-anchor-id="objectives">Objectives</h3>
+<ul>
+<li>Revolutionize global supply chain dynamics by integrating upcycling and best practices.</li>
+<li>Innovate for financial sustainability by developing new value streams within existing supply chains.</li>
+<li>Foster collaborative networks to share knowledge, resources, and best practices.</li>
+<li>Educate and empower stakeholders to champion sustainable supply chains.</li>
+<li>Drive economic viability by demonstrating the financial benefits of upcycling.</li>
+<li>Focus on environmental and social impact to ensure equitable and sustainable supply chains.</li>
+</ul>
 </section>
-<section id="extract-get-tuples-of-knowledge-from-the-text" class="level2">
-<h2 class="anchored" data-anchor-id="extract-get-tuples-of-knowledge-from-the-text">Extract : Get tuples of knowledge from the text</h2>
-<p>With the reduced text now the model will attempt to make tuples and nodes according to the ontology. Here too <code>divide and conquer</code> will be used, in order to reduce hallucianations it’s better to invoke the model multiple times using a subset of the ontlogy each time. This will yield better results and avoid the model to try to makeup nodes for each class of the ontology.</p>
-<p><a href="../ai/Prompt_Extraction.html">Extracting Prompt</a></p>
+<section id="key-benefits" class="level3">
+<h3 class="anchored" data-anchor-id="key-benefits">Key Benefits</h3>
+<ul>
+<li>Enhanced supply chain transparency and efficiency.</li>
+<li>Economic gains through cost savings and new value streams.</li>
+<li>Positive environmental impact through sustainable practices.</li>
+<li>Social benefits such as improved worker safety and community engagement.</li>
+</ul>
 </section>
-<section id="validate-check-facts-deduplicate-ensure-proper-syntax" class="level2">
-<h2 class="anchored" data-anchor-id="validate-check-facts-deduplicate-ensure-proper-syntax">Validate : Check facts, deduplicate ensure proper syntax</h2>
-<p>Now we have extracted nodes, we will invoke antoher model to do a quality check on each node, by adding a rag on the actual document this step is able to search back in the document and coroborate different pieces of the document to make the most complete set of tuples and nodes, suppressing normally any hallucinated facts that might have produced by previous steps.</p>
-<p><a href="../ai/Prompt_Extraction_validation.html">Validation Prompt</a></p>
 </section>
-<section id="ingest-incorporate-tuples-and-nodes-to-the-global-graph" class="level2">
-<h2 class="anchored" data-anchor-id="ingest-incorporate-tuples-and-nodes-to-the-global-graph">Ingest : Incorporate tuples and nodes to the global graph</h2>
-<p>With our appured nodes being now filtered and checked for quality we will now query the graph for each of them and add them if they are not a perfect duplicate and reject the nodes that might be too similar using cosine similarity and clustering techniques.</p>
+<section id="business-model-canvas" class="level2">
+<h2 class="anchored" data-anchor-id="business-model-canvas">Business Model Canvas</h2>
+<section id="key-partners" class="level4">
+<h4 class="anchored" data-anchor-id="key-partners">Key Partners</h4>
+<ul>
+<li>Academic institutions</li>
+<li>NGOs</li>
+<li>Governmental bodies</li>
+<li>Industry leaders</li>
+<li>Technology providers</li>
+</ul>
+</section>
+<section id="key-activities" class="level4">
+<h4 class="anchored" data-anchor-id="key-activities">Key Activities</h4>
+<ul>
+<li>Supply chain mapping and analysis</li>
+<li>Development of upcycling solutions</li>
+<li>Educational programs and workshops</li>
+<li>Collaboration and networking events</li>
+<li>Research and case studies</li>
+</ul>
+</section>
+<section id="key-resources" class="level4">
+<h4 class="anchored" data-anchor-id="key-resources">Key Resources</h4>
+<ul>
+<li>Expertise in supply chain management</li>
+<li>Advanced technological tools (AI, data analytics)</li>
+<li>Strong network of partners and collaborators</li>
+<li>Educational materials and platforms</li>
+</ul>
+</section>
+<section id="value-propositions" class="level4">
+<h4 class="anchored" data-anchor-id="value-propositions">Value Propositions</h4>
+<ul>
+<li>Neutral facilitation of supply chain improvements</li>
+<li>Confidentiality assurance for sensitive business information</li>
+<li>Economic, environmental, and social benefits</li>
+<li>Access to cutting-edge technologies and expertise</li>
+</ul>
+</section>
+<section id="customer-relationships" class="level4">
+<h4 class="anchored" data-anchor-id="customer-relationships">Customer Relationships</h4>
+<ul>
+<li>Long-term partnerships with stakeholders</li>
+<li>Regular updates and transparent communication</li>
+<li>Collaborative problem-solving and innovation</li>
+</ul>
+</section>
+<section id="channels" class="level4">
+<h4 class="anchored" data-anchor-id="channels">Channels</h4>
+<ul>
+<li>Online platform and virtual collaboration spaces</li>
+<li>Workshops, seminars, and town hall meetings</li>
+<li>Publications and case studies</li>
+</ul>
+</section>
+<section id="customer-segments" class="level4">
+<h4 class="anchored" data-anchor-id="customer-segments">Customer Segments</h4>
+<ul>
+<li>Manufacturing companies</li>
+<li>Retail and distribution firms</li>
+<li>Environmental organizations</li>
+<li>Academic and research institutions</li>
+<li>Local communities</li>
+</ul>
+</section>
+<section id="cost-structure" class="level4">
+<h4 class="anchored" data-anchor-id="cost-structure">Cost Structure</h4>
+<ul>
+<li>Technology development and maintenance</li>
+<li>Staffing and expert consultations</li>
+<li>Marketing and outreach</li>
+<li>Educational program development</li>
+<li>Event hosting and logistics</li>
+</ul>
+</section>
+<section id="revenue-streams" class="level4">
+<h4 class="anchored" data-anchor-id="revenue-streams">Revenue Streams</h4>
+<ul>
+<li>Membership fees from partners</li>
+<li>Consulting and advisory services</li>
+<li>Sponsorships and grants</li>
+<li>Educational program fees</li>
+<li>Licensing of developed technologies</li>
+</ul>
+</section>
+</section>
+<section id="business-need" class="level2">
+<h2 class="anchored" data-anchor-id="business-need">Business Need</h2>
+<section id="stakeholders" class="level3">
+<h3 class="anchored" data-anchor-id="stakeholders">Stakeholders</h3>
+<ul>
+<li>Manufacturing and distribution companies seeking supply chain optimization.</li>
+<li>Environmental organizations aiming for sustainable practices.</li>
+<li>Academic institutions looking for practical applications of research.</li>
+<li>Local communities affected by supply chain practices.</li>
+</ul>
 
 
+</section>
+</section>
 </section>
 
 </main> <!-- /main -->

@@ -46,7 +46,7 @@ Please feel free to [contact me](mailto:cg.verhoef@windesheim.nl) if you have an
 
 ```{=html}
 <div  style="margin: 30px; text-align: center;">
-<a class="btn btn-primary" href="https://www.marvinschmitt.com/blog/website-tutorial-quarto/" role="button" target="_blank" style="padding: 15px 30px;">Join the Project!</a>
+<a class="btn btn-primary" href="https://workadventure.lab.viridis.info" role="button" target="_blank" style="padding: 15px 30px;">Join our digital office</a>
 </div>
 ```
 

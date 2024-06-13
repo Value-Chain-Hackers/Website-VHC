@@ -7,29 +7,23 @@ format: revealjs
 
 ## Last Sprint
 
-#### What Went Well
+## What Went Well
 
 1. **Ontology Implementation**: 
     - Successfully integrated the ontology framework.
     - Enhanced the system's understanding and extensibility by replacing traditional relational database structures.
-
-2. **Functionality Development**:
-    - Progress in developing the supply chain mapping feature.
     - Enabled system to guess nodes using first-order logic and automate the search process.
-
-3. **AI Segmentation**:
+2. **AI Segmentation**:
     - Divided process into three distinct AI components:
         - AI for searching information.
         - AI for making connections and data mashing.
         - AI for creating displays, widgets, and tables.
-
-4. **Feature Requests Addressed**:
+3. **Feature Requests Addressed**:
     - Noted and planned important feature requests like the accuracy counter for supply chain mapping.
-
-5. **Initial MVP**:
+4. **Initial MVP**:
     - Demonstrated an initial version of a minimally viable product (MVP).
 
-#### What Could Be Improved
+## What Could Be Improved
 
 1. **Accuracy and Quality Assurance**:
     - Ensure the system's accuracy and address concerns about missing small, vital components.
@@ -49,8 +43,11 @@ format: revealjs
 - [x] Create an ontology to describe the supply chain elements as a schema to help the AI structurize knowledge.
 - [x] Chat system needs to work and update map upon prompt.
 - [x] Creating a digital environment and bringing it online.
+- [x] Updating the contacts sheet, making it into markdown.
+- [x] Recruiting text for students
+- [x] Making a website
 
-## Work unfinished
+## Backlog
 
 - [ ] Ask multiple AIs and multiple prompts to identify which data is correct.
 - [ ] [in progress] Need to build the task scheduler for the A.I Crews.
@@ -58,16 +55,18 @@ format: revealjs
 - [ ] [in progress] Load significantly more data into the model to parse.
 - [ ] [in progress] Built an initial dataset to train AI models, improving accuracy from 40% to 70%.
 - [ ] First version of the application online.
-- [ ] Updating the contacts sheet, making it into markdown.
+
+## Backlog #2
 - [ ] Setup of LinkedIn Page.
-- [ ] Texts for students, onboarding process.
+- [ ] Getting a Domain.
+- [ ] Onboarding Process for students. 
 - [ ] Organisation Starting: Creation of a B.V or Non-Profit.
 - [ ] Setup recruitment process for students, CRM.
 - [ ] Creation of online content for students to learn, LMS.
 - [ ] Filing for public grants.
 - [ ] Going to several events on behalf of Value Chain Hackers.
 - [ ] Setup of social media for Value Chain Hackers.
-- [ ] Making a website, getting a domain.
+- [ ] Making a nicer looking website.
 - [ ] Server setup and config budget for production.
 - [ ] Setup scripts.
 - [ ] Splitting the minds over multiple machines.

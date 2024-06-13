@@ -13,7 +13,11 @@ Approach: Use AI and modern technologies to map existing supply chains, identify
 Establish and maintain over 50 active partnerships by 2025 with industries, academic institutions, NGOs, and governmental bodies to collaboratively work on upcycling supply chain initiatives.
 Approach:
 
-Join us Online in our vitual office:
+```{=html}
+<div  style="margin: 30px; text-align: center;">
+<a class="btn btn-primary" href="https://workadventure.lab.viridis.info" role="button" target="_blank" style="padding: 15px 30px;">Join our digital office</a>
+</div>
+```
 
 Virtual Collaboration Platform: Utilize WorkAdventure, a virtual world platform, to create an engaging and interactive environment for collaboration. This platform allows for real-time communication, collaboration, and networking in a visually appealing and gamified setting.
 Virtual Office Spaces: Set up virtual office spaces where partners can meet, share ideas, and work on projects together. These spaces can be customized to reflect the unique branding and culture of Value Chain Hackers and our partners.
@@ -22,16 +26,19 @@ Interactive Workshops and Meetings: Host interactive workshops, seminars, and to
 
 Collaboration Zones: Create specific zones within the virtual world dedicated to different aspects of supply chain upcycling, such as sustainability, technology innovation, and policy development. Partners can visit these zones to access resources, participate in discussions, and collaborate on projects.
 
-Open Space Town Halls:
+## Open Space Town Halls:
 
 Crowd Knowledge Gathering: Organize open-space town hall meetings within the WorkAdventure platform to gather crowd knowledge and insights from partners, collaborators, and local communities. These sessions will help identify challenges, share best practices, and co-create solutions.
 Interactive Brainstorming: Use interactive tools and activities within WorkAdventure to facilitate brainstorming sessions. Participants can contribute ideas, vote on potential solutions, and collaborate on action plans in real-time.
 Scaling Existing Solutions: Identify and scale existing technologies and solutions that have proven effective in other contexts. This approach ensures that we are not reinventing the wheel but rather building on successful initiatives.
 Building a Global Network:
 
-Diverse Partnerships: Establish partnerships with a diverse range of organizations, including universities, companies, NGOs, and municipalities. Each partner will have a stake in one or more of our projects, fostering a sense of ownership and collaboration.
+## Diverse Partnerships: 
+
+Establish partnerships with a diverse range of organizations, including universities, companies, NGOs, and municipalities. Each partner will have a stake in one or more of our projects, fostering a sense of ownership and collaboration.
 Knowledge and Resource Sharing: Encourage partners to share knowledge, resources, and best practices. This collaborative approach will enable us to leverage collective expertise and drive innovation in upcycling supply chains.
 Regular Networking Events: Host regular networking events within WorkAdventure to facilitate relationship building, knowledge exchange, and collaboration. These events will provide opportunities for partners to connect, share experiences, and explore potential synergies.
+
 ## 3. Educational Programs and Workshops
 
 Objective: Educate 10,000 individuals by 2028 through tailored programs for businesses, professionals, and students.
@@ -47,8 +54,4 @@ Approach: Conduct detailed analyses of supply chains to demonstrate cost savings
 Objective: Ensure all projects drive social and environmental impact, fostering equal access and equity within the supply chain.
 Approach: Develop initiatives that improve worker safety, reduce environmental footprint, and drive policy changes to hold companies accountable for their supply chain practices.
 
-```{=html}
-<div  style="margin: 30px; text-align: center;">
-<a class="btn btn-primary" href="https://www.marvinschmitt.com/blog/website-tutorial-quarto/" role="button" target="_blank" style="padding: 15px 30px;">View the tutorial for this template (+ download link)</a>
-</div>
-```
+

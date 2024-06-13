@@ -21,8 +21,8 @@ website:
         href: ai/index.qmd
       - text: "Presentations"
         href: presentations/presentations.qmd
-        - text: "businesscase"
-        href: BusinessCase.index.qmd
+      - text: "businesscase"
+        href: BusinessCase/index.qmd
     
     # your social media handles
     right:

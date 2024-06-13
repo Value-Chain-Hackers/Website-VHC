@@ -3,10 +3,15 @@ title: "Presentations"
 ---
 
 
+### 13-06-2024 planning
+- **Date:** june 13, 2024
+- **Description:** This presentation coveres the **planning** to do the first infrastructure launch
+- [View Slides](./13-05-2024%20planning.qmd)
+
 
 ### 30-05-2024 Planning
 - **Date:** May 30, 2024
-- **Description:** This presentation covers the planning phase for our upcoming projects.
+- **Description:** planning from Sprint 1 with sebastien
 - [View Slides](./30-05-2024%20Planning.html)
 
 ### 22-05-2024 presentation
@@ -15,3 +20,30 @@ title: "Presentations"
 - [View Slides](./22-05-2024%20presentation2.qmd)
 
 
+
+```mermaid
+graph TD
+style Requirements fill:#ffa500, stroke:#000000
+style Backlog fill:#ffff00, stroke:#000000
+style SprintPlanning fill:#ffa500, stroke:#000000
+style Sprint fill:#008000, stroke:#000000
+style DailyScrum fill:#ffa500, stroke:#000000
+style Development fill:#008000, stroke:#000000
+style Testing fill:#008000, stroke:#000000
+style Review fill:#ffa500, stroke:#000000
+style Retrospective fill:#ffa500, stroke:#000000
+style ProductRelease fill:#ff0000, stroke:#000000
+
+subgraph AgileDevelopment
+    Requirements[Requirements] --> Backlog[Product Backlog]
+    Backlog --> SprintPlanning[Sprint Planning]
+    SprintPlanning --> Sprint[Sprint]
+    Sprint --> DailyScrum[Daily Scrum]
+    Sprint --> Development[Development]
+    Development --> Testing[Testing]
+    Testing --> Review[Sprint Review]
+    Review --> Retrospective[Sprint Retrospective]
+    Retrospective --> Backlog
+    Review --> ProductRelease[Product Release]
+end
+```

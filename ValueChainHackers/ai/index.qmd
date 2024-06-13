@@ -10,7 +10,6 @@ Extracting knowledge from large text documents is not a single step.
 To retrieve valuable information from these a large document or corpus needs to be chuncked and the task needs to be subdivided in multiple sub-tasks.
 
 ```{mermaid}
-
 graph LR
 style PDF fill:#008000, stroke:#000000
 style Crawling fill:#ffa500, stroke:#000000
@@ -35,40 +34,39 @@ style Query fill:#ffa500, stroke:#000000
 style Retrievers fill:#ffa500, stroke:#000000
 style Results fill:#ffa500, stroke:#000000
 style Visualize fill:#ffa500, stroke:#000000
-style Embeddings fill:#ffa500
-style Structurize fill:#ffa500
+style Embeddings fill:#ffa500, stroke:#000000
+style Structurize fill:#ffa500, stroke:#000000
 
 subgraph Collect
-PDF[PDF\nannual reports] --> Store
-Crawling[
-    Crawling:\nWeb Site\nBrand Site\nProduct Pages
-] --> Store
-SEC[
-    US SEC\nFilings\n10<wbr>-K\n10-Q
-] --> Store
-Wikipedia[Wiki\n<wbr>Company Pages\nIngredien<wbr>s\nChemicals] --> Store
-
-DuckDuckGo[Searc<wbr>h\nDuckDuckGo] --> Store
-
-Store --> Ingestion['Proce<wbr>ssing\nIngestion<wbr>']
+    PDF[PDF\nannual reports] --> Store
+    Crawling[Crawling:\nWeb Site\nBrand Site\nProduct Pages] --> Store
+    SEC[US SEC\nFilings\n10-K\n10-Q] --> Store
+    Wikipedia[Wiki\nCompany Pages\nIngredients\nChemicals] --> Store
+    DuckDuckGo[Search\nDuckDuckGo] --> Store
+    Store --> Ingestion[Processing\nIngestion]
 end
+
 subgraph Ingest
-    Ingestion --> Transform <--> Extract[Extract:<wbr>\n Nodes, Edges]
-    Transform <--> Structurize[Stru<wbr>cturize:\n CSV, JSON, Markdown]
+    Ingestion --> Transform <--> Extract[Extract:\nNodes, Edges]
+    Transform <--> Structurize[Structurize:\nCSV, JSON, Markdown]
     Transform --> Embeddings
     Structurize --> Knowledge
 end
+
 subgraph Knowledge
     Transform --> LLM
     Extract <--> IndexGraph
     Extract <--> IndexFact
     LLM --> Structurize
 end
+
 RAG --> Retrievers
+
 subgraph GraphDatabase
-    IndexGraph[Graph<wbr>\nNodes\nLinks] --> Neo4j 
+    IndexGraph[Graph\nNodes\nLinks] --> Neo4j 
     RAG --> Neo4j
 end
+
 subgraph FactDatabase
     IndexFact --> Sqlite 
     IndexFact --> Markdown
@@ -87,6 +85,7 @@ subgraph UI
     UIAI --> Query --> Retrievers --> Results --> Visualize
     Query --> Visualize
 end
+
 ```
 
 ## Chunks : Chunkin a large document in pieces
@@ -114,3 +113,7 @@ Now we have extracted nodes, we will invoke antoher model to do a quality check 
 ## Ingest : Incorporate tuples and nodes to the global graph
 
 With our appured nodes being now filtered and checked for quality we will now query the graph for each of them and add them if they are not a perfect duplicate and reject the nodes that might be too similar using cosine similarity and clustering techniques.
+
+## Technical Budget
+
+[technical budget](./technicalbudget.qmd)
