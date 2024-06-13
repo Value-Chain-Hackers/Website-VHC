@@ -5,34 +5,43 @@ date: "13-06-2024"
 format: revealjs
 ---
 
-## Last Sprint
+#### Sprint 1: Basic Ontology Setup and Initial Data Integration
 
-## What Went Well
+**Sprint Goal A**: 
+- Establish the foundation for the Power Dynamics Ecosystem visualization.
+
+##### Sub-Goals A:
+
+**Define Key Supply Chain Elements**:
+- [x] Identify and document primary elements like suppliers, manufacturers, distributors, retailers, and consumers.
+- [x] Create a working ontology and implement it in the system.
+
+
+## Demo: What Went Well
 
 1. **Ontology Implementation**: 
     - Successfully integrated the ontology framework.
     - Enhanced the system's understanding and extensibility by replacing traditional relational database structures.
     - Enabled system to guess nodes using first-order logic and automate the search process.
-2. **AI Segmentation**:
-    - Divided process into three distinct AI components:
-        - AI for searching information.
-        - AI for making connections and data mashing.
-        - AI for creating displays, widgets, and tables.
 3. **Feature Requests Addressed**:
     - Noted and planned important feature requests like the accuracy counter for supply chain mapping.
 4. **Initial MVP**:
     - Demonstrated an initial version of a minimally viable product (MVP).
 
-## What Could Be Improved
+## Segmentation.
+2. **AI Segmentation**:
+    - Divided process into three distinct AI components:
+        - AI for searching information.
+        - AI for making connections and data mashing.
+        - AI for creating displays, widgets, and tables.
 
+## What Could Be Improved
 1. **Accuracy and Quality Assurance**:
     - Ensure the system's accuracy and address concerns about missing small, vital components.
     - Requested a feature to improve accuracy.
-
 2. **Focus and Scope Management**:
     - Avoid getting into "rabbit holes".
     - Focus on achieving a functional product that provides reasonably accurate mappings.
-
 3. **Balancing Development Efforts**:
     - Balance efforts between creating a usable product and maintaining high accuracy.
 
@@ -42,10 +51,46 @@ format: revealjs
 - [x] Finetune: protocol to allow the AI to control the UI elements and dynamically render various visualizations.
 - [x] Create an ontology to describe the supply chain elements as a schema to help the AI structurize knowledge.
 - [x] Chat system needs to work and update map upon prompt.
+
+## Work done' continued
 - [x] Creating a digital environment and bringing it online.
 - [x] Updating the contacts sheet, making it into markdown.
 - [x] Recruiting text for students
-- [x] Making a website
+- [x] Making a website - process
+
+## Next Sprint
+
+### Tasks
+
+**Next Steps:**
+
+EPIC Visualize Power Dynamics Ecosystem: 
+- Develop a feature to visualize the entire ecosystem based on a company name within 20 minutes.
+
+### Sprint Goal
+
+- Integrate all core components, ensure system reliability and accuracy, and prepare for a visual launch of the Power Dynamics Ecosystem feature.
+- Feature request: Accuracy Counter!
+
+## Sub-Goals
+
+1. **Enhance Ontology Framework**:
+    - Finalize the ontology for comprehensive representation of supply chain elements and relationships.
+
+2. **Develop and Refine Visualizations**:
+    - Create intuitive visualizations for supply chain mappings and power dynamics.
+    - Create a design visual framework. 
+
+3. **User Feedback Integration**:
+    - Schedule another demo and feedback on this. 
+
+4. **System Testing and Quality Assurance**:
+    - Conduct thorough testing to ensure accuracy and reliability.
+
+5. **Prepare for Visual Launch**:
+    - Finalize elements for a successful visual launch.
+
+### Sub-Goals and Optional Tasks
 
 ## Backlog
 
@@ -60,128 +105,14 @@ format: revealjs
 - [ ] Setup of LinkedIn Page.
 - [ ] Getting a Domain.
 - [ ] Onboarding Process for students. 
-- [ ] Organisation Starting: Creation of a B.V or Non-Profit.
 - [ ] Setup recruitment process for students, CRM.
+- [ ] Setup of social media for Value Chain Hackers.
+- [ ] Making a nicer looking website.
+
+## backlog #3
 - [ ] Creation of online content for students to learn, LMS.
 - [ ] Filing for public grants.
 - [ ] Going to several events on behalf of Value Chain Hackers.
-- [ ] Setup of social media for Value Chain Hackers.
-- [ ] Making a nicer looking website.
 - [ ] Server setup and config budget for production.
 - [ ] Setup scripts.
 - [ ] Splitting the minds over multiple machines.
-
-## Next Sprint
-
-### Tasks
-
-**Next Steps:**
-
-EPIC Visualize Power Dynamics Ecosystem: 
-- Develop a feature to visualize the entire ecosystem based on a company name within 20 minutes.
-
-#### Sprint 1: Basic Ontology Setup and Initial Data Integration
-
-**Sprint Goal A**: 
-- Establish the foundation for the Power Dynamics Ecosystem visualization.
-
-##### Sub-Goals A:
-
-**Define Key Supply Chain Elements**:
-- Identify and document primary elements like suppliers, manufacturers, distributors, retailers, and consumers.
-- Define relationships including material flow, information flow, and financial flow.
-
-**Sub-tasks**:
-
-1. **Define Key Supply Chain Elements**:
-    - Identify and document primary elements.
-    - Define relationships.
-
-2. **Develop Basic Schema**:
-    - Create an initial schema using an ontology editor.
-    - Ensure the schema is extensible for future updates.
-
-3. **Test the Ontology with Sample Data**:
-    - Validate the ontology's structure with a small dataset.
-
-4. **Initial Data Integration**:
-    - Collect and integrate a small, representative dataset.
-    - Develop SPARQL queries to test the ontology.
-
-### Sprint Goal
-
-- Integrate all core components, ensure system reliability and accuracy, and prepare for a visual launch of the Power Dynamics Ecosystem feature.
-
-### Sub-Goals
-
-1. **Enhance Ontology Framework**:
-    - Finalize the ontology for comprehensive representation of supply chain elements and relationships.
-
-2. **Develop and Refine Visualizations**:
-    - Create intuitive visualizations for supply chain mappings and power dynamics.
-
-3. **User Feedback Integration**:
-    - Collect and integrate user feedback for system improvement.
-
-4. **System Testing and Quality Assurance**:
-    - Conduct thorough testing to ensure accuracy and reliability.
-
-5. **Prepare for Visual Launch**:
-    - Finalize elements for a successful visual launch.
-
-### Sub-Goals and Optional Tasks
-
-#### Sub-Goal 1: Enhance Ontology Framework
-1. **Refine Schema**:
-    - [ ] Review and update the initial schema.
-    - [ ] Ensure comprehensive coverage of supply chain elements.
-    - [ ] **Optional Task**: Conduct workshops with domain experts.
-
-2. **Expand Data Integration**:
-    - [ ] Integrate additional datasets.
-    - [ ] Test with larger datasets for scalability.
-    - [ ] **Optional Task**: Develop automated data integration pipelines.
-
-#### Sub-Goal 2: Develop and Refine Visualizations
-1. **Design Visual Elements**:
-    - [ ] Create wireframes and mockups.
-    - [ ] Develop dynamic visual elements.
-    - [ ] **Optional Task**: Conduct user testing on wireframes.
-
-2. **Implement Visualizations**:
-    - [ ] Code and integrate visual elements.
-    - [ ] Ensure interactivity and meaningful insights.
-
-#### Sub-Goal 3: User Feedback Integration
-1. **Collect Feedback**:
-    - [ ] Conduct user testing sessions.
-    - [ ] Use surveys and interviews.
-
-2. **Integrate Feedback**:
-    - [ ] Prioritize and implement feedback.
-    - [ ] Continuously update the system.
-
-#### Sub-Goal 4: System Testing and Quality Assurance
-1. **Accuracy Testing**:
-    - [ ] Develop test cases.
-    - [ ] Implement an accuracy counter feature.
-
-2. **Performance Testing**:
-    - [ ] Conduct load testing.
-    - [ ] Resolve performance bottlenecks.
-
-3. **Quality Assurance**:
-    - [ ] Perform comprehensive QA testing.
-    - [ ] Ensure system meets usability and accuracy criteria.
-
-#### Sub-Goal 5: Prepare for Visual Launch
-1. **Documentation**:
-    - [ ] Create user and technical documentation.
-
-2. **Marketing Materials**:
-    - [ ] Prepare marketing materials.
-    - [ ] Develop a demo video.
-
-3. **Launch Plan**:
-    - [ ] Finalize the launch plan.
-    - [ ] Coordinate with stakeholders.
