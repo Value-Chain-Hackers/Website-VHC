@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Value Chain Hackers - Photography</title>
+<title>Value Chain Hackers - Supply Chain Mapping</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -65,6 +65,9 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script src="../site_libs/quarto-diagram/mermaid.min.js"></script>
+<script src="../site_libs/quarto-diagram/mermaid-init.js"></script>
+<link href="../site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 
 
 </head>
@@ -140,7 +143,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Photography</h1>
+<h1 class="title">Supply Chain Mapping</h1>
 </div>
 
 
@@ -157,33 +160,49 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>As a wizard and scholar of Middle-earth, I have been studying the magic of the natural world for centuries. Through my self-portraits, I aim to capture the essence of my own being and reflect on my own journey through time. Each photograph is a reflection of my own experiences and emotions. Through my photography, I hope to offer a glimpse into my life as a scholar and adventurer, and inspire others to reflect on their own journeys through the world.</p>
+<section id="map-supply-chains-using-ontologies" class="level2">
+<h2 class="anchored" data-anchor-id="map-supply-chains-using-ontologies">Map Supply Chains using ontologies</h2>
+<p>Extracting knowledge from large text documents is not a single step. To retrieve valuable information from these a large document or corpus needs to be chuncked and the task needs to be subdivided in multiple sub-tasks.</p>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
 <div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">graph LR
+    Chunks ---&gt; Preprocess ---&gt; Extract
+    Extract ---&gt; Validate ---&gt; Ingest
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+</section>
+<section id="chunks-chunkin-a-large-document-in-pieces" class="level2">
+<h2 class="anchored" data-anchor-id="chunks-chunkin-a-large-document-in-pieces">Chunks : Chunkin a large document in pieces</h2>
+<p>This step will take a large document and chuck it in parts using some overlap to ensure that paragraph that would be cut in their middle are also present in the next chunk of text.</p>
+</section>
+<section id="preprocess-remove-the-grease" class="level2">
+<h2 class="anchored" data-anchor-id="preprocess-remove-the-grease">Preprocess : Remove the grease</h2>
+<p>This step will tranform the larger text chunks to sentences that are focused on facts, named entities, take-aways and essential points removing the grease of what is not relevant to the extraction process, but present in the textual form of the document.</p>
+<p><a href="../ai/Prompt_Extraction_preprocess.html">Pre-Process Prompt</a></p>
+</section>
+<section id="extract-get-tuples-of-knowledge-from-the-text" class="level2">
+<h2 class="anchored" data-anchor-id="extract-get-tuples-of-knowledge-from-the-text">Extract : Get tuples of knowledge from the text</h2>
+<p>With the reduced text now the model will attempt to make tuples and nodes according to the ontology. Here too <code>divide and conquer</code> will be used, in order to reduce hallucianations it’s better to invoke the model multiple times using a subset of the ontlogy each time. This will yield better results and avoid the model to try to makeup nodes for each class of the ontology.</p>
+<p><a href="../ai/Prompt_Extraction.html">Extracting Prompt</a></p>
+</section>
+<section id="validate-check-facts-deduplicate-ensure-proper-syntax" class="level2">
+<h2 class="anchored" data-anchor-id="validate-check-facts-deduplicate-ensure-proper-syntax">Validate : Check facts, deduplicate ensure proper syntax</h2>
+<p>Now we have extracted nodes, we will invoke antoher model to do a quality check on each node, by adding a rag on the actual document this step is able to search back in the document and coroborate different pieces of the document to make the most complete set of tuples and nodes, suppressing normally any hallucinated facts that might have produced by previous steps.</p>
+<p><a href="../ai/Prompt_Extraction_validation.html">Validation Prompt</a></p>
+</section>
+<section id="ingest-incorporate-tuples-and-nodes-to-the-global-graph" class="level2">
+<h2 class="anchored" data-anchor-id="ingest-incorporate-tuples-and-nodes-to-the-global-graph">Ingest : Incorporate tuples and nodes to the global graph</h2>
+<p>With our appured nodes being now filtered and checked for quality we will now query the graph for each of them and add them if they are not a perfect duplicate and reject the nodes that might be too similar using cosine similarity and clustering techniques.</p>
 
-</div>
-<div class="quarto-layout-panel" data-layout-ncol="2">
-<div class="quarto-layout-row">
-<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
-<p><img src="gandalf_image_1.jpg" class="img-fluid"></p>
-</div>
-<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
-<p><img src="gandalf_image_2.jpg" class="img-fluid"></p>
-</div>
-</div>
-<div class="quarto-layout-row">
-<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
-<p><img src="gandalf_image_3.jpg" class="img-fluid"></p>
-</div>
-<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
-<p><img src="gandalf_image_4.jpg" class="img-fluid"></p>
-</div>
-</div>
-</div>
-<div style="margin: 30px; text-align: center;">
-<a class="btn btn-primary" href="https://www.marvinschmitt.com/blog/website-tutorial-quarto/" role="button" target="_blank" style="padding: 15px 30px;">View the tutorial for this template (+ download link)</a>
-</div>
 
-
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
