@@ -1,5 +1,33 @@
 [
   {
+    "objectID": "prompts/knowledge_validate.html",
+    "href": "prompts/knowledge_validate.html",
+    "title": "Value Chain Hackers",
+    "section": "",
+    "text": "You are a Knowledge Validation Agent tasked with validating and double-checking the extracted nodes from a text document."
+  },
+  {
+    "objectID": "prompts/knowledge_validate.html#instructions",
+    "href": "prompts/knowledge_validate.html#instructions",
+    "title": "Value Chain Hackers",
+    "section": "Instructions:",
+    "text": "Instructions:\n\nValidation Format:\n\nEnsure the extracted knowledge graph is in valid Turtle format.\nVerify that only classes and properties defined in the ontology are used.\nEnsure only prefixes defined and namespaces declared in the ontology are used.\nEnsure identifiers are unique and meaningful. Use underscores instead of spaces.\nMaintain a consistent order for properties within each entity, preferably alphabetical or as defined in the ontology.\n\nRelevance:\n\nConfirm that only information relevant to the company is extracted.\nEnsure no irrelevant details are included and all extracted information is directly present in the text.\n\nObject Details:\n\nUse the rdfs:comment field for additional descriptions or specifics where available.\n\nAccuracy and Completeness:\n\nVerify that all extracted information is accurate and complete.\nDouble-check for any missing relevant details.\n\nOutput:\n\nEnsure the output is valid Turtle format.\nEnsure no additional fields or change of field names are included.\nEnsure that each instance or tuple is separated by double whitelines.\nConfirm only instances are extracted; no new classes or properties are created.\nEnsure identifiers are meaningful and no spaces are used in the identifiers.\nConfirm special characters are properly escaped within literals.\nVerify hierarchical relationships between entities are correctly represented using properties as defined in the ontology.\n\nError Handling:\n\nIf there is ambiguity or an error in the text, do not invent or guess information.\nEnsure only information that is directly present in the text is extracted.\nPrioritize accuracy and completeness of the information.\n\n\n\nTask:\n\nValidate and correct the provided Turtle code.\nOutput only the corrected Turtle code within a turtle code block.\nDO NOT include any explanations, notes, or text outside the Turtle structure.\nDO NOT output the ontology iteself just output instances.\n\nProvide the corrected Turtle code based on the validation. Ensure the output is only within a turtle code block."
+  },
+  {
+    "objectID": "prompts/knowledge_extraction.html",
+    "href": "prompts/knowledge_extraction.html",
+    "title": "Value Chain Hackers",
+    "section": "",
+    "text": "You are a Knowledge Extraction Agent tasked with building a comprehensive knowledge graph from a text document using the classes and properties of the Supply Chain Ontology. Your goal is to extract relevant information and represent it in the rdf format."
+  },
+  {
+    "objectID": "prompts/knowledge_extraction.html#instructions",
+    "href": "prompts/knowledge_extraction.html#instructions",
+    "title": "Value Chain Hackers",
+    "section": "Instructions:",
+    "text": "Instructions:\n\nExtraction Format:\n\nUse RDF Format:\n\nAdhere strictly to the RDF format for the extracted knowledge graph.\nUse only the classes and properties defined in the provided ontology.\nEnsure identifiers are unique and meaningful, using underscores instead of spaces (e.g., ABC_Company instead of Company1).\n\nPrefixes and Namespaces:\n\nUse only the prefixes and namespaces declared in the ontology.\nDo not include classes from other ontologies, schemas, or vocabularies.\nDO not create new ObjectProperty of Class objects, only refer to classes existing in the scm ontology.\nDo only create individuals in in the namespace : {namespace} using the {prefix}.\nDo not use : as default prefix always use the {prefix} for the namespace : {namespace}\n\nProperties Order:\n\nMaintain a consistent order for properties within each entity, preferably alphabetical or as defined in the ontology.\n\nExtract Relevant Information:\n\nExtract only information that is relevant to the company and the ontology classes.\nDo not include irrelevant details. Ensure all extracted information is explicitly present in the text.\nMaske sure to include the prefix of the scm ontology.\nIf in doubt about the truthfulness of your extraction, skip the node.\nDO not create individuals for the documents.\nDO not reference or mention the documents only use the information present in the documents.\nSummarize the information in the document and only keep information that will serve to create individuals in the ontology.\n\nUse rdfs:comment:\n\nUse the rdfs:comment field for additional descriptions or specific comments where desirable.\n\nEnsure Accuracy and Completeness:\n\nDouble-check for missing relevant details.\nDo not extract information not explicitly present in the text of that is not relevant to the Ontology.\n\nValid RDF Format:\n\nOutput should be in valid RDF format.\nDo not include any additional explanations or notes outside the RDF structure.\nOnly output the RDF with RDF code blocks.\nEscape any special characters appropriately in the output.\nIf no valuable entities can be extracted, output the message ‘No valuable information’.\n\nHandle Special Characters:\n\nEscape special characters such as quotes, backslashes, and newlines within literals.\nEnsure proper formatting and quoting of literals.\n\nHandle Ambiguities:\n\nIf there is ambiguity or an error in the text, skip the extraction.\nDo not invent or guess any information.\nOnly extract information directly present in the text.\nPrioritize accuracy and completeness. If in doubt, return ‘No valuable information’.\n\n\n\n\nFinal Instructions:\n\nFollow these instructions meticulously to extract and construct the knowledge graph.\nVerify the accuracy and relevance of your extractions.\nDo not include any text outside the RDF code block.\nAvoid using abbreviations or acronyms in the identifiers; use full names for clarity.\nTake your time and ensure the quality of your work.\nMake sure your output is exhaustive and definitive.\n\nIf you follow these guidelines correctly, you will significantly contribute to the success of this task."
+  },
+  {
     "objectID": "projects/index.html",
     "href": "projects/index.html",
     "title": "Projects",
@@ -42,277 +70,11 @@
     "text": "STUPID SHIT"
   },
   {
-    "objectID": "presentations/30-05-2024 Planning.html#welcome-introduction",
-    "href": "presentations/30-05-2024 Planning.html#welcome-introduction",
-    "title": "VHC sprint",
-    "section": "Welcome & Introduction",
-    "text": "Welcome & Introduction\n\nDate: 30-5-2024\nLast Demo: 22 - 5 - 2024\nPresenter: Chris Verhoef\nObjective: Review the progress of our AI Supply Chain Tool development, Plan next iteration."
-  },
-  {
-    "objectID": "presentations/30-05-2024 Planning.html#last-time",
-    "href": "presentations/30-05-2024 Planning.html#last-time",
-    "title": "VHC sprint",
-    "section": "Last Time",
-    "text": "Last Time\n\nReal-time data processing pipeline.\nReal-time Systhesys of a company data map. That was in Markdown\nUser interface for data manipulation and adjustment.\nIntergration into workbook with nice interface allows non-tech users to join the project.\nModel overview Intergration allows us to watch A.I “think” in real time.\nOptimize the back-end processes to ensure that the visualization is generated within the 20-minute timeframe.\nComplete the development of the initial visualization tool capable of representing power dynamics based solely on a company name."
-  },
-  {
-    "objectID": "presentations/30-05-2024 Planning.html#planned-tasks",
-    "href": "presentations/30-05-2024 Planning.html#planned-tasks",
-    "title": "VHC sprint",
-    "section": "PLanned tasks",
-    "text": "PLanned tasks"
-  },
-  {
-    "objectID": "presentations/30-05-2024 Planning.html#feedback-and-plan-last-time",
-    "href": "presentations/30-05-2024 Planning.html#feedback-and-plan-last-time",
-    "title": "VHC sprint",
-    "section": "Feedback and plan last time:",
-    "text": "Feedback and plan last time:\n\nObjectives:\nMake sure the AI iterates over every part of the supplchain, nultitier Suppliers, 2,3,4-de 5de niveau toega.\nTraining the AI model to be specific; Unilever - ASML - 1ste lijns, tweede lijns. Derde Lijns.\nAdd to the Product Limitation; (a razos blade of Philps) A Specific Product;\nWe want to see an improvement of the meeting; Can I see the an Improvement of the mapping.\n\nGo back to the Graphical Display to map out the Supplychain Planned Tasks:\nCollect more diverse data sets"
-  },
-  {
-    "objectID": "presentations/30-05-2024 Planning.html#sprint-overview",
-    "href": "presentations/30-05-2024 Planning.html#sprint-overview",
-    "title": "VHC sprint",
-    "section": "Sprint Overview",
-    "text": "Sprint Overview\n\nSprint Goals: Visualize Power Dynamics Ecosystem: For the upcoming demo, develop a feature to visualize the entire ecosystem based on a company name within 20 minutes.\nMake sure the AI iterates over every part of the supplchain, nultitier Suppliers, 2,3,4-de 5de niveau toega.\nTraining the AI model to be specific; Unilever - ASML - 1ste lijns, tweede lijns. Derde Lijns.\nAdd to the Product Limitation; (a razos blade of Philps) A Specific Product;\nWe want to see an improvement of the meeting; Can I see the an Improvement of the mapping.\nGo back to the Graphical Display to map out the Supplychain\nMaking a more visual plan of the objective. Planned Tasks:\nCollect more diverse data sets"
-  },
-  {
-    "objectID": "presentations/30-05-2024 Planning.html#work-completed",
-    "href": "presentations/30-05-2024 Planning.html#work-completed",
-    "title": "VHC sprint",
-    "section": "Work Completed",
-    "text": "Work Completed\n::: incremental\n\nVisual Design, back to the core of the mapping\nMultipule A.I system intergrated\nNow a Unified system with an graphical interface, A.I completly hidden\nA.I now uses more advanced models, though the most advanced are still out of scope\nDesign and implement a user-friendly interface that allows users to easily input a company name and initiate the visualization process.\nEnsure the interface is intuitive and guides the user through the visualization generation.\nCrawler version one online\nA Data Cleansing process!!\nA data transformation process!!"
-  },
-  {
-    "objectID": "presentations/30-05-2024 Planning.html#challanges-mitigated",
-    "href": "presentations/30-05-2024 Planning.html#challanges-mitigated",
-    "title": "VHC sprint",
-    "section": "Challanges Mitigated!",
-    "text": "Challanges Mitigated!\n\n\n\nInability for the A.I to produce a result that the previous visualization tool could correctly prase. (Implementing a data cleansing process: DONE!)\nInitial model underperformance, Tokensize is very limited to 9000 characters.\nHardware limitations, inability to train faster.\nInability to parse data effectively into system\nAI model training takes significant time\nChris does his best but he needs to be a data-engineer, ai-engineer, full stack programmer all in one.\nCreating presentations and formats in PowerPoint always take a very long time.\nHard to keep head focused on a project that is very big where learning still needs to happen.\n“good Path” often changes mid-way due to discovery that it’s impossible.\nReality of time is different that real time, 6 days turns out to be 3."
-  },
-  {
-    "objectID": "presentations/30-05-2024 Planning.html#challenges-faced-still-a-problem.",
-    "href": "presentations/30-05-2024 Planning.html#challenges-faced-still-a-problem.",
-    "title": "VHC sprint",
-    "section": "Challenges Faced, still a problem.",
-    "text": "Challenges Faced, still a problem.\n\nSignificant Challenges:\n\n\n\n\nData inconsistency across sources.\nInability for the A.I to produce a result that the previous visualization tool could correctly prase.\nAccess to good data sources and an example\nAI model “Hallucinates” New: Ayoub had a long ontsteking, is er 2.5 week uit geweest; New: Nikita kon niet goed genoeg A.I coderen."
-  },
-  {
-    "objectID": "presentations/30-05-2024 Planning.html#why-chain-of-thoughts-all-of-a-sudden.",
-    "href": "presentations/30-05-2024 Planning.html#why-chain-of-thoughts-all-of-a-sudden.",
-    "title": "VHC sprint",
-    "section": "Why Chain of Thoughts all of a sudden.",
-    "text": "Why Chain of Thoughts all of a sudden.\n\n\n\n\n\n\nAspect\nChain of Thoughts\nSingle LLM\n\n\n\n\nComplexity and Detail\nBreaks down complexities into manageable insights, capturing detailed interdependencies.\nMay overlook nuanced details due to generalized training data.\n\n\nAdaptability and Flexibility\nAllows iterative reassessment and refinements, crucial for dynamic environments.\nConstrained by initial training, less adaptive to new scenarios.\n\n\nRisk Identification and Mitigation\nEnables comprehensive risk analysis from multiple perspectives and scenarios.\nPotentially misses emerging or non-obvious risks, limited by training scope.\n\n\nCustomization and Specificity\nTailored analysis specific to operational needs and strategic goals.\nGeneralizes based on broad datasets, may neglect organization-specific needs."
-  },
-  {
-    "objectID": "presentations/30-05-2024 Planning.html#next-sprint",
-    "href": "presentations/30-05-2024 Planning.html#next-sprint",
-    "title": "VHC sprint",
-    "section": "Next Sprint",
-    "text": "Next Sprint\nSprint Goal 1: Visualize Power Dynamics Ecosystem: For the upcoming demo, develop a feature to visualize the entire ecosystem based on a company name within 20 minutes.\nIn order to do this: we need to build the ontology first; ontology to describe the supply chanin elements as a schema to help the AI structurize knowledge in a well defined way.\nThis will help to later help to query the knowledge in a structured way. {UNTIL WE HAVE THIS, We cannot Draw the mapping in another way.}\nEven if you don’t want to see the in between sets, we need to have this in order to map the graphs correct this.\nhttps://www.ontotext.com/knowledgehub/fundamentals/what-is-sparql/\n\nWe will have this by the End of Next week!"
-  },
-  {
-    "objectID": "presentations/30-05-2024 Planning.html#sub-goals",
-    "href": "presentations/30-05-2024 Planning.html#sub-goals",
-    "title": "VHC sprint",
-    "section": "Sub-Goals:",
-    "text": "Sub-Goals:\n\ncreate a protocol to allow the ai to control the UI elements and dynamically render various visualisations.\nAsk multipule A.I’s and Multipule Prompts, to identify the which of the data is correct. To do reanforcement-learning: data set bouwen, zo that the A.I will always answer the correct information. Example: I have 3 models and 3 examples, to have concrete examples; to Label them correctly, so that the error margin will get lower. 40% accurate, 70% accurate &gt; 90% accurate.\nCREWS need to start working; So that it can start crawling the internet for subquestions: “So it can say: Ah I need more information, go and search the internet”.\nFinetune: protocol to allow the ai to control the UI elements and dynamically render various visualisations\nNeed to build the task scheduler for the A.I Crews - &gt; so that you can see what tasks are running and what is going on. So you can see it “Build” Data.\nVisual updates about the crews in the interface, so that we can see what is running.\ncreate an ontology to describe the supply chanin elements as a schema to help the AI structurize knowledge in a well defined way.\nLoad significantly more data into the model to parse\nChat system needs to work and update map upon prompt\nFirst version of the Application online"
-  },
-  {
-    "objectID": "presentations/30-05-2024 Planning.html#next-sprint-part-2",
-    "href": "presentations/30-05-2024 Planning.html#next-sprint-part-2",
-    "title": "VHC sprint",
-    "section": "Next Sprint (part 2)",
-    "text": "Next Sprint (part 2)\n\nSprint Goal 2: the Setup of a community: Getting ready to recieve the students, setting up alliances and connections\nUpdating the Contacts sheet, making it into markdown so that everyone can read ORGANISATION\nCreating a digital environment and bringint it online. INFRASTUCTURE\nSetup of Linkedin Page, LEGITEMACY\nTexten voor studenten, onboarding process for students. RECRUITMENT\nOrganisation Starting: Creation of a B.V or Non-Profit? LEGITEMACY\nSetup Recruitment process for students, CRM. RECRUITMENT\nCreation of Online content for students to learn, LMS\nFiling for Public Grants, FUNDING\nGoing to Several Events on behalf of Value Chain Hackers, NETWORKING\nSetup of Social Media for Value Chain Hackers, OUTREACH\nMaking a website , Getting a domain, INFRASTRUCTURE"
-  },
-  {
-    "objectID": "presentations/30-05-2024 Planning.html#next-sprint-part-3",
-    "href": "presentations/30-05-2024 Planning.html#next-sprint-part-3",
-    "title": "VHC sprint",
-    "section": "Next Sprint (part 3)",
-    "text": "Next Sprint (part 3)\n\nServer Setup and config budget for Production. INFRASTUCTURE\nSetup Scripts\nSplitting the minds over multipule machines\nSprint Goal 1: Version 0.5 Online!"
-  },
-  {
-    "objectID": "presentations/30-05-2024 Planning.html#feedback-questions",
-    "href": "presentations/30-05-2024 Planning.html#feedback-questions",
-    "title": "VHC sprint",
-    "section": "Feedback & Questions",
-    "text": "Feedback & Questions\n\nQuestions Received:\nFeedback Incorporation:\n\nHeel Gefaseerd maken; - Wat wij hebben wel toegang wil wat je eerste instantie op de website 3 filters Bedrijven &gt; Product &gt; Lens. In de toekomst willen we meer producten toevoegen.\nEn die chat is heel belangrijk, dat geeft juist de dynamiek, maar niet voor de eerste fase. Wel voor de mensen die werken aan het project voor de achterankt."
-  },
-  {
-    "objectID": "presentations/22-05-2024 presentation.html#welcome-introduction",
-    "href": "presentations/22-05-2024 presentation.html#welcome-introduction",
-    "title": "VHC sprint",
-    "section": "Welcome & Introduction",
-    "text": "Welcome & Introduction\n\nDate: 22-5-2024\nPresenter: Chris Verhoef\nObjective: Review the progress of our AI Supply Chain Tool development"
-  },
-  {
-    "objectID": "presentations/22-05-2024 presentation.html#sprint-overview",
-    "href": "presentations/22-05-2024 presentation.html#sprint-overview",
-    "title": "VHC sprint",
-    "section": "Sprint Overview",
-    "text": "Sprint Overview\n\nSprint Goals: Visualize Power Dynamics Ecosystem: For the upcoming demo, develop a feature to visualize the entire ecosystem based on a company name within 20 minutes.\nMake sure the AI iterates over every part of the supplchain, nultitier Suppliers, 2,3,4-de 5de niveau toega.\nTraining the AI model to be specific; Unilever - ASML - 1ste lijns, tweede lijns. Derde Lijns.\nAdd to the Product Limitation; (a razos blade of Philps) A Specific Product;\nWe want to see an improvement of the meeting; Can I see the an Improvement of the mapping.\nGo back to the Graphical Display to map out the Supplychain\n\nmaar je moet eerst op pen en papier neerlegger hoe de tussen stappen moeten werken en wat ze moeten outputten , text, json, csv ? wat moet daar in de colonnen die je moet hebben enz dan kan refinen"
-  },
-  {
-    "objectID": "presentations/22-05-2024 presentation.html#prototype-development-and-initial-testing",
-    "href": "presentations/22-05-2024 presentation.html#prototype-development-and-initial-testing",
-    "title": "VHC sprint",
-    "section": "Prototype Development and Initial Testing",
-    "text": "Prototype Development and Initial Testing\n\nDevelop an initial prototype for inputting a company name to generate an ecosystem visualization.\nModel visualization needs somewhat accurate."
-  },
-  {
-    "objectID": "presentations/22-05-2024 presentation.html#feature-enhancement-and-system-optimization",
-    "href": "presentations/22-05-2024 presentation.html#feature-enhancement-and-system-optimization",
-    "title": "VHC sprint",
-    "section": "Feature Enhancement and System Optimization",
-    "text": "Feature Enhancement and System Optimization\n\nEnhance visualization features to include detailed ecosystem interactions.\nOptimize backend processes to achieve visualization generation within the 20-minute target."
-  },
-  {
-    "objectID": "presentations/22-05-2024 presentation.html#interface-design-and-requirement-analysis",
-    "href": "presentations/22-05-2024 presentation.html#interface-design-and-requirement-analysis",
-    "title": "VHC sprint",
-    "section": "Interface Design and Requirement Analysis",
-    "text": "Interface Design and Requirement Analysis\n\nDesign a user-friendly interface for easy initiation of the visualization process.\nAnalyze requirements to accurately represent the ecosystem based on essential data points."
-  },
-  {
-    "objectID": "presentations/22-05-2024 presentation.html#integration-and-final-preparations",
-    "href": "presentations/22-05-2024 presentation.html#integration-and-final-preparations",
-    "title": "VHC sprint",
-    "section": "Integration and Final Preparations",
-    "text": "Integration and Final Preparations\n\nExpand tool capabilities to integrate product data alongside company names.\nFinalize the tool with stakeholder feedback, ensuring readiness for the demo."
-  },
-  {
-    "objectID": "presentations/22-05-2024 presentation.html#work-completed",
-    "href": "presentations/22-05-2024 presentation.html#work-completed",
-    "title": "VHC sprint",
-    "section": "Work Completed",
-    "text": "Work Completed\n::: incremental\n\nPrototype to take company name and output a basic visualization of the ecosystem\nTest the prototype to ensure it meets the basic functional requirements.\nUI Enhancements: Improved dashboard for better user interaction.\nEnhance the visualization tool to include more detailed interactions and connections within the ecosystem.\nOptimize the back-end processes to ensure that the visualization is generated within the 20-minute timeframe.\nComplete the development of the initial visualization tool capable of representing power dynamics based solely on a company name.\nExpand the visualization tool to integrate product data along with the company name.\nDesign and implement a user-friendly interface that allows users to easily input a company name and initiate the visualization process.\nEnsure the interface is intuitive and guides the user through the visualization generation."
-  },
-  {
-    "objectID": "presentations/22-05-2024 presentation.html#key-achievements",
-    "href": "presentations/22-05-2024 presentation.html#key-achievements",
-    "title": "VHC sprint",
-    "section": "Key Achievements",
-    "text": "Key Achievements\n\nMajor Achievement: Successful prototype of supplychain mapping;\nImpact on Project: Allows us to see a first workable version of the program.\nCompleted Product Increments:\n\nReal-time data processing pipeline.\nReal-time Systhesys of a company data map.\nUser interface for data manipulation and adjustment.\nIntergration into workbook with nice interface allows non-tech users to join the project.\nModel overview Intergration allows us to watch A.I “think” in real time."
-  },
-  {
-    "objectID": "presentations/22-05-2024 presentation.html#key-achievement-2",
-    "href": "presentations/22-05-2024 presentation.html#key-achievement-2",
-    "title": "VHC sprint",
-    "section": "Key Achievement 2",
-    "text": "Key Achievement 2\n\n**Major Achievement: Reached Bedrock! This is something we can build upon!\nImpact on Project: Chris will no longer need to make a whole new project every time he makes a small adjustment!\nCompleted Project increments:\n\nKey tools and guides gathered for the good path.\nFinally something workable."
-  },
-  {
-    "objectID": "presentations/22-05-2024 presentation.html#challenges-faced",
-    "href": "presentations/22-05-2024 presentation.html#challenges-faced",
-    "title": "VHC sprint",
-    "section": "Challenges Faced",
-    "text": "Challenges Faced\n\nSignificant Challenges:\n\n\n\n\nData inconsistency across sources.\n\nInability for the A.I to produce a result that the previous visualization tool could correctly prase.\nAccess to good data sources and an example\nInitial model underperformance, Tokensize is very limited to 9000 characters.\nHardware limitations, inability to train faster.\nInability to parse data effectively into system\nAI model training takes significant time\nAI model “Hallucinates”\nChris does his best but he needs to be a data-engineer, ai-engineer, full stack programmer all in one.\n\nCreating presentations and formats in PowerPoint always take a very long time.\n\nHard to keep head focused on a project that is very big where learning still needs to happen.\n“good Path” often changes mid-way due to discovery that it’s impossible.\nReality of time is different that real time, 6 days turns out to be 3.\nSignificant stress due to “significant difference between what is promised and what is shown”"
-  },
-  {
-    "objectID": "presentations/22-05-2024 presentation.html#mitigating-and-moving-foward",
-    "href": "presentations/22-05-2024 presentation.html#mitigating-and-moving-foward",
-    "title": "VHC sprint",
-    "section": "Mitigating and moving foward",
-    "text": "Mitigating and moving foward\n\nconcerns addressed by:\n\nImplementing a data cleansing process\nNow using a Programmer and Data engineering presenting style, you are looking at it!\nJuypter Notebook intergration directly into code;\nModel overview tester to show differences\nChain of Thought model prompting for more accurate results\n\nRemaining Concerns: Adding significant data and parsing and inability to see how that will work, Chris needs to learn."
-  },
-  {
-    "objectID": "presentations/22-05-2024 presentation.html#why-chain-of-thoughts-all-of-a-sudden.",
-    "href": "presentations/22-05-2024 presentation.html#why-chain-of-thoughts-all-of-a-sudden.",
-    "title": "VHC sprint",
-    "section": "Why Chain of Thoughts all of a sudden.",
-    "text": "Why Chain of Thoughts all of a sudden.\n\n\n\n\n\n\nAspect\nChain of Thoughts\nSingle LLM\n\n\n\n\nComplexity and Detail\nBreaks down complexities into manageable insights, capturing detailed interdependencies.\nMay overlook nuanced details due to generalized training data.\n\n\nAdaptability and Flexibility\nAllows iterative reassessment and refinements, crucial for dynamic environments.\nConstrained by initial training, less adaptive to new scenarios.\n\n\nRisk Identification and Mitigation\nEnables comprehensive risk analysis from multiple perspectives and scenarios.\nPotentially misses emerging or non-obvious risks, limited by training scope.\n\n\nCustomization and Specificity\nTailored analysis specific to operational needs and strategic goals.\nGeneralizes based on broad datasets, may neglect organization-specific needs."
-  },
-  {
-    "objectID": "presentations/22-05-2024 presentation.html#chain-of-thought-prompting",
-    "href": "presentations/22-05-2024 presentation.html#chain-of-thought-prompting",
-    "title": "VHC sprint",
-    "section": "Chain of Thought Prompting",
-    "text": "Chain of Thought Prompting\n\n\n\n\n\ngraph LR;\n    A[Process Inputs] --&gt; B[Create Thoughts];\n    B --&gt; C[Evaluate Pathways];\n    C --&gt; D[Summarize Results];\n    D --&gt; E[Formulate Conclusions];\n\n\n\n\n\n\n\nStep 1: Focus on acquiring and organizing all necessary inputs that will inform the subsequent stages of thinking.\n\nStep 2: Develop coherent thoughts that logically follow from the processed inputs.\n\nStep 3: Critically evaluate each pathway to determine its feasibility and relevance.\n\nStep 4: Aggregate and synthesize the results to provide a clear overview of what has been discovered or concluded so far.\n\nStep 5: Make informed decisions or conclusions that are supported by the summarized findings and ready to be implemented or communicated."
-  },
-  {
-    "objectID": "presentations/22-05-2024 presentation.html#product-demonstration",
-    "href": "presentations/22-05-2024 presentation.html#product-demonstration",
-    "title": "VHC sprint",
-    "section": "Product Demonstration",
-    "text": "Product Demonstration\n\nLive Demo: Showcasing the Chain of Thought one\nFeature Explanation: Detailed overview of data inputs and machine learning outputs.\nInteraction Scenarios: Taking a Present Data Supplychain set and mapping this out, to determine the relationship between them. – Question that is posed: Between the characters of the “Miserables” what is the connection? – Features shown"
-  },
-  {
-    "objectID": "presentations/22-05-2024 presentation.html#language-model-integration",
-    "href": "presentations/22-05-2024 presentation.html#language-model-integration",
-    "title": "VHC sprint",
-    "section": "Language Model Integration:",
-    "text": "Language Model Integration:\nThe notebook integrates two language models, Ollama with enhanced context capabilities and OpenAIChat from OpenAI’s GPT models, to process text inputs.\nData Processing and Visualization:\nA function, load_graph, loads data from a JSON file and converts it into a Mermaid graph format for visualization within the notebook."
-  },
-  {
-    "objectID": "presentations/22-05-2024 presentation.html#chain-of-thoughts-processing",
-    "href": "presentations/22-05-2024 presentation.html#chain-of-thoughts-processing",
-    "title": "VHC sprint",
-    "section": "Chain of Thoughts Processing:",
-    "text": "Chain of Thoughts Processing:\nImplements a structured data processing approach that sequentially processes data through stages: input processing, thought creation, pathway evaluation, and conclusion formulation, using custom templates for each stage.\nCustom Templates for Language Models:\nUses ChatPromptTemplate and PromptTemplate to define structured prompts that guide the language models’ responses, ensuring that each step of the process is contextually relevant to the previous outputs.\nDynamic Content Rendering:\nOutputs from language model processing are rendered as Markdown, allowing for dynamic presentation of both textual and graphical data in the notebook environment. Iterative and Conditional Processing:\nThe notebook demonstrates the ability to loop over data iteratively and conditionally based on the outputs from each stage of the processing chain, refining the results with each iteration."
-  },
-  {
-    "objectID": "presentations/22-05-2024 presentation.html#synthesis-of-complex-data",
-    "href": "presentations/22-05-2024 presentation.html#synthesis-of-complex-data",
-    "title": "VHC sprint",
-    "section": "Synthesis of Complex Data:",
-    "text": "Synthesis of Complex Data:\nIt synthesizes complex data from multiple processing steps into a coherent plan or conclusion, demonstrating advanced data handling and decision-making capabilities.\nInteractive Markdown Display:\nMarkdown is used extensively to display both code-generated graphics and language model outputs interactively, enhancing the readability and user engagement with the notebook content."
-  },
-  {
-    "objectID": "presentations/22-05-2024 presentation.html#map",
-    "href": "presentations/22-05-2024 presentation.html#map",
-    "title": "VHC sprint",
-    "section": "MAP",
-    "text": "MAP\n\n\n\n\n\n\n\nASML_Supply_Chain\n\n\n\nASML\n\nASML Holding N.V.\n\n\n\nIntel\n\nIntel Corporation\n\n\n\nASML-&gt;Intel\n\n\nSemiconductor Equipment Sales\n\n\n\nSamsung\n\nSamsung Electronics Co., Ltd.\n\n\n\nASML-&gt;Samsung\n\n\nSemiconductor Equipment Sales\n\n\n\nTSMC\n\nTaiwan Semiconductor Manufacturing Company (TSMC)\n\n\n\nASML-&gt;TSMC\n\n\nSemiconductor Equipment Sales\n\n\n\nGlobalFoundries\n\nGlobalFoundries Inc.\n\n\n\nASML-&gt;GlobalFoundries\n\n\nSemiconductor Equipment Sales\n\n\n\nIntel-&gt;ASML\n\n\nSemiconductor Equipment Purchases\n\n\n\nSamsung-&gt;ASML\n\n\nSemiconductor Equipment Purchases\n\n\n\nTSMC-&gt;ASML\n\n\nSemiconductor Equipment Purchases\n\n\n\nGlobalFoundries-&gt;ASML\n\n\nSemiconductor Equipment Purchases\n\n\n\nOther Suppliers\n\nVarious Other Suppliers\n\n\n\nOther\n\nOther\n\n\n\nSuppliers\n\nSuppliers\n\n\n\nSuppliers-&gt;ASML\n\n\nComponents, Materials, and Services\n\n\n\nSpecialty\n\nSpecialty\n\n\n\nSuppliers-&gt;Specialty\n\n\n\n\n\nPackaging\n\nPackaging\n\n\n\nSuppliers-&gt;Packaging\n\n\n\n\n\nAssembly\n\nAssembly\n\n\n\nSuppliers-&gt;Assembly\n\n\n\n\n\nSpecialty Chemicals\n\nSpecialty Chemicals Inc.\n\n\n\nPackaging Materials\n\nPackaging Materials Co., Ltd.\n\n\n\nAssembly Services\n\nAssembly Services Inc.\n\n\n\nChemicals\n\nChemicals\n\n\n\nMaterials\n\nPackaging Materials\n\n\n\nServices\n\nAssembly Services"
-  },
-  {
-    "objectID": "presentations/22-05-2024 presentation.html#feedback-questions",
-    "href": "presentations/22-05-2024 presentation.html#feedback-questions",
-    "title": "VHC sprint",
-    "section": "Feedback & Questions",
-    "text": "Feedback & Questions\n\nQuestions Received:\n\nConcerns about data privacy\nQuestions about integration with existing ERP systems\n\nFeedback Incorporation:\n\nPlan to enhance data encryption\nRoadmap for ERP integration by next quarter"
-  },
-  {
-    "objectID": "presentations/22-05-2024 presentation.html#sprint-metrics",
-    "href": "presentations/22-05-2024 presentation.html#sprint-metrics",
-    "title": "VHC sprint",
-    "section": "Sprint Metrics",
-    "text": "Sprint Metrics\n\nVelocity Chart: Display of completed story points over time.\nBurndown Chart: Current sprint progress.\nOther Metrics: Accuracy improvements of the forecasting model."
-  },
-  {
-    "objectID": "presentations/22-05-2024 presentation.html#plan-for-next-sprint",
-    "href": "presentations/22-05-2024 presentation.html#plan-for-next-sprint",
-    "title": "VHC sprint",
-    "section": "Plan for Next Sprint",
-    "text": "Plan for Next Sprint\n\nObjectives:\n\nMake sure the AI iterates over every part of the supplchain, nultitier Suppliers, 2,3,4-de 5de niveau toega.\nTraining the AI model to be specific; Unilever - ASML - 1ste lijns, tweede lijns. Derde Lijns.\nAdd to the Product Limitation; (a razos blade of Philps) A Specific Product;\nWe want to see an improvement of the meeting; Can I see the an Improvement of the mapping.\nGo back to the Graphical Display to map out the Supplychain\n\nPlanned Tasks:\n\nCollect more diverse data sets\nWork on backend modifications for ERP integration\n\nAdjustments Based on Feedback:\n\nFocus on data security enhancements"
-  },
-  {
-    "objectID": "presentations/22-05-2024 presentation.html#conclusion",
-    "href": "presentations/22-05-2024 presentation.html#conclusion",
-    "title": "VHC sprint",
-    "section": "Conclusion",
-    "text": "Conclusion\n\nSummary: Reviewed the advancements made in our AI tool for enhancing supply chain efficiency.\nNext Steps:\n\nContinue development and testing of the forecasting model\nInitiate stakeholder meetings for next-phase planning\n\nThank You: Special thanks to the team and stakeholders for ongoing support and feedback."
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Welcome Value Chain Rebels",
+    "objectID": "presentations/presentations.html",
+    "href": "presentations/presentations.html",
+    "title": "Presentations",
     "section": "",
-    "text": "Github\n  \n  \n    \n     LinkedIn\n  \n  \n    \n     Email\n  \n\n\n\n\nWelcome Value Chain Rebels\nValue Chain Hackers Mission: Value Chain Hackers is dedicated to revolutionizing global supply chain dynamics by introducing innovative practices and technologies that create economic, environmental, and social benefits. Our goal is to transform supply chains from mere transactional pathways into transformative forces for global well-being.\n\n30-05-2024 Planning\n\nDate: May 30, 2024\nDescription: This presentation covers the planning phase for our upcoming projects.\nView Slides\n\nVision: We aim to foster collaborative networks with industries, academic institutions, NGOs, and governmental bodies to share knowledge, resources, and best practices. By leveraging AI and cutting-edge technologies, we map and optimize supply chains, identify challenges, and develop sustainable, upcycling solutions.\nCore Objectives:\nInnovate for Financial Sustainability: Develop and implement technologies that enhance supply chain accountability and find new streams of value. Foster Collaborative Networks: Establish a global network of over 50 active partnerships by 2025. Educate and Empower: Educate 10,000 individuals by 2028 on upcycling supply chains through programs and workshops. Drive Economic Viability: Showcase the economic benefits of upcycling practices with comprehensive case studies and reports, leading to a 20% increase in adoption among targeted industries by 2028. Focus on Environmental and Social Impact: Ensure all projects have a positive social and environmental impact, driving policy changes to hold companies accountable. Approach:\nConfidentiality Assurance: Prioritize the security of clients’ data with robust protection measures. Independent Facilitation: Act as a neutral third party to facilitate collaboration without bias. Value Creation: Emphasize the value of collaboration for achieving greater efficiency and sustainability. Ethical Standards: Uphold strict ethical principles in all engagements. By focusing on these areas, Value Chain Hackers seeks to improve safety, reduce costs, and create lasting positive changes in global supply chains, benefiting both businesses and society at large.\nPlease feel free to contact me if you have any questions or would like to discuss potential projects.\n\nJoin the Project!"
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "About this site"
-  },
-  {
-    "objectID": "photography/index.html",
-    "href": "photography/index.html",
-    "title": "Photography",
-    "section": "",
-    "text": "As a wizard and scholar of Middle-earth, I have been studying the magic of the natural world for centuries. Through my self-portraits, I aim to capture the essence of my own being and reflect on my own journey through time. Each photograph is a reflection of my own experiences and emotions. Through my photography, I hope to offer a glimpse into my life as a scholar and adventurer, and inspire others to reflect on their own journeys through the world.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nView the tutorial for this template (+ download link)"
+    "text": "30-05-2024 Planning\n\nDate: May 30, 2024\nDescription: This presentation covers the planning phase for our upcoming projects.\nView Slides\n\n\n\n22-05-2024 presentation\n\n[View Slides](/presentations/22-05-2024 presentation.qmd”"
   },
   {
     "objectID": "presentations/22-05-2024 presentation2.html#welcome-introduction",
@@ -490,6 +252,384 @@
     "text": "Conclusion\n\nSummary: Reviewed the advancements made in our AI tool for enhancing supply chain efficiency.\nNext Steps:\n\nContinue development and testing of the forecasting model\nInitiate stakeholder meetings for next-phase planning\n\nThank You: Special thanks to the team and stakeholders for ongoing support and feedback."
   },
   {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Welcome Value Chain Rebels",
+    "section": "",
+    "text": "Github\n  \n  \n    \n     LinkedIn\n  \n  \n    \n     Email\n  \n\n\n\n\nWelcome Value Chain Rebels\nValue Chain Hackers Mission: Value Chain Hackers is dedicated to revolutionizing global supply chain dynamics by introducing innovative practices and technologies that create economic, environmental, and social benefits. Our goal is to transform supply chains from mere transactional pathways into transformative forces for global well-being.\n\n30-05-2024 Planning\n\nDate: May 30, 2024\nDescription: This presentation covers the planning phase for our upcoming projects.\nView Slides\n\nVision: We aim to foster collaborative networks with industries, academic institutions, NGOs, and governmental bodies to share knowledge, resources, and best practices. By leveraging AI and cutting-edge technologies, we map and optimize supply chains, identify challenges, and develop sustainable, upcycling solutions.\nCore Objectives:\nInnovate for Financial Sustainability: Develop and implement technologies that enhance supply chain accountability and find new streams of value. Foster Collaborative Networks: Establish a global network of over 50 active partnerships by 2025. Educate and Empower: Educate 10,000 individuals by 2028 on upcycling supply chains through programs and workshops. Drive Economic Viability: Showcase the economic benefits of upcycling practices with comprehensive case studies and reports, leading to a 20% increase in adoption among targeted industries by 2028. Focus on Environmental and Social Impact: Ensure all projects have a positive social and environmental impact, driving policy changes to hold companies accountable. Approach:\nConfidentiality Assurance: Prioritize the security of clients’ data with robust protection measures. Independent Facilitation: Act as a neutral third party to facilitate collaboration without bias. Value Creation: Emphasize the value of collaboration for achieving greater efficiency and sustainability. Ethical Standards: Uphold strict ethical principles in all engagements. By focusing on these areas, Value Chain Hackers seeks to improve safety, reduce costs, and create lasting positive changes in global supply chains, benefiting both businesses and society at large.\nPlease feel free to contact me if you have any questions or would like to discuss potential projects.\n\nJoin the Project!"
+  },
+  {
+    "objectID": "ai/Prompt_Extraction_preprocess.html",
+    "href": "ai/Prompt_Extraction_preprocess.html",
+    "title": "Pre-Processing prompt",
+    "section": "",
+    "text": "You are a Knowledge Extraction Agent tasked with summarizing and extracting relevant information from a given text document, specifically within the context of supply chains. Your goal is to reduce the amount text while maintaining a maximum of information and context, all factual details should be captured. Make sure focus on information related to the company and the Supply Chain Ontology. Adhere strictly to the following guidelines:"
+  },
+  {
+    "objectID": "ai/Prompt_Extraction_preprocess.html#extraction-preprocess-prompt",
+    "href": "ai/Prompt_Extraction_preprocess.html#extraction-preprocess-prompt",
+    "title": "Pre-Processing prompt",
+    "section": "",
+    "text": "You are a Knowledge Extraction Agent tasked with summarizing and extracting relevant information from a given text document, specifically within the context of supply chains. Your goal is to reduce the amount text while maintaining a maximum of information and context, all factual details should be captured. Make sure focus on information related to the company and the Supply Chain Ontology. Adhere strictly to the following guidelines:"
+  },
+  {
+    "objectID": "ai/Prompt_Extraction_preprocess.html#instructions",
+    "href": "ai/Prompt_Extraction_preprocess.html#instructions",
+    "title": "Pre-Processing prompt",
+    "section": "Instructions:",
+    "text": "Instructions:\n\nSummary and Extraction Goals:\n\nDO Summarize the given text by extracting key facts, names of persons, brands, names, companies, subsidiaries, accomplishments, locations, affiliates, partnerships, take-aways, and any other relevant context information related to the company and it’s supplychain.\nDO Capture all relevant and valuable information related to supply chains, focusing on the relationships and hierarchies between entities.\nDO NOT add irrelevant details. Ensure all extracted information is directly present in the text.\n\nInformation Categories:\n\nFacts: Extract core facts about supply chain activities, relationships, and processes.\nPersons: Extract names and roles of persons mentioned in the text, their role, position and any other relevant information.\nBrands: Extract names of brands, product-lines, categories as well as the products, their manufacturing process, ingredients or components.\nNames: Extract names of companies, subsidiaries, holdings, organizations, legal entities, affiliates, competitors, and other key entities.\nLocations: Extract locations, addresses, and any other geographical information about plants, offices, headquarters, stores, transportation hubs, routes, warehouses and distribution centers.\nTake-aways: Identify main points, conclusions, or insights presented in the text.\nContext: Extract any additional context that provides clues of indications on the supply chain operations.\n\nFormat:\n\nUse markdown syntaxt with headings and sections.\nDO only use headings corresponding to classes in the ontology.\nEnsure that the information is concise and to the point.\nExtract tables as markdown tables where appropriate.\nUse lists to enumerate elements that are part of groups of collections.\n\nOntology Alignment:\n\nEnsure that the extracted information reffers and can be used to futher extract information with regard to the ontology below:\n\nOutput:\n\nThe output should be organized in markdown format as described in the above mentioned Format instructions.\n\n\n\nTask:\nDO follow the above instructions meticulously to extract and summarize the information from the given text. DO verify the accuracy and relevance of your extractions, if unsure do not extract the information. DO ensure all relevant context information is included when extracting entities or facts. DO NOT invent or guess information, if the information is not explicitelly clear do not extract it. DO NOT start you response with an introduction, do not repeat the task or the above instructions just ouput the required text."
+  },
+  {
+    "objectID": "ai/KnowledgeExtraction.html",
+    "href": "ai/KnowledgeExtraction.html",
+    "title": "Knowledge Extraction Pipeline",
+    "section": "",
+    "text": "Extracting knowledge from large text documents is not a single step. To retrieve valuable information from these a large document or corpus needs to be chuncked and the task needs to be subdivided in multiple sub-tasks.\ngraph LR\n    Chunks ---&gt; Preprocess ---&gt; Extract\n    Extract ---&gt; Validate ---&gt; Ingest"
+  },
+  {
+    "objectID": "ai/KnowledgeExtraction.html#chunks-chunkin-a-large-document-in-pieces",
+    "href": "ai/KnowledgeExtraction.html#chunks-chunkin-a-large-document-in-pieces",
+    "title": "Knowledge Extraction Pipeline",
+    "section": "Chunks : Chunkin a large document in pieces",
+    "text": "Chunks : Chunkin a large document in pieces\nThis step will take a large document and chuck it in parts using some overlap to ensure that paragraph that would be cut in their middle are also present in the next chunk of text."
+  },
+  {
+    "objectID": "ai/KnowledgeExtraction.html#preprocess-remove-the-grease",
+    "href": "ai/KnowledgeExtraction.html#preprocess-remove-the-grease",
+    "title": "Knowledge Extraction Pipeline",
+    "section": "Preprocess : Remove the grease",
+    "text": "Preprocess : Remove the grease\nThis step will tranform the larger text chunks to sentences that are focused on facts, named entities, take-aways and essential points removing the grease of what is not relevant to the extraction process, but present in the textual form of the document.\nPre-Process Prompt"
+  },
+  {
+    "objectID": "ai/KnowledgeExtraction.html#extract-get-tuples-of-knowledge-from-the-text",
+    "href": "ai/KnowledgeExtraction.html#extract-get-tuples-of-knowledge-from-the-text",
+    "title": "Knowledge Extraction Pipeline",
+    "section": "Extract : Get tuples of knowledge from the text",
+    "text": "Extract : Get tuples of knowledge from the text\nWith the reduced text now the model will attempt to make tuples and nodes according to the ontology. Here too divide and conquer will be used, in order to reduce hallucianations it’s better to invoke the model multiple times using a subset of the ontlogy each time. This will yield better results and avoid the model to try to makeup nodes for each class of the ontology.\nExtracting Prompt"
+  },
+  {
+    "objectID": "ai/KnowledgeExtraction.html#validate-check-facts-deduplicate-ensure-proper-syntax",
+    "href": "ai/KnowledgeExtraction.html#validate-check-facts-deduplicate-ensure-proper-syntax",
+    "title": "Knowledge Extraction Pipeline",
+    "section": "Validate : Check facts, deduplicate ensure proper syntax",
+    "text": "Validate : Check facts, deduplicate ensure proper syntax\nNow we have extracted nodes, we will invoke antoher model to do a quality check on each node, by adding a rag on the actual document this step is able to search back in the document and coroborate different pieces of the document to make the most complete set of tuples and nodes, suppressing normally any hallucinated facts that might have produced by previous steps.\nValidation Prompt"
+  },
+  {
+    "objectID": "ai/KnowledgeExtraction.html#ingest-incorporate-tuples-and-nodes-to-the-global-graph",
+    "href": "ai/KnowledgeExtraction.html#ingest-incorporate-tuples-and-nodes-to-the-global-graph",
+    "title": "Knowledge Extraction Pipeline",
+    "section": "Ingest : Incorporate tuples and nodes to the global graph",
+    "text": "Ingest : Incorporate tuples and nodes to the global graph\nWith our appured nodes being now filtered and checked for quality we will now query the graph for each of them and add them if they are not a perfect duplicate and reject the nodes that might be too similar using cosine similarity and clustering techniques."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
+  },
+  {
+    "objectID": "ai/index.html",
+    "href": "ai/index.html",
+    "title": "Photography",
+    "section": "",
+    "text": "As a wizard and scholar of Middle-earth, I have been studying the magic of the natural world for centuries. Through my self-portraits, I aim to capture the essence of my own being and reflect on my own journey through time. Each photograph is a reflection of my own experiences and emotions. Through my photography, I hope to offer a glimpse into my life as a scholar and adventurer, and inspire others to reflect on their own journeys through the world.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nView the tutorial for this template (+ download link)"
+  },
+  {
+    "objectID": "ai/Prompt_Extraction.html",
+    "href": "ai/Prompt_Extraction.html",
+    "title": "Knowledge Extraction Prompt",
+    "section": "",
+    "text": "You are a Knowledge Extraction Agent tasked with building a comprehensive knowledge graph from a text document using the classes and properties of the Supply Chain Ontology. Your goal is to extract relevant information and represent it in the rdf format."
+  },
+  {
+    "objectID": "ai/Prompt_Extraction.html#extraction-prompt",
+    "href": "ai/Prompt_Extraction.html#extraction-prompt",
+    "title": "Knowledge Extraction Prompt",
+    "section": "",
+    "text": "You are a Knowledge Extraction Agent tasked with building a comprehensive knowledge graph from a text document using the classes and properties of the Supply Chain Ontology. Your goal is to extract relevant information and represent it in the rdf format."
+  },
+  {
+    "objectID": "ai/Prompt_Extraction.html#instructions",
+    "href": "ai/Prompt_Extraction.html#instructions",
+    "title": "Knowledge Extraction Prompt",
+    "section": "Instructions:",
+    "text": "Instructions:\n\nExtraction Format:\n\nUse RDF Format:\n\nAdhere strictly to the RDF format for the extracted knowledge graph.\nUse only the classes and properties defined in the provided ontology.\nEnsure identifiers are unique and meaningful, using underscores instead of spaces (e.g., ABC_Company instead of Company1).\n\nPrefixes and Namespaces:\n\nUse only the prefixes and namespaces declared in the ontology.\nDo not include classes from other ontologies, schemas, or vocabularies.\nDO not create new ObjectProperty of Class objects, only refer to classes existing in the scm ontology.\nDo only create individuals in in the namespace : {namespace} using the {prefix}.\nDo not use : as default prefix always use the {prefix} for the namespace : {namespace}\n\nProperties Order:\n\nMaintain a consistent order for properties within each entity, preferably alphabetical or as defined in the ontology.\n\nExtract Relevant Information:\n\nExtract only information that is relevant to the company and the ontology classes.\nDo not include irrelevant details. Ensure all extracted information is explicitly present in the text.\nMaske sure to include the prefix of the scm ontology.\nIf in doubt about the truthfulness of your extraction, skip the node.\nDO not create individuals for the documents.\nDO not reference or mention the documents only use the information present in the documents.\nSummarize the information in the document and only keep information that will serve to create individuals in the ontology.\n\nUse rdfs:comment:\n\nUse the rdfs:comment field for additional descriptions or specific comments where desirable.\n\nEnsure Accuracy and Completeness:\n\nDouble-check for missing relevant details.\nDo not extract information not explicitly present in the text of that is not relevant to the Ontology.\n\nValid RDF Format:\n\nOutput should be in valid RDF format.\nDo not include any additional explanations or notes outside the RDF structure.\nOnly output the RDF with RDF code blocks.\nEscape any special characters appropriately in the output.\nIf no valuable entities can be extracted, output the message ‘No valuable information’.\n\nHandle Special Characters:\n\nEscape special characters such as quotes, backslashes, and newlines within literals.\nEnsure proper formatting and quoting of literals.\n\nHandle Ambiguities:\n\nIf there is ambiguity or an error in the text, skip the extraction.\nDo not invent or guess any information.\nOnly extract information directly present in the text.\nPrioritize accuracy and completeness. If in doubt, return ‘No valuable information’.\n\n\n\n\nFinal Instructions:\n\nFollow these instructions meticulously to extract and construct the knowledge graph.\nVerify the accuracy and relevance of your extractions.\nDo not include any text outside the RDF code block.\nAvoid using abbreviations or acronyms in the identifiers; use full names for clarity.\nTake your time and ensure the quality of your work.\nMake sure your output is exhaustive and definitive.\n\nIf you follow these guidelines correctly, you will significantly contribute to the success of this task."
+  },
+  {
+    "objectID": "ai/Prompt_Extraction_validation.html",
+    "href": "ai/Prompt_Extraction_validation.html",
+    "title": "Validation prompt",
+    "section": "",
+    "text": "You are a Knowledge Validation Agent tasked with validating and double-checking the extracted nodes from a text document."
+  },
+  {
+    "objectID": "ai/Prompt_Extraction_validation.html#validation-prompt",
+    "href": "ai/Prompt_Extraction_validation.html#validation-prompt",
+    "title": "Validation prompt",
+    "section": "",
+    "text": "You are a Knowledge Validation Agent tasked with validating and double-checking the extracted nodes from a text document."
+  },
+  {
+    "objectID": "ai/Prompt_Extraction_validation.html#instructions",
+    "href": "ai/Prompt_Extraction_validation.html#instructions",
+    "title": "Validation prompt",
+    "section": "Instructions:",
+    "text": "Instructions:\n\nValidation Format:\n\nEnsure the extracted knowledge graph is in valid Turtle format.\nVerify that only classes and properties defined in the ontology are used.\nEnsure only prefixes defined and namespaces declared in the ontology are used.\nEnsure identifiers are unique and meaningful. Use underscores instead of spaces.\nMaintain a consistent order for properties within each entity, preferably alphabetical or as defined in the ontology.\n\nRelevance:\n\nConfirm that only information relevant to the company is extracted.\nEnsure no irrelevant details are included and all extracted information is directly present in the text.\n\nObject Details:\n\nUse the rdfs:comment field for additional descriptions or specifics where available.\n\nAccuracy and Completeness:\n\nVerify that all extracted information is accurate and complete.\nDouble-check for any missing relevant details.\n\nOutput:\n\nEnsure the output is valid Turtle format.\nEnsure no additional fields or change of field names are included.\nEnsure that each instance or tuple is separated by double whitelines.\nConfirm only instances are extracted; no new classes or properties are created.\nEnsure identifiers are meaningful and no spaces are used in the identifiers.\nConfirm special characters are properly escaped within literals.\nVerify hierarchical relationships between entities are correctly represented using properties as defined in the ontology.\n\nError Handling:\n\nIf there is ambiguity or an error in the text, do not invent or guess information.\nEnsure only information that is directly present in the text is extracted.\nPrioritize accuracy and completeness of the information.\n\n\n\nTask:\n\nValidate and correct the provided Turtle code.\nOutput only the corrected Turtle code within a turtle code block.\nDO NOT include any explanations, notes, or text outside the Turtle structure.\nDO NOT output the ontology iteself just output instances.\n\nProvide the corrected Turtle code based on the validation. Ensure the output is only within a turtle code block."
+  },
+  {
+    "objectID": "presentations/22-05-2024 presentation.html#welcome-introduction",
+    "href": "presentations/22-05-2024 presentation.html#welcome-introduction",
+    "title": "VHC sprint",
+    "section": "Welcome & Introduction",
+    "text": "Welcome & Introduction\n\nDate: 22-5-2024\nPresenter: Chris Verhoef\nObjective: Review the progress of our AI Supply Chain Tool development"
+  },
+  {
+    "objectID": "presentations/22-05-2024 presentation.html#sprint-overview",
+    "href": "presentations/22-05-2024 presentation.html#sprint-overview",
+    "title": "VHC sprint",
+    "section": "Sprint Overview",
+    "text": "Sprint Overview\n\nSprint Goals: Visualize Power Dynamics Ecosystem: For the upcoming demo, develop a feature to visualize the entire ecosystem based on a company name within 20 minutes.\nMake sure the AI iterates over every part of the supplchain, nultitier Suppliers, 2,3,4-de 5de niveau toega.\nTraining the AI model to be specific; Unilever - ASML - 1ste lijns, tweede lijns. Derde Lijns.\nAdd to the Product Limitation; (a razos blade of Philps) A Specific Product;\nWe want to see an improvement of the meeting; Can I see the an Improvement of the mapping.\nGo back to the Graphical Display to map out the Supplychain\n\nmaar je moet eerst op pen en papier neerlegger hoe de tussen stappen moeten werken en wat ze moeten outputten , text, json, csv ? wat moet daar in de colonnen die je moet hebben enz dan kan refinen"
+  },
+  {
+    "objectID": "presentations/22-05-2024 presentation.html#prototype-development-and-initial-testing",
+    "href": "presentations/22-05-2024 presentation.html#prototype-development-and-initial-testing",
+    "title": "VHC sprint",
+    "section": "Prototype Development and Initial Testing",
+    "text": "Prototype Development and Initial Testing\n\nDevelop an initial prototype for inputting a company name to generate an ecosystem visualization.\nModel visualization needs somewhat accurate."
+  },
+  {
+    "objectID": "presentations/22-05-2024 presentation.html#feature-enhancement-and-system-optimization",
+    "href": "presentations/22-05-2024 presentation.html#feature-enhancement-and-system-optimization",
+    "title": "VHC sprint",
+    "section": "Feature Enhancement and System Optimization",
+    "text": "Feature Enhancement and System Optimization\n\nEnhance visualization features to include detailed ecosystem interactions.\nOptimize backend processes to achieve visualization generation within the 20-minute target."
+  },
+  {
+    "objectID": "presentations/22-05-2024 presentation.html#interface-design-and-requirement-analysis",
+    "href": "presentations/22-05-2024 presentation.html#interface-design-and-requirement-analysis",
+    "title": "VHC sprint",
+    "section": "Interface Design and Requirement Analysis",
+    "text": "Interface Design and Requirement Analysis\n\nDesign a user-friendly interface for easy initiation of the visualization process.\nAnalyze requirements to accurately represent the ecosystem based on essential data points."
+  },
+  {
+    "objectID": "presentations/22-05-2024 presentation.html#integration-and-final-preparations",
+    "href": "presentations/22-05-2024 presentation.html#integration-and-final-preparations",
+    "title": "VHC sprint",
+    "section": "Integration and Final Preparations",
+    "text": "Integration and Final Preparations\n\nExpand tool capabilities to integrate product data alongside company names.\nFinalize the tool with stakeholder feedback, ensuring readiness for the demo."
+  },
+  {
+    "objectID": "presentations/22-05-2024 presentation.html#work-completed",
+    "href": "presentations/22-05-2024 presentation.html#work-completed",
+    "title": "VHC sprint",
+    "section": "Work Completed",
+    "text": "Work Completed\n::: incremental\n\nPrototype to take company name and output a basic visualization of the ecosystem\nTest the prototype to ensure it meets the basic functional requirements.\nUI Enhancements: Improved dashboard for better user interaction.\nEnhance the visualization tool to include more detailed interactions and connections within the ecosystem.\nOptimize the back-end processes to ensure that the visualization is generated within the 20-minute timeframe.\nComplete the development of the initial visualization tool capable of representing power dynamics based solely on a company name.\nExpand the visualization tool to integrate product data along with the company name.\nDesign and implement a user-friendly interface that allows users to easily input a company name and initiate the visualization process.\nEnsure the interface is intuitive and guides the user through the visualization generation."
+  },
+  {
+    "objectID": "presentations/22-05-2024 presentation.html#key-achievements",
+    "href": "presentations/22-05-2024 presentation.html#key-achievements",
+    "title": "VHC sprint",
+    "section": "Key Achievements",
+    "text": "Key Achievements\n\nMajor Achievement: Successful prototype of supplychain mapping;\nImpact on Project: Allows us to see a first workable version of the program.\nCompleted Product Increments:\n\nReal-time data processing pipeline.\nReal-time Systhesys of a company data map.\nUser interface for data manipulation and adjustment.\nIntergration into workbook with nice interface allows non-tech users to join the project.\nModel overview Intergration allows us to watch A.I “think” in real time."
+  },
+  {
+    "objectID": "presentations/22-05-2024 presentation.html#key-achievement-2",
+    "href": "presentations/22-05-2024 presentation.html#key-achievement-2",
+    "title": "VHC sprint",
+    "section": "Key Achievement 2",
+    "text": "Key Achievement 2\n\n**Major Achievement: Reached Bedrock! This is something we can build upon!\nImpact on Project: Chris will no longer need to make a whole new project every time he makes a small adjustment!\nCompleted Project increments:\n\nKey tools and guides gathered for the good path.\nFinally something workable."
+  },
+  {
+    "objectID": "presentations/22-05-2024 presentation.html#challenges-faced",
+    "href": "presentations/22-05-2024 presentation.html#challenges-faced",
+    "title": "VHC sprint",
+    "section": "Challenges Faced",
+    "text": "Challenges Faced\n\nSignificant Challenges:\n\n\n\n\nData inconsistency across sources.\n\nInability for the A.I to produce a result that the previous visualization tool could correctly prase.\nAccess to good data sources and an example\nInitial model underperformance, Tokensize is very limited to 9000 characters.\nHardware limitations, inability to train faster.\nInability to parse data effectively into system\nAI model training takes significant time\nAI model “Hallucinates”\nChris does his best but he needs to be a data-engineer, ai-engineer, full stack programmer all in one.\n\nCreating presentations and formats in PowerPoint always take a very long time.\n\nHard to keep head focused on a project that is very big where learning still needs to happen.\n“good Path” often changes mid-way due to discovery that it’s impossible.\nReality of time is different that real time, 6 days turns out to be 3.\nSignificant stress due to “significant difference between what is promised and what is shown”"
+  },
+  {
+    "objectID": "presentations/22-05-2024 presentation.html#mitigating-and-moving-foward",
+    "href": "presentations/22-05-2024 presentation.html#mitigating-and-moving-foward",
+    "title": "VHC sprint",
+    "section": "Mitigating and moving foward",
+    "text": "Mitigating and moving foward\n\nconcerns addressed by:\n\nImplementing a data cleansing process\nNow using a Programmer and Data engineering presenting style, you are looking at it!\nJuypter Notebook intergration directly into code;\nModel overview tester to show differences\nChain of Thought model prompting for more accurate results\n\nRemaining Concerns: Adding significant data and parsing and inability to see how that will work, Chris needs to learn."
+  },
+  {
+    "objectID": "presentations/22-05-2024 presentation.html#why-chain-of-thoughts-all-of-a-sudden.",
+    "href": "presentations/22-05-2024 presentation.html#why-chain-of-thoughts-all-of-a-sudden.",
+    "title": "VHC sprint",
+    "section": "Why Chain of Thoughts all of a sudden.",
+    "text": "Why Chain of Thoughts all of a sudden.\n\n\n\n\n\n\nAspect\nChain of Thoughts\nSingle LLM\n\n\n\n\nComplexity and Detail\nBreaks down complexities into manageable insights, capturing detailed interdependencies.\nMay overlook nuanced details due to generalized training data.\n\n\nAdaptability and Flexibility\nAllows iterative reassessment and refinements, crucial for dynamic environments.\nConstrained by initial training, less adaptive to new scenarios.\n\n\nRisk Identification and Mitigation\nEnables comprehensive risk analysis from multiple perspectives and scenarios.\nPotentially misses emerging or non-obvious risks, limited by training scope.\n\n\nCustomization and Specificity\nTailored analysis specific to operational needs and strategic goals.\nGeneralizes based on broad datasets, may neglect organization-specific needs."
+  },
+  {
+    "objectID": "presentations/22-05-2024 presentation.html#chain-of-thought-prompting",
+    "href": "presentations/22-05-2024 presentation.html#chain-of-thought-prompting",
+    "title": "VHC sprint",
+    "section": "Chain of Thought Prompting",
+    "text": "Chain of Thought Prompting\n\n\n\n\n\ngraph LR;\n    A[Process Inputs] --&gt; B[Create Thoughts];\n    B --&gt; C[Evaluate Pathways];\n    C --&gt; D[Summarize Results];\n    D --&gt; E[Formulate Conclusions];\n\n\n\n\n\n\n\nStep 1: Focus on acquiring and organizing all necessary inputs that will inform the subsequent stages of thinking.\n\nStep 2: Develop coherent thoughts that logically follow from the processed inputs.\n\nStep 3: Critically evaluate each pathway to determine its feasibility and relevance.\n\nStep 4: Aggregate and synthesize the results to provide a clear overview of what has been discovered or concluded so far.\n\nStep 5: Make informed decisions or conclusions that are supported by the summarized findings and ready to be implemented or communicated."
+  },
+  {
+    "objectID": "presentations/22-05-2024 presentation.html#product-demonstration",
+    "href": "presentations/22-05-2024 presentation.html#product-demonstration",
+    "title": "VHC sprint",
+    "section": "Product Demonstration",
+    "text": "Product Demonstration\n\nLive Demo: Showcasing the Chain of Thought one\nFeature Explanation: Detailed overview of data inputs and machine learning outputs.\nInteraction Scenarios: Taking a Present Data Supplychain set and mapping this out, to determine the relationship between them. – Question that is posed: Between the characters of the “Miserables” what is the connection? – Features shown"
+  },
+  {
+    "objectID": "presentations/22-05-2024 presentation.html#language-model-integration",
+    "href": "presentations/22-05-2024 presentation.html#language-model-integration",
+    "title": "VHC sprint",
+    "section": "Language Model Integration:",
+    "text": "Language Model Integration:\nThe notebook integrates two language models, Ollama with enhanced context capabilities and OpenAIChat from OpenAI’s GPT models, to process text inputs.\nData Processing and Visualization:\nA function, load_graph, loads data from a JSON file and converts it into a Mermaid graph format for visualization within the notebook."
+  },
+  {
+    "objectID": "presentations/22-05-2024 presentation.html#chain-of-thoughts-processing",
+    "href": "presentations/22-05-2024 presentation.html#chain-of-thoughts-processing",
+    "title": "VHC sprint",
+    "section": "Chain of Thoughts Processing:",
+    "text": "Chain of Thoughts Processing:\nImplements a structured data processing approach that sequentially processes data through stages: input processing, thought creation, pathway evaluation, and conclusion formulation, using custom templates for each stage.\nCustom Templates for Language Models:\nUses ChatPromptTemplate and PromptTemplate to define structured prompts that guide the language models’ responses, ensuring that each step of the process is contextually relevant to the previous outputs.\nDynamic Content Rendering:\nOutputs from language model processing are rendered as Markdown, allowing for dynamic presentation of both textual and graphical data in the notebook environment. Iterative and Conditional Processing:\nThe notebook demonstrates the ability to loop over data iteratively and conditionally based on the outputs from each stage of the processing chain, refining the results with each iteration."
+  },
+  {
+    "objectID": "presentations/22-05-2024 presentation.html#synthesis-of-complex-data",
+    "href": "presentations/22-05-2024 presentation.html#synthesis-of-complex-data",
+    "title": "VHC sprint",
+    "section": "Synthesis of Complex Data:",
+    "text": "Synthesis of Complex Data:\nIt synthesizes complex data from multiple processing steps into a coherent plan or conclusion, demonstrating advanced data handling and decision-making capabilities.\nInteractive Markdown Display:\nMarkdown is used extensively to display both code-generated graphics and language model outputs interactively, enhancing the readability and user engagement with the notebook content."
+  },
+  {
+    "objectID": "presentations/22-05-2024 presentation.html#map",
+    "href": "presentations/22-05-2024 presentation.html#map",
+    "title": "VHC sprint",
+    "section": "MAP",
+    "text": "MAP\n\n\n\n\n\n\n\nASML_Supply_Chain\n\n\n\nASML\n\nASML Holding N.V.\n\n\n\nIntel\n\nIntel Corporation\n\n\n\nASML-&gt;Intel\n\n\nSemiconductor Equipment Sales\n\n\n\nSamsung\n\nSamsung Electronics Co., Ltd.\n\n\n\nASML-&gt;Samsung\n\n\nSemiconductor Equipment Sales\n\n\n\nTSMC\n\nTaiwan Semiconductor Manufacturing Company (TSMC)\n\n\n\nASML-&gt;TSMC\n\n\nSemiconductor Equipment Sales\n\n\n\nGlobalFoundries\n\nGlobalFoundries Inc.\n\n\n\nASML-&gt;GlobalFoundries\n\n\nSemiconductor Equipment Sales\n\n\n\nIntel-&gt;ASML\n\n\nSemiconductor Equipment Purchases\n\n\n\nSamsung-&gt;ASML\n\n\nSemiconductor Equipment Purchases\n\n\n\nTSMC-&gt;ASML\n\n\nSemiconductor Equipment Purchases\n\n\n\nGlobalFoundries-&gt;ASML\n\n\nSemiconductor Equipment Purchases\n\n\n\nOther Suppliers\n\nVarious Other Suppliers\n\n\n\nOther\n\nOther\n\n\n\nSuppliers\n\nSuppliers\n\n\n\nSuppliers-&gt;ASML\n\n\nComponents, Materials, and Services\n\n\n\nSpecialty\n\nSpecialty\n\n\n\nSuppliers-&gt;Specialty\n\n\n\n\n\nPackaging\n\nPackaging\n\n\n\nSuppliers-&gt;Packaging\n\n\n\n\n\nAssembly\n\nAssembly\n\n\n\nSuppliers-&gt;Assembly\n\n\n\n\n\nSpecialty Chemicals\n\nSpecialty Chemicals Inc.\n\n\n\nPackaging Materials\n\nPackaging Materials Co., Ltd.\n\n\n\nAssembly Services\n\nAssembly Services Inc.\n\n\n\nChemicals\n\nChemicals\n\n\n\nMaterials\n\nPackaging Materials\n\n\n\nServices\n\nAssembly Services"
+  },
+  {
+    "objectID": "presentations/22-05-2024 presentation.html#feedback-questions",
+    "href": "presentations/22-05-2024 presentation.html#feedback-questions",
+    "title": "VHC sprint",
+    "section": "Feedback & Questions",
+    "text": "Feedback & Questions\n\nQuestions Received:\n\nConcerns about data privacy\nQuestions about integration with existing ERP systems\n\nFeedback Incorporation:\n\nPlan to enhance data encryption\nRoadmap for ERP integration by next quarter"
+  },
+  {
+    "objectID": "presentations/22-05-2024 presentation.html#sprint-metrics",
+    "href": "presentations/22-05-2024 presentation.html#sprint-metrics",
+    "title": "VHC sprint",
+    "section": "Sprint Metrics",
+    "text": "Sprint Metrics\n\nVelocity Chart: Display of completed story points over time.\nBurndown Chart: Current sprint progress.\nOther Metrics: Accuracy improvements of the forecasting model."
+  },
+  {
+    "objectID": "presentations/22-05-2024 presentation.html#plan-for-next-sprint",
+    "href": "presentations/22-05-2024 presentation.html#plan-for-next-sprint",
+    "title": "VHC sprint",
+    "section": "Plan for Next Sprint",
+    "text": "Plan for Next Sprint\n\nObjectives:\n\nMake sure the AI iterates over every part of the supplchain, nultitier Suppliers, 2,3,4-de 5de niveau toega.\nTraining the AI model to be specific; Unilever - ASML - 1ste lijns, tweede lijns. Derde Lijns.\nAdd to the Product Limitation; (a razos blade of Philps) A Specific Product;\nWe want to see an improvement of the meeting; Can I see the an Improvement of the mapping.\nGo back to the Graphical Display to map out the Supplychain\n\nPlanned Tasks:\n\nCollect more diverse data sets\nWork on backend modifications for ERP integration\n\nAdjustments Based on Feedback:\n\nFocus on data security enhancements"
+  },
+  {
+    "objectID": "presentations/22-05-2024 presentation.html#conclusion",
+    "href": "presentations/22-05-2024 presentation.html#conclusion",
+    "title": "VHC sprint",
+    "section": "Conclusion",
+    "text": "Conclusion\n\nSummary: Reviewed the advancements made in our AI tool for enhancing supply chain efficiency.\nNext Steps:\n\nContinue development and testing of the forecasting model\nInitiate stakeholder meetings for next-phase planning\n\nThank You: Special thanks to the team and stakeholders for ongoing support and feedback."
+  },
+  {
+    "objectID": "presentations/30-05-2024 Planning.html#welcome-introduction",
+    "href": "presentations/30-05-2024 Planning.html#welcome-introduction",
+    "title": "VHC sprint",
+    "section": "Welcome & Introduction",
+    "text": "Welcome & Introduction\n\nDate: 30-5-2024\nLast Demo: 22 - 5 - 2024\nPresenter: Chris Verhoef\nObjective: Review the progress of our AI Supply Chain Tool development, Plan next iteration."
+  },
+  {
+    "objectID": "presentations/30-05-2024 Planning.html#last-time",
+    "href": "presentations/30-05-2024 Planning.html#last-time",
+    "title": "VHC sprint",
+    "section": "Last Time",
+    "text": "Last Time\n\nReal-time data processing pipeline.\nReal-time Systhesys of a company data map. That was in Markdown\nUser interface for data manipulation and adjustment.\nIntergration into workbook with nice interface allows non-tech users to join the project.\nModel overview Intergration allows us to watch A.I “think” in real time.\nOptimize the back-end processes to ensure that the visualization is generated within the 20-minute timeframe.\nComplete the development of the initial visualization tool capable of representing power dynamics based solely on a company name."
+  },
+  {
+    "objectID": "presentations/30-05-2024 Planning.html#planned-tasks",
+    "href": "presentations/30-05-2024 Planning.html#planned-tasks",
+    "title": "VHC sprint",
+    "section": "PLanned tasks",
+    "text": "PLanned tasks"
+  },
+  {
+    "objectID": "presentations/30-05-2024 Planning.html#feedback-and-plan-last-time",
+    "href": "presentations/30-05-2024 Planning.html#feedback-and-plan-last-time",
+    "title": "VHC sprint",
+    "section": "Feedback and plan last time:",
+    "text": "Feedback and plan last time:\n\nObjectives:\nMake sure the AI iterates over every part of the supplchain, nultitier Suppliers, 2,3,4-de 5de niveau toega.\nTraining the AI model to be specific; Unilever - ASML - 1ste lijns, tweede lijns. Derde Lijns.\nAdd to the Product Limitation; (a razos blade of Philps) A Specific Product;\nWe want to see an improvement of the meeting; Can I see the an Improvement of the mapping.\n\nGo back to the Graphical Display to map out the Supplychain Planned Tasks:\nCollect more diverse data sets"
+  },
+  {
+    "objectID": "presentations/30-05-2024 Planning.html#sprint-overview",
+    "href": "presentations/30-05-2024 Planning.html#sprint-overview",
+    "title": "VHC sprint",
+    "section": "Sprint Overview",
+    "text": "Sprint Overview\n\nSprint Goals: Visualize Power Dynamics Ecosystem: For the upcoming demo, develop a feature to visualize the entire ecosystem based on a company name within 20 minutes.\nMake sure the AI iterates over every part of the supplchain, nultitier Suppliers, 2,3,4-de 5de niveau toega.\nTraining the AI model to be specific; Unilever - ASML - 1ste lijns, tweede lijns. Derde Lijns.\nAdd to the Product Limitation; (a razos blade of Philps) A Specific Product;\nWe want to see an improvement of the meeting; Can I see the an Improvement of the mapping.\nGo back to the Graphical Display to map out the Supplychain\nMaking a more visual plan of the objective. Planned Tasks:\nCollect more diverse data sets"
+  },
+  {
+    "objectID": "presentations/30-05-2024 Planning.html#work-completed",
+    "href": "presentations/30-05-2024 Planning.html#work-completed",
+    "title": "VHC sprint",
+    "section": "Work Completed",
+    "text": "Work Completed\n::: incremental\n\nVisual Design, back to the core of the mapping\nMultipule A.I system intergrated\nNow a Unified system with an graphical interface, A.I completly hidden\nA.I now uses more advanced models, though the most advanced are still out of scope\nDesign and implement a user-friendly interface that allows users to easily input a company name and initiate the visualization process.\nEnsure the interface is intuitive and guides the user through the visualization generation.\nCrawler version one online\nA Data Cleansing process!!\nA data transformation process!!"
+  },
+  {
+    "objectID": "presentations/30-05-2024 Planning.html#challanges-mitigated",
+    "href": "presentations/30-05-2024 Planning.html#challanges-mitigated",
+    "title": "VHC sprint",
+    "section": "Challanges Mitigated!",
+    "text": "Challanges Mitigated!\n\n\n\nInability for the A.I to produce a result that the previous visualization tool could correctly prase. (Implementing a data cleansing process: DONE!)\nInitial model underperformance, Tokensize is very limited to 9000 characters.\nHardware limitations, inability to train faster.\nInability to parse data effectively into system\nAI model training takes significant time\nChris does his best but he needs to be a data-engineer, ai-engineer, full stack programmer all in one.\nCreating presentations and formats in PowerPoint always take a very long time.\nHard to keep head focused on a project that is very big where learning still needs to happen.\n“good Path” often changes mid-way due to discovery that it’s impossible.\nReality of time is different that real time, 6 days turns out to be 3."
+  },
+  {
+    "objectID": "presentations/30-05-2024 Planning.html#challenges-faced-still-a-problem.",
+    "href": "presentations/30-05-2024 Planning.html#challenges-faced-still-a-problem.",
+    "title": "VHC sprint",
+    "section": "Challenges Faced, still a problem.",
+    "text": "Challenges Faced, still a problem.\n\nSignificant Challenges:\n\n\n\n\nData inconsistency across sources.\nInability for the A.I to produce a result that the previous visualization tool could correctly prase.\nAccess to good data sources and an example\nAI model “Hallucinates” New: Ayoub had a long ontsteking, is er 2.5 week uit geweest; New: Nikita kon niet goed genoeg A.I coderen."
+  },
+  {
+    "objectID": "presentations/30-05-2024 Planning.html#why-chain-of-thoughts-all-of-a-sudden.",
+    "href": "presentations/30-05-2024 Planning.html#why-chain-of-thoughts-all-of-a-sudden.",
+    "title": "VHC sprint",
+    "section": "Why Chain of Thoughts all of a sudden.",
+    "text": "Why Chain of Thoughts all of a sudden.\n\n\n\n\n\n\nAspect\nChain of Thoughts\nSingle LLM\n\n\n\n\nComplexity and Detail\nBreaks down complexities into manageable insights, capturing detailed interdependencies.\nMay overlook nuanced details due to generalized training data.\n\n\nAdaptability and Flexibility\nAllows iterative reassessment and refinements, crucial for dynamic environments.\nConstrained by initial training, less adaptive to new scenarios.\n\n\nRisk Identification and Mitigation\nEnables comprehensive risk analysis from multiple perspectives and scenarios.\nPotentially misses emerging or non-obvious risks, limited by training scope.\n\n\nCustomization and Specificity\nTailored analysis specific to operational needs and strategic goals.\nGeneralizes based on broad datasets, may neglect organization-specific needs."
+  },
+  {
+    "objectID": "presentations/30-05-2024 Planning.html#next-sprint",
+    "href": "presentations/30-05-2024 Planning.html#next-sprint",
+    "title": "VHC sprint",
+    "section": "Next Sprint",
+    "text": "Next Sprint\nSprint Goal 1: Visualize Power Dynamics Ecosystem: For the upcoming demo, develop a feature to visualize the entire ecosystem based on a company name within 20 minutes.\nIn order to do this: we need to build the ontology first; ontology to describe the supply chanin elements as a schema to help the AI structurize knowledge in a well defined way.\nThis will help to later help to query the knowledge in a structured way. {UNTIL WE HAVE THIS, We cannot Draw the mapping in another way.}\nEven if you don’t want to see the in between sets, we need to have this in order to map the graphs correct this.\nhttps://www.ontotext.com/knowledgehub/fundamentals/what-is-sparql/\n\nWe will have this by the End of Next week!"
+  },
+  {
+    "objectID": "presentations/30-05-2024 Planning.html#sub-goals",
+    "href": "presentations/30-05-2024 Planning.html#sub-goals",
+    "title": "VHC sprint",
+    "section": "Sub-Goals:",
+    "text": "Sub-Goals:\n\ncreate a protocol to allow the ai to control the UI elements and dynamically render various visualisations.\nAsk multipule A.I’s and Multipule Prompts, to identify the which of the data is correct. To do reanforcement-learning: data set bouwen, zo that the A.I will always answer the correct information. Example: I have 3 models and 3 examples, to have concrete examples; to Label them correctly, so that the error margin will get lower. 40% accurate, 70% accurate &gt; 90% accurate.\nCREWS need to start working; So that it can start crawling the internet for subquestions: “So it can say: Ah I need more information, go and search the internet”.\nFinetune: protocol to allow the ai to control the UI elements and dynamically render various visualisations\nNeed to build the task scheduler for the A.I Crews - &gt; so that you can see what tasks are running and what is going on. So you can see it “Build” Data.\nVisual updates about the crews in the interface, so that we can see what is running.\ncreate an ontology to describe the supply chanin elements as a schema to help the AI structurize knowledge in a well defined way.\nLoad significantly more data into the model to parse\nChat system needs to work and update map upon prompt\nFirst version of the Application online"
+  },
+  {
+    "objectID": "presentations/30-05-2024 Planning.html#next-sprint-part-2",
+    "href": "presentations/30-05-2024 Planning.html#next-sprint-part-2",
+    "title": "VHC sprint",
+    "section": "Next Sprint (part 2)",
+    "text": "Next Sprint (part 2)\n\nSprint Goal 2: the Setup of a community: Getting ready to recieve the students, setting up alliances and connections\nUpdating the Contacts sheet, making it into markdown so that everyone can read ORGANISATION\nCreating a digital environment and bringint it online. INFRASTUCTURE\nSetup of Linkedin Page, LEGITEMACY\nTexten voor studenten, onboarding process for students. RECRUITMENT\nOrganisation Starting: Creation of a B.V or Non-Profit? LEGITEMACY\nSetup Recruitment process for students, CRM. RECRUITMENT\nCreation of Online content for students to learn, LMS\nFiling for Public Grants, FUNDING\nGoing to Several Events on behalf of Value Chain Hackers, NETWORKING\nSetup of Social Media for Value Chain Hackers, OUTREACH\nMaking a website , Getting a domain, INFRASTRUCTURE"
+  },
+  {
+    "objectID": "presentations/30-05-2024 Planning.html#next-sprint-part-3",
+    "href": "presentations/30-05-2024 Planning.html#next-sprint-part-3",
+    "title": "VHC sprint",
+    "section": "Next Sprint (part 3)",
+    "text": "Next Sprint (part 3)\n\nServer Setup and config budget for Production. INFRASTUCTURE\nSetup Scripts\nSplitting the minds over multipule machines\nSprint Goal 1: Version 0.5 Online!"
+  },
+  {
+    "objectID": "presentations/30-05-2024 Planning.html#feedback-questions",
+    "href": "presentations/30-05-2024 Planning.html#feedback-questions",
+    "title": "VHC sprint",
+    "section": "Feedback & Questions",
+    "text": "Feedback & Questions\n\nQuestions Received:\nFeedback Incorporation:\n\nHeel Gefaseerd maken; - Wat wij hebben wel toegang wil wat je eerste instantie op de website 3 filters Bedrijven &gt; Product &gt; Lens. In de toekomst willen we meer producten toevoegen.\nEn die chat is heel belangrijk, dat geeft juist de dynamiek, maar niet voor de eerste fase. Wel voor de mensen die werken aan het project voor de achterankt."
+  },
+  {
     "objectID": "presentations/status.html",
     "href": "presentations/status.html",
     "title": "Value Chain Hackers",
@@ -579,5 +719,33 @@
     "title": "# Digital Workplace for Lab",
     "section": "## Task 8: Monitoring and Maintenance",
     "text": "## Task 8: Monitoring and Maintenance\n\nSubtask 8.1: Set up Monitoring Tools\nSet up monitoring tools to track system performance and identify potential issues.\n\n\nSubtask 8.2: Schedule Maintenance\nSchedule regular maintenance tasks to ensure the system remains stable and secure.\n\n\nSubtask 8.3: Perform Updates and Patches\nPerform updates and patches to ensure the system remains up-to-date and secure."
+  },
+  {
+    "objectID": "prompts/knowledge_extraction copy.html",
+    "href": "prompts/knowledge_extraction copy.html",
+    "title": "Value Chain Hackers",
+    "section": "",
+    "text": "You are a Knowledge Extraction Agent for a company that is building a comprehensive knowledge graph from a text document."
+  },
+  {
+    "objectID": "prompts/knowledge_extraction copy.html#instructions",
+    "href": "prompts/knowledge_extraction copy.html#instructions",
+    "title": "Value Chain Hackers",
+    "section": "Instructions:",
+    "text": "Instructions:\nYour task is to build a comprehensive report of the current text block. Adhere strictly to the following guidelines:\n\nExtraction Format:\n\nDO use the Turtle format for the extracted knowledge graph.\nDO ONLY use the classes and properties defined in the ontology.\nDO ONLY use prefixes defined and namespaces declared in the ontology.\nDO NOT include any additional fields or change the field names.\nDO NOT include classes from other ontologies, schemas, or vocabularies that are not defined in the ontology.\nDO ensure that the identifiers are unique and meaningful. Use underscores instead of spaces. For example, use CocaCola_Company instead of Company1.\nDO maintain a consistent order for properties within each entity, preferably alphabetical or as defined in the ontology.\n\nRelevance:\n\nExtract only the information that is relevant to the company.\nDO NOT add irrelevant details and ensure that all extracted information is directly present in the text.\n\nObject Details:\n\nDO USE the rdfs:comment field for additional descriptions or specifics where available.\n\nAccuracy and Completeness:\n\nEnsure that all extracted information is accurate and complete.\nDO double-check for any missing relevant details.\n\nOutput:\n\nThe output should be valid Turtle format, as specified.\nDO NOT include additional explanations or notes outside the Turtle structure.\nDO ONLY output the Turtle with turtle code blocks; do not include any other text in the output.\nDO escape any special characters appropriately in the output.\n\n\n\nTask:\n\nDO follow these instructions meticulously to extract and construct the knowledge graph.\nDO verify the accuracy and relevance of your extractions as they are critical to the success of this task.\nDO NOT add any @prefix declarations in the output.\nONLY use the prefixes defined in the ontology.\nDO ONLY use the classes and properties defined in the ontology DO NOT define new classes or properties.\nDO USE meaningful identifiers for each entity instance; DO NOT use generic names like “Supplier1” or “Product2”.\nDO NOT use spaces in the identifiers; replace them with underscores.\nDO ONLY output the graph within a turtle code block.\nDO NOT include any other text in the output.\nDO NOT use blank nodes [] for aliases; use the full URI of the entity.\nDO NOT include additional explanations or notes outside the Turtle structure.\nAVOID using abbreviations or acronyms in the identifiers; use full names for clarity.\nBe exhaustive in your extraction; ensure all relevant information is included in the output.\nDO NOT use comments in the Turtle output; use the rdfs:comment field for additional details.\nDO ONLY extract instances; do not create new classes or properties.\nDO NOT provide dummy or example data; only extract information from the text.\n\n\n\nSpecial Character Handling:\n\nEscape special characters such as quotes, backslashes, and newlines within literals.\nEnsure proper formatting and quoting of literals.\n\n\n\nHierarchical Relationships:\n\nEnsure that hierarchical relationships between entities (e.g., part-of relationships) are correctly represented.\nUse properties as defined in the ontology to establish these relationships.\n\n\n\nError Handling:\n\nIf there is ambiguity or an error in the text, DO NOT invent or guess information.\nOnly extract information that is directly present in the text.\nIf in doubt, prioritize accuracy and completeness of the information.\n\n\n\nOntology:\n{ontology}\nDO RESPECT THE ABOVE GUIDELINES STRICTLY !!!\nThink step by step, and make sure you understand the relationships between the entities before you start extracting the data. DO NOT RUSH, TAKE YOUR TIME AND DO IT RIGHT THE FIRST TIME. DO NOT SUBMIT UNFINISHED WORK, MAKE SURE YOU HAVE EXTRACTED ALL THE RELEVANT INFORMATION. IF YOU ARE UNSURE ABOUT ANYTHING, PLEASE DO NOT INVENT OR GUESS, ONLY EXTRACT INFORMATION THAT IS DIRECTLY PRESENT IN THE TEXT. DO RESPECT TURTLE SYNTAX, DO NOT INCLUDE ANYTHING OUTSIDE THE TURTLE STRUCTURE. IF YOU FAIL TO FOLLOW THE GUIDELINES, YOUR SUBMISSION WILL BE REJECTED. DO USE A TURTLE CODEBLOCK AND ONLY THAT FOR THE OUTPUT."
+  },
+  {
+    "objectID": "prompts/knowledge_preprocess.html",
+    "href": "prompts/knowledge_preprocess.html",
+    "title": "Value Chain Hackers",
+    "section": "",
+    "text": "You are a Knowledge Extraction Agent tasked with summarizing and extracting relevant information from a given text document, specifically within the context of supply chains. Your goal is to reduce the amount text while maintaining a maximum of information and context, all factual details should be captured. Make sure focus on information related to the company and the Supply Chain Ontology. Adhere strictly to the following guidelines:"
+  },
+  {
+    "objectID": "prompts/knowledge_preprocess.html#instructions",
+    "href": "prompts/knowledge_preprocess.html#instructions",
+    "title": "Value Chain Hackers",
+    "section": "Instructions:",
+    "text": "Instructions:\n\nSummary and Extraction Goals:\n\nDO Summarize the given text by extracting key facts, names of persons, brands, names, companies, subsidiaries, accomplishments, locations, affiliates, partnerships, take-aways, and any other relevant context information related to the company and it’s supplychain.\nDO Capture all relevant and valuable information related to supply chains, focusing on the relationships and hierarchies between entities.\nDO NOT add irrelevant details. Ensure all extracted information is directly present in the text.\n\nInformation Categories:\n\nFacts: Extract core facts about supply chain activities, relationships, and processes.\nPersons: Extract names and roles of persons mentioned in the text, their role, position and any other relevant information.\nBrands: Extract names of brands, product-lines, categories as well as the products, their manufacturing process, ingredients or components.\nNames: Extract names of companies, subsidiaries, holdings, organizations, legal entities, affiliates, competitors, and other key entities.\nLocations: Extract locations, addresses, and any other geographical information about plants, offices, headquarters, stores, transportation hubs, routes, warehouses and distribution centers.\nTake-aways: Identify main points, conclusions, or insights presented in the text.\nContext: Extract any additional context that provides clues of indications on the supply chain operations.\n\nFormat:\n\nUse markdown syntaxt with headings and sections.\nDO only use headings corresponding to classes in the ontology.\nEnsure that the information is concise and to the point.\nExtract tables as markdown tables where appropriate.\nUse lists to enumerate elements that are part of groups of collections.\n\nOntology Alignment:\n\nEnsure that the extracted information reffers and can be used to futher extract information with regard to the ontology below:\n\nOutput:\n\nThe output should be organized in markdown format as described in the above mentioned Format instructions.\n\n\n\nTask:\nDO follow the above instructions meticulously to extract and summarize the information from the given text. DO verify the accuracy and relevance of your extractions, if unsure do not extract the information. DO ensure all relevant context information is included when extracting entities or facts. DO NOT invent or guess information, if the information is not explicitelly clear do not extract it. DO NOT start you response with an introduction, do not repeat the task or the above instructions just ouput the required text."
   }
 ]

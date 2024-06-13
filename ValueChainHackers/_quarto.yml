@@ -3,8 +3,8 @@
 # website settings
 website:
   title: "Value Chain Hackers"                                # Your name
-  description: "Gandalf is a renowned wizard and scholar of Middle-earth"   # A brief slogan (optional)
-  image: img/my_image.jpg
+  description: "Radical open initiative"   # A brief slogan (optional)
+  image: img/WorkAdventure.png
   
   favicon: img/favicon.png
   
@@ -17,10 +17,10 @@ website:
     left:
       - text: "Projects"
         href: projects/index.qmd
-      - text: "Photography"
-        href: photography/index.qmd
+      - text: "A.I Tool"
+        href: ai/index.qmd
       - text: "Presentations"
-        href: cv/index.qmd
+        href: presentations/presentations.qmd
     
     # your social media handles
     right:
@@ -44,7 +44,7 @@ website:
     left: |
       <span class="faux-block">&#169; 2024 Value Chain Hackers</span>
     center: |
-      <span class="faux-block"><a href="https://valuechainhackers.xyz">View the tutorial for this template!</a></span>
+      <span class="faux-block"><a href="https://valuechainhackers.xyz"></a></span>
     right: |
       <span class="faux-block"><a href="https://github.com/Value-Chain-Hackers/Website-VHC">View source on GitHub</a></span>
 
