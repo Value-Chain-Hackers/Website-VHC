@@ -105,7 +105,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Presentations</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../BusinessCase.index.qmd"> 
+    <a class="nav-link" href="../BusinessCase/index.html"> 
 <span class="menu-text">businesscase</span></a>
   </li>  
 </ul>
@@ -196,40 +196,39 @@ style Query fill:#ffa500, stroke:#000000
 style Retrievers fill:#ffa500, stroke:#000000
 style Results fill:#ffa500, stroke:#000000
 style Visualize fill:#ffa500, stroke:#000000
-style Embeddings fill:#ffa500
-style Structurize fill:#ffa500
+style Embeddings fill:#ffa500, stroke:#000000
+style Structurize fill:#ffa500, stroke:#000000
 
 subgraph Collect
-PDF[PDF\nannual reports] --&gt; Store
-Crawling[
-    Crawling:\nWeb Site\nBrand Site\nProduct Pages
-] --&gt; Store
-SEC[
-    US SEC\nFilings\n10&lt;wbr&gt;-K\n10-Q
-] --&gt; Store
-Wikipedia[Wiki\n&lt;wbr&gt;Company Pages\nIngredien&lt;wbr&gt;s\nChemicals] --&gt; Store
-
-DuckDuckGo[Searc&lt;wbr&gt;h\nDuckDuckGo] --&gt; Store
-
-Store --&gt; Ingestion['Proce&lt;wbr&gt;ssing\nIngestion&lt;wbr&gt;']
+    PDF[PDF\nannual reports] --&gt; Store
+    Crawling[Crawling:\nWeb Site\nBrand Site\nProduct Pages] --&gt; Store
+    SEC[US SEC\nFilings\n10-K\n10-Q] --&gt; Store
+    Wikipedia[Wiki\nCompany Pages\nIngredients\nChemicals] --&gt; Store
+    DuckDuckGo[Search\nDuckDuckGo] --&gt; Store
+    Store --&gt; Ingestion[Processing\nIngestion]
 end
+
 subgraph Ingest
-    Ingestion --&gt; Transform &lt;--&gt; Extract[Extract:&lt;wbr&gt;\n Nodes, Edges]
-    Transform &lt;--&gt; Structurize[Stru&lt;wbr&gt;cturize:\n CSV, JSON, Markdown]
+    Ingestion --&gt; Transform &lt;--&gt; Extract[Extract:\nNodes, Edges]
+    Transform &lt;--&gt; Structurize[Structurize:\nCSV, JSON, Markdown]
     Transform --&gt; Embeddings
     Structurize --&gt; Knowledge
 end
+
 subgraph Knowledge
     Transform --&gt; LLM
     Extract &lt;--&gt; IndexGraph
     Extract &lt;--&gt; IndexFact
     LLM --&gt; Structurize
 end
+
 RAG --&gt; Retrievers
+
 subgraph GraphDatabase
-    IndexGraph[Graph&lt;wbr&gt;\nNodes\nLinks] --&gt; Neo4j 
+    IndexGraph[Graph\nNodes\nLinks] --&gt; Neo4j 
     RAG --&gt; Neo4j
 end
+
 subgraph FactDatabase
     IndexFact --&gt; Sqlite 
     IndexFact --&gt; Markdown
@@ -248,6 +247,7 @@ subgraph UI
     UIAI --&gt; Query --&gt; Retrievers --&gt; Results --&gt; Visualize
     Query --&gt; Visualize
 end
+
 </pre>
 </div>
 <p></p></figure><p></p>
