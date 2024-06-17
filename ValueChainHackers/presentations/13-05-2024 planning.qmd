@@ -78,8 +78,11 @@ EPIC Visualize Power Dynamics Ecosystem:
     - Finalize the ontology for comprehensive representation of supply chain elements and relationships.
 
 2. **Develop and Refine Visualizations**:
-    - Create intuitive visualizations for supply chain mappings and power dynamics.
+    - Make sure it updates the D3.js
     - Create a design visual framework. 
+
+
+## Sub-Goals Continued
 
 3. **User Feedback Integration**:
     - Schedule another demo and feedback on this. 

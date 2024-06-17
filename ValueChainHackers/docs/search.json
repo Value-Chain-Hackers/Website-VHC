@@ -672,39 +672,53 @@
     "text": "Instructions:\n\nSummary and Extraction Goals:\n\nDO Summarize the given text by extracting key facts, names of persons, brands, names, companies, subsidiaries, accomplishments, locations, affiliates, partnerships, take-aways, and any other relevant context information related to the company and it’s supplychain.\nDO Capture all relevant and valuable information related to supply chains, focusing on the relationships and hierarchies between entities.\nDO NOT add irrelevant details. Ensure all extracted information is directly present in the text.\n\nInformation Categories:\n\nFacts: Extract core facts about supply chain activities, relationships, and processes.\nPersons: Extract names and roles of persons mentioned in the text, their role, position and any other relevant information.\nBrands: Extract names of brands, product-lines, categories as well as the products, their manufacturing process, ingredients or components.\nNames: Extract names of companies, subsidiaries, holdings, organizations, legal entities, affiliates, competitors, and other key entities.\nLocations: Extract locations, addresses, and any other geographical information about plants, offices, headquarters, stores, transportation hubs, routes, warehouses and distribution centers.\nTake-aways: Identify main points, conclusions, or insights presented in the text.\nContext: Extract any additional context that provides clues of indications on the supply chain operations.\n\nFormat:\n\nUse markdown syntaxt with headings and sections.\nDO only use headings corresponding to classes in the ontology.\nEnsure that the information is concise and to the point.\nExtract tables as markdown tables where appropriate.\nUse lists to enumerate elements that are part of groups of collections.\n\nOntology Alignment:\n\nEnsure that the extracted information reffers and can be used to futher extract information with regard to the ontology below:\n\nOutput:\n\nThe output should be organized in markdown format as described in the above mentioned Format instructions.\n\n\n\nTask:\nDO follow the above instructions meticulously to extract and summarize the information from the given text. DO verify the accuracy and relevance of your extractions, if unsure do not extract the information. DO ensure all relevant context information is included when extracting entities or facts. DO NOT invent or guess information, if the information is not explicitelly clear do not extract it. DO NOT start you response with an introduction, do not repeat the task or the above instructions just ouput the required text."
   },
   {
-    "objectID": "ai/technicalbudget.html",
-    "href": "ai/technicalbudget.html",
+    "objectID": "ai/technicalbudget.html#gpus-graphics-processing-units",
+    "href": "ai/technicalbudget.html#gpus-graphics-processing-units",
     "title": "Cost-Effective Server Setup for AI Models in Supply Chain Mapping",
-    "section": "",
-    "text": "Deploying AI models for supply chain mapping requires robust hardware and software configurations. Given a budget of 10,000 euros, this analysis provides multiple server setup options, balancing cost and performance to ensure efficient AI model deployment and operation.\n\n\n\n\n\nComponents: - CPU: AMD Ryzen 9 5950X (16 cores, 32 threads) - €700 - GPU: 2 x NVIDIA RTX 3080 - €2,000 - Memory: 128GB DDR4 RAM - €600 - Storage: 2TB NVMe SSD - €300 - Motherboard: ASUS ROG Crosshair VIII Hero - €400 - Power Supply: Corsair RM850x 850W - €150 - Cooling: Noctua NH-D15 - €100 - Case: Fractal Design Meshify C - €100 - Networking: Gigabit Ethernet Card - €50 - UPS: APC Back-UPS Pro - €200\nTotal Cost: €4,600\nAnalysis: This configuration provides a balanced and powerful setup, ideal for handling intensive AI computations required for supply chain mapping. The dual RTX 3080 GPUs offer significant parallel processing power, ensuring efficient model training and inference.\n\n\n\nComponents: - CPU: AMD Ryzen 7 5800X (8 cores, 16 threads) - €400 - GPU: NVIDIA RTX 3070 - €800 - Memory: 64GB DDR4 RAM - €300 - Storage: 1TB NVMe SSD - €150 - Motherboard: MSI B550-A PRO - €150 - Power Supply: EVGA 750W - €100 - Cooling: Cooler Master Hyper 212 - €50 - Case: NZXT H510 - €80 - Networking: Gigabit Ethernet Card - €50 - UPS: APC Back-UPS Pro - €200\nTotal Cost: €2,280\nAnalysis: This budget-friendly configuration is suitable for smaller AI models or less intensive workloads. While it offers less computational power compared to the high-performance option, it still provides a solid foundation for running AI models efficiently.\n\n\n\n\n\nOperating System: Ubuntu Server (Free)\nAI Frameworks: TensorFlow, PyTorch, Hugging Face Transformers (Free)\nModel Management: NVIDIA NGC or Ollama (Free or subscription-based services)\n\n\n\n\nSelecting the right server setup depends on the specific needs and scale of your AI models. The high-performance configuration is recommended for extensive and intensive AI workloads, providing robust performance and scalability. The budget-friendly option is suitable for smaller-scale operations, offering a cost-effective solution without compromising too much on performance.\n\n\n\nFuture Upgrades: Both configurations allow for future upgrades, such as adding more GPUs or increasing RAM, to accommodate growing computational needs.\nEnergy Efficiency: Consider the power consumption of the components, especially if operating in an environment with limited cooling capabilities.\n\nFor more details on setting up and managing your AI models, please consult our full guide."
+    "section": "GPUs (Graphics Processing Units)",
+    "text": "GPUs (Graphics Processing Units)\nImportance: GPUs are essential for the heavy computational tasks required by AI models. They handle parallel processing much better than CPUs.\nTop Picks: - NVIDIA GeForce RTX 4090 (24GB VRAM): This is the top consumer-grade GPU for AI, providing excellent performance for large language models and deep learning tasks. It can handle high output quality and large context windows, making it ideal for intensive AI workloads Source. - NVIDIA A100 and H100: Used in large-scale AI infrastructures like Meta’s, these GPUs are designed for high throughput and efficiency in AI training and inference Source. - Dual GPU Setups: For models like Mixtral 8x7B, dual RTX 3090 or RTX 4090 setups are recommended to achieve high performance without CPU offloading Source.\nWhy NVIDIA? - CUDA Support: NVIDIA GPUs are favored due to their CUDA support, which is essential for many AI frameworks and applications. This makes them more efficient and easier to use compared to AMD GPUs Source."
   },
   {
-    "objectID": "ai/technicalbudget.html#introduction",
-    "href": "ai/technicalbudget.html#introduction",
+    "objectID": "ai/technicalbudget.html#cpus-central-processing-units",
+    "href": "ai/technicalbudget.html#cpus-central-processing-units",
     "title": "Cost-Effective Server Setup for AI Models in Supply Chain Mapping",
-    "section": "",
-    "text": "Deploying AI models for supply chain mapping requires robust hardware and software configurations. Given a budget of 10,000 euros, this analysis provides multiple server setup options, balancing cost and performance to ensure efficient AI model deployment and operation."
+    "section": "CPUs (Central Processing Units)",
+    "text": "CPUs (Central Processing Units)\nImportance: While GPUs handle the bulk of the processing, CPUs are crucial for managing data preprocessing, orchestration, and tasks that GPUs are less suited for.\nRecommended CPUs: - Intel Xeon W and AMD Threadripper Pro: These CPUs are preferred for their high core counts and the ability to support multiple GPUs due to their extensive PCIe lanes. They also offer excellent memory performance, which is vital for AI workloads Source.\nCore Requirements: - At least 16 cores for balanced performance with multiple GPUs. For more CPU-intensive tasks, 32 or even 64 cores might be necessary Source."
   },
   {
-    "objectID": "ai/technicalbudget.html#hardware-options",
-    "href": "ai/technicalbudget.html#hardware-options",
+    "objectID": "ai/technicalbudget.html#ram-random-access-memory",
+    "href": "ai/technicalbudget.html#ram-random-access-memory",
     "title": "Cost-Effective Server Setup for AI Models in Supply Chain Mapping",
-    "section": "",
-    "text": "Components: - CPU: AMD Ryzen 9 5950X (16 cores, 32 threads) - €700 - GPU: 2 x NVIDIA RTX 3080 - €2,000 - Memory: 128GB DDR4 RAM - €600 - Storage: 2TB NVMe SSD - €300 - Motherboard: ASUS ROG Crosshair VIII Hero - €400 - Power Supply: Corsair RM850x 850W - €150 - Cooling: Noctua NH-D15 - €100 - Case: Fractal Design Meshify C - €100 - Networking: Gigabit Ethernet Card - €50 - UPS: APC Back-UPS Pro - €200\nTotal Cost: €4,600\nAnalysis: This configuration provides a balanced and powerful setup, ideal for handling intensive AI computations required for supply chain mapping. The dual RTX 3080 GPUs offer significant parallel processing power, ensuring efficient model training and inference.\n\n\n\nComponents: - CPU: AMD Ryzen 7 5800X (8 cores, 16 threads) - €400 - GPU: NVIDIA RTX 3070 - €800 - Memory: 64GB DDR4 RAM - €300 - Storage: 1TB NVMe SSD - €150 - Motherboard: MSI B550-A PRO - €150 - Power Supply: EVGA 750W - €100 - Cooling: Cooler Master Hyper 212 - €50 - Case: NZXT H510 - €80 - Networking: Gigabit Ethernet Card - €50 - UPS: APC Back-UPS Pro - €200\nTotal Cost: €2,280\nAnalysis: This budget-friendly configuration is suitable for smaller AI models or less intensive workloads. While it offers less computational power compared to the high-performance option, it still provides a solid foundation for running AI models efficiently."
+    "section": "RAM (Random Access Memory)",
+    "text": "RAM (Random Access Memory)\nImportance: Adequate RAM is crucial for holding large datasets and model parameters during processing.\nRecommendations: - Minimum 32GB: Suitable for smaller models and lighter workloads. - 64GB to 128GB: Recommended for more intensive tasks and larger datasets. High RAM capacity ensures smooth operation without bottlenecks Source Source."
   },
   {
-    "objectID": "ai/technicalbudget.html#software-requirements",
-    "href": "ai/technicalbudget.html#software-requirements",
+    "objectID": "ai/technicalbudget.html#storage",
+    "href": "ai/technicalbudget.html#storage",
     "title": "Cost-Effective Server Setup for AI Models in Supply Chain Mapping",
-    "section": "",
-    "text": "Operating System: Ubuntu Server (Free)\nAI Frameworks: TensorFlow, PyTorch, Hugging Face Transformers (Free)\nModel Management: NVIDIA NGC or Ollama (Free or subscription-based services)"
+    "section": "Storage",
+    "text": "Storage\nImportance: Fast and reliable storage is necessary for handling large datasets and quick data access.\nRecommendations: - NVMe SSDs: These offer the fastest read/write speeds, which significantly reduce data loading times. High-capacity SSDs are essential for large-scale AI projects Source."
   },
   {
-    "objectID": "ai/technicalbudget.html#conclusion",
-    "href": "ai/technicalbudget.html#conclusion",
+    "objectID": "ai/technicalbudget.html#power-supply-unit-psu",
+    "href": "ai/technicalbudget.html#power-supply-unit-psu",
     "title": "Cost-Effective Server Setup for AI Models in Supply Chain Mapping",
-    "section": "",
-    "text": "Selecting the right server setup depends on the specific needs and scale of your AI models. The high-performance configuration is recommended for extensive and intensive AI workloads, providing robust performance and scalability. The budget-friendly option is suitable for smaller-scale operations, offering a cost-effective solution without compromising too much on performance.\n\n\n\nFuture Upgrades: Both configurations allow for future upgrades, such as adding more GPUs or increasing RAM, to accommodate growing computational needs.\nEnergy Efficiency: Consider the power consumption of the components, especially if operating in an environment with limited cooling capabilities.\n\nFor more details on setting up and managing your AI models, please consult our full guide."
+    "section": "Power Supply Unit (PSU)",
+    "text": "Power Supply Unit (PSU)\nImportance: Ensures stable and sufficient power to all components, especially when using multiple high-performance GPUs.\nRecommendation: - 1000W or Higher: A high-wattage PSU is necessary to support the power demands of GPUs and CPUs under heavy load Source."
+  },
+  {
+    "objectID": "ai/technicalbudget.html#motherboard",
+    "href": "ai/technicalbudget.html#motherboard",
+    "title": "Cost-Effective Server Setup for AI Models in Supply Chain Mapping",
+    "section": "Motherboard",
+    "text": "Motherboard\nImportance: Connects all components and ensures compatibility and efficient communication.\nRecommendations: - Support for Multiple GPUs: Choose a motherboard with adequate PCIe slots and support for multiple GPUs. This ensures that you can fully utilize your GPU setup without performance bottlenecks Source."
+  },
+  {
+    "objectID": "ai/technicalbudget.html#networking",
+    "href": "ai/technicalbudget.html#networking",
+    "title": "Cost-Effective Server Setup for AI Models in Supply Chain Mapping",
+    "section": "Networking",
+    "text": "Networking\nImportance: Essential for distributed computing and large data transfers, particularly in cloud-based AI environments.\nRecommendations: - High-speed Ethernet: Necessary for fast data transfer and efficient handling of large-scale AI workloads. For extremely high performance, consider Infiniband solutions Source.\nConfiguration 1: Optimized High-End AI Training Server Purpose: Designed for large-scale AI training tasks within the budget.\n\nCPU:\n\nModel: AMD Ryzen Threadripper PRO 5975WX Cores/Threads: 32 cores / 64 threads Price: €3,500 2. GPU:\nModel: NVIDIA RTX 4090 Quantity: 2 GPUs VRAM: 24GB per GPU Price: €1,800 each (Total: €3,600)\n\nRAM:\n\nCapacity: 256GB DDR4 ECC Price: €1,200\n\nStorage:\n\nPrimary: 2TB NVMe SSD (for OS and software) Price: €300 Secondary: 8TB NVMe SSD (for dataset storage and fast access) Price: €1,200\n\nPower Supply:\n\nWattage: 2000W Platinum-rated PSU Price: €400\n\nMotherboard:\n\nModel: ASUS Pro WS WRX80E-SAGE SE WIFI Price: €1,000\n\nNetworking:\n\nEthernet: Dual 10Gb Ethernet ports Price: €300\n\nCooling:\n\nType: Custom liquid cooling Price: €500\n\nChassis:\n\nModel: Fractal Design Define 7 XL Price: €200 Total Cost: €12,200\nConfiguration 2: Optimized Mid-Range AI Development Server Purpose: Ideal for small to medium enterprises and academic institutions focusing on AI development and moderate training tasks.\n\nCPU:\n\nModel: Intel Xeon W-3345 Cores/Threads: 24 cores / 48 threads Price: €3,000 2. GPU:\nModel: NVIDIA RTX 4080 Quantity: 2 GPUs VRAM: 16GB per GPU Price: €1,400 each (Total: €2,800)\n\nRAM:\n\nCapacity: 256GB DDR4 ECC Price: €1,200\n\nStorage:\n\nPrimary: 1TB NVMe SSD (for OS and software) Price: €150 Secondary: 4TB NVMe SSD (for dataset storage and fast access) Price: €600\n\nPower Supply:\n\nWattage: 1500W Gold-rated PSU Price: €300\n\nMotherboard:\n\nModel: ASUS WS C621E Sage Price: €700 7. Networking:\nEthernet: Single 10Gb Ethernet port Price: €150\n\nCooling:\n\nType: High-performance air cooling Price: €200\n\nChassis:\n\nModel: Fractal Design Define 7 XL Price: €200 Total Cost: €9,300\nThese optimized configurations should fit within the specified budget range, providing powerful setups for running advanced AI models.\nConfiguration 1: Optimized High-End AI Training Server CPU: AMD Ryzen Threadripper PRO 5975WX - €3,500 GPU: 2 x NVIDIA RTX 4090 (24GB) - €3,600 RAM: 256GB DDR4 ECC - €1,200 Primary Storage: 2TB NVMe SSD - €300 Secondary Storage: 8TB NVMe SSD - €1,200 Power Supply: 2000W Platinum-rated PSU - €400 Motherboard: ASUS Pro WS WRX80E-SAGE SE WIFI - €1,000 Networking: Dual 10Gb Ethernet ports - €300 Cooling: Custom liquid cooling - €500 Chassis: Fractal Design Define 7 XL - €200 Total Cost: €12,200\nConfiguration 2: Optimized Mid-Range AI Development Server CPU: Intel Xeon W-3345 - €3,000 GPU: 2 x NVIDIA RTX 4080 (16GB) - €2,800 RAM: 256GB DDR4 ECC - €1,200 Primary Storage: 1TB NVMe SSD - €150 Secondary Storage: 4TB NVMe SSD - €600 Power Supply: 1500W Gold-rated PSU - €300 Motherboard: ASUS WS C621E Sage - €700 Networking: Single 10Gb Ethernet port - €150 Cooling: High-performance air cooling - €200 Chassis: Fractal Design Define 7 XL - €200 Total Cost: €9,300"
   },
   {
     "objectID": "BusinessCase/Userstories.html",
@@ -791,18 +805,18 @@
     "text": "## Task 8: Monitoring and Maintenance\n\nSubtask 8.1: Set up Monitoring Tools\nSet up monitoring tools to track system performance and identify potential issues.\n\n\nSubtask 8.2: Schedule Maintenance\nSchedule regular maintenance tasks to ensure the system remains stable and secure.\n\n\nSubtask 8.3: Perform Updates and Patches\nPerform updates and patches to ensure the system remains up-to-date and secure."
   },
   {
-    "objectID": "presentations/13-05-2024 planning.html#last-sprint",
-    "href": "presentations/13-05-2024 planning.html#last-sprint",
+    "objectID": "presentations/13-05-2024 planning.html#demo-what-went-well",
+    "href": "presentations/13-05-2024 planning.html#demo-what-went-well",
     "title": "Sprint planning",
-    "section": "Last Sprint",
-    "text": "Last Sprint"
+    "section": "Demo: What Went Well",
+    "text": "Demo: What Went Well\n\nOntology Implementation:\n\nSuccessfully integrated the ontology framework.\nEnhanced the system’s understanding and extensibility by replacing traditional relational database structures.\nEnabled system to guess nodes using first-order logic and automate the search process.\n\nFeature Requests Addressed:\n\nNoted and planned important feature requests like the accuracy counter for supply chain mapping.\n\nInitial MVP:\n\nDemonstrated an initial version of a minimally viable product (MVP)."
   },
   {
-    "objectID": "presentations/13-05-2024 planning.html#what-went-well",
-    "href": "presentations/13-05-2024 planning.html#what-went-well",
+    "objectID": "presentations/13-05-2024 planning.html#segmentation.",
+    "href": "presentations/13-05-2024 planning.html#segmentation.",
     "title": "Sprint planning",
-    "section": "What Went Well",
-    "text": "What Went Well\n\nOntology Implementation:\n\nSuccessfully integrated the ontology framework.\nEnhanced the system’s understanding and extensibility by replacing traditional relational database structures.\nEnabled system to guess nodes using first-order logic and automate the search process.\n\nAI Segmentation:\n\nDivided process into three distinct AI components:\n\nAI for searching information.\nAI for making connections and data mashing.\nAI for creating displays, widgets, and tables.\n\n\nFeature Requests Addressed:\n\nNoted and planned important feature requests like the accuracy counter for supply chain mapping.\n\nInitial MVP:\n\nDemonstrated an initial version of a minimally viable product (MVP)."
+    "section": "Segmentation.",
+    "text": "Segmentation.\n\nAI Segmentation:\n\nDivided process into three distinct AI components:\n\nAI for searching information.\nAI for making connections and data mashing.\nAI for creating displays, widgets, and tables."
   },
   {
     "objectID": "presentations/13-05-2024 planning.html#what-could-be-improved",
@@ -816,7 +830,35 @@
     "href": "presentations/13-05-2024 planning.html#work-done",
     "title": "Sprint planning",
     "section": "Work done",
-    "text": "Work done\n\nCreate a protocol to allow the AI to control the UI elements and dynamically render various visualizations.\nCREWS need to start working to crawl the internet for subquestions.\nFinetune: protocol to allow the AI to control the UI elements and dynamically render various visualizations.\nCreate an ontology to describe the supply chain elements as a schema to help the AI structurize knowledge.\nChat system needs to work and update map upon prompt.\nCreating a digital environment and bringing it online.\nUpdating the contacts sheet, making it into markdown.\nRecruiting text for students\nMaking a website"
+    "text": "Work done\n\nCreate a protocol to allow the AI to control the UI elements and dynamically render various visualizations.\nCREWS need to start working to crawl the internet for subquestions.\nFinetune: protocol to allow the AI to control the UI elements and dynamically render various visualizations.\nCreate an ontology to describe the supply chain elements as a schema to help the AI structurize knowledge.\nChat system needs to work and update map upon prompt."
+  },
+  {
+    "objectID": "presentations/13-05-2024 planning.html#work-done-continued",
+    "href": "presentations/13-05-2024 planning.html#work-done-continued",
+    "title": "Sprint planning",
+    "section": "Work done’ continued",
+    "text": "Work done’ continued\n\nCreating a digital environment and bringing it online.\nUpdating the contacts sheet, making it into markdown.\nRecruiting text for students\nMaking a website - process"
+  },
+  {
+    "objectID": "presentations/13-05-2024 planning.html#next-sprint",
+    "href": "presentations/13-05-2024 planning.html#next-sprint",
+    "title": "Sprint planning",
+    "section": "Next Sprint",
+    "text": "Next Sprint\nTasks\nNext Steps:\nEPIC Visualize Power Dynamics Ecosystem: - Develop a feature to visualize the entire ecosystem based on a company name within 20 minutes.\nSprint Goal\n\nIntegrate all core components, ensure system reliability and accuracy, and prepare for a visual launch of the Power Dynamics Ecosystem feature.\nFeature request: Accuracy Counter!"
+  },
+  {
+    "objectID": "presentations/13-05-2024 planning.html#sub-goals",
+    "href": "presentations/13-05-2024 planning.html#sub-goals",
+    "title": "Sprint planning",
+    "section": "Sub-Goals",
+    "text": "Sub-Goals\n\nEnhance Ontology Framework:\n\nFinalize the ontology for comprehensive representation of supply chain elements and relationships.\n\nDevelop and Refine Visualizations:\n\nMake sure it updates the D3.js\nCreate a design visual framework."
+  },
+  {
+    "objectID": "presentations/13-05-2024 planning.html#sub-goals-continued",
+    "href": "presentations/13-05-2024 planning.html#sub-goals-continued",
+    "title": "Sprint planning",
+    "section": "Sub-Goals Continued",
+    "text": "Sub-Goals Continued\n\nUser Feedback Integration:\n\nSchedule another demo and feedback on this.\n\nSystem Testing and Quality Assurance:\n\nConduct thorough testing to ensure accuracy and reliability.\n\nPrepare for Visual Launch:\n\nFinalize elements for a successful visual launch.\n\n\nSub-Goals and Optional Tasks"
   },
   {
     "objectID": "presentations/13-05-2024 planning.html#backlog",
@@ -830,14 +872,14 @@
     "href": "presentations/13-05-2024 planning.html#backlog-2",
     "title": "Sprint planning",
     "section": "Backlog #2",
-    "text": "Backlog #2\n\nSetup of LinkedIn Page.\nGetting a Domain.\nOnboarding Process for students.\nOrganisation Starting: Creation of a B.V or Non-Profit.\nSetup recruitment process for students, CRM.\nCreation of online content for students to learn, LMS.\nFiling for public grants.\nGoing to several events on behalf of Value Chain Hackers.\nSetup of social media for Value Chain Hackers.\nMaking a nicer looking website.\nServer setup and config budget for production.\nSetup scripts.\nSplitting the minds over multiple machines."
+    "text": "Backlog #2\n\nSetup of LinkedIn Page.\nGetting a Domain.\nOnboarding Process for students.\nSetup recruitment process for students, CRM.\nSetup of social media for Value Chain Hackers.\nMaking a nicer looking website."
   },
   {
-    "objectID": "presentations/13-05-2024 planning.html#next-sprint",
-    "href": "presentations/13-05-2024 planning.html#next-sprint",
+    "objectID": "presentations/13-05-2024 planning.html#backlog-3",
+    "href": "presentations/13-05-2024 planning.html#backlog-3",
     "title": "Sprint planning",
-    "section": "Next Sprint",
-    "text": "Next Sprint\nTasks\nNext Steps:\nEPIC Visualize Power Dynamics Ecosystem: - Develop a feature to visualize the entire ecosystem based on a company name within 20 minutes.\nSprint 1: Basic Ontology Setup and Initial Data Integration\nSprint Goal A: - Establish the foundation for the Power Dynamics Ecosystem visualization.\nSub-Goals A:\nDefine Key Supply Chain Elements: - Identify and document primary elements like suppliers, manufacturers, distributors, retailers, and consumers. - Define relationships including material flow, information flow, and financial flow.\nSub-tasks:\n\nDefine Key Supply Chain Elements:\n\nIdentify and document primary elements.\nDefine relationships.\n\nDevelop Basic Schema:\n\nCreate an initial schema using an ontology editor.\nEnsure the schema is extensible for future updates.\n\nTest the Ontology with Sample Data:\n\nValidate the ontology’s structure with a small dataset.\n\nInitial Data Integration:\n\nCollect and integrate a small, representative dataset.\nDevelop SPARQL queries to test the ontology.\n\n\nSprint Goal\n\nIntegrate all core components, ensure system reliability and accuracy, and prepare for a visual launch of the Power Dynamics Ecosystem feature.\n\nSub-Goals\n\nEnhance Ontology Framework:\n\nFinalize the ontology for comprehensive representation of supply chain elements and relationships.\n\nDevelop and Refine Visualizations:\n\nCreate intuitive visualizations for supply chain mappings and power dynamics.\n\nUser Feedback Integration:\n\nCollect and integrate user feedback for system improvement.\n\nSystem Testing and Quality Assurance:\n\nConduct thorough testing to ensure accuracy and reliability.\n\nPrepare for Visual Launch:\n\nFinalize elements for a successful visual launch.\n\n\nSub-Goals and Optional Tasks\nSub-Goal 1: Enhance Ontology Framework\n\nRefine Schema:\n\nReview and update the initial schema.\nEnsure comprehensive coverage of supply chain elements.\nOptional Task: Conduct workshops with domain experts.\n\nExpand Data Integration:\n\nIntegrate additional datasets.\nTest with larger datasets for scalability.\nOptional Task: Develop automated data integration pipelines.\n\n\nSub-Goal 2: Develop and Refine Visualizations\n\nDesign Visual Elements:\n\nCreate wireframes and mockups.\nDevelop dynamic visual elements.\nOptional Task: Conduct user testing on wireframes.\n\nImplement Visualizations:\n\nCode and integrate visual elements.\nEnsure interactivity and meaningful insights.\n\n\nSub-Goal 3: User Feedback Integration\n\nCollect Feedback:\n\nConduct user testing sessions.\nUse surveys and interviews.\n\nIntegrate Feedback:\n\nPrioritize and implement feedback.\nContinuously update the system.\n\n\nSub-Goal 4: System Testing and Quality Assurance\n\nAccuracy Testing:\n\nDevelop test cases.\nImplement an accuracy counter feature.\n\nPerformance Testing:\n\nConduct load testing.\nResolve performance bottlenecks.\n\nQuality Assurance:\n\nPerform comprehensive QA testing.\nEnsure system meets usability and accuracy criteria.\n\n\nSub-Goal 5: Prepare for Visual Launch\n\nDocumentation:\n\nCreate user and technical documentation.\n\nMarketing Materials:\n\nPrepare marketing materials.\nDevelop a demo video.\n\nLaunch Plan:\n\nFinalize the launch plan.\nCoordinate with stakeholders."
+    "section": "backlog #3",
+    "text": "backlog #3\n\nCreation of online content for students to learn, LMS.\nFiling for public grants.\nGoing to several events on behalf of Value Chain Hackers.\nServer setup and config budget for production.\nSetup scripts.\nSplitting the minds over multiple machines."
   },
   {
     "objectID": "presentations/30-05-2024 Planning.html#welcome-introduction",
