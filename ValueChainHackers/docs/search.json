@@ -1,5 +1,285 @@
 [
   {
+    "objectID": "wiki/Userstories.html",
+    "href": "wiki/Userstories.html",
+    "title": "# Digital Workplace for Lab",
+    "section": "",
+    "text": "Automatic website and Documentation and Presentation building in one flow from one single file: Quarto &gt; van een file &gt; Naar een website"
+  },
+  {
+    "objectID": "wiki/Userstories.html#objective-1",
+    "href": "wiki/Userstories.html#objective-1",
+    "title": "# Digital Workplace for Lab",
+    "section": "",
+    "text": "Automatic website and Documentation and Presentation building in one flow from one single file: Quarto &gt; van een file &gt; Naar een website"
+  },
+  {
+    "objectID": "wiki/Userstories.html#subjective",
+    "href": "wiki/Userstories.html#subjective",
+    "title": "# Digital Workplace for Lab",
+    "section": "Subjective:",
+    "text": "Subjective:\n(sub objective) Is Jupyter Notebooks intergration into that file, so that we can have local AI, talk to the documents and help us build faster"
+  },
+  {
+    "objectID": "wiki/Userstories.html#objective-3",
+    "href": "wiki/Userstories.html#objective-3",
+    "title": "# Digital Workplace for Lab",
+    "section": "objective 3:",
+    "text": "objective 3:"
+  },
+  {
+    "objectID": "wiki/Userstories.html#task-1-set-up-workadventure",
+    "href": "wiki/Userstories.html#task-1-set-up-workadventure",
+    "title": "# Digital Workplace for Lab",
+    "section": "## Task 1: Set up WorkAdventure",
+    "text": "## Task 1: Set up WorkAdventure\n\nSubtask 1.1: Install WorkAdventure\nInstall WorkAdventure on a server (e.g., Ubuntu) using Docker.\n\n\nSubtask 1.2: Configure WorkAdventure\nConfigure WorkAdventure to create a virtual world for the lab.\n\n\nSubtask 1.3: Customize WorkAdventure\nCustomize the virtual world to fit the lab’s needs (e.g., add rooms, furniture, and decorations)."
+  },
+  {
+    "objectID": "wiki/Userstories.html#task-2-integrate-chat-programs",
+    "href": "wiki/Userstories.html#task-2-integrate-chat-programs",
+    "title": "# Digital Workplace for Lab",
+    "section": "## Task 2: Integrate Chat Programs",
+    "text": "## Task 2: Integrate Chat Programs\n\nSubtask 2.1: Integrate RocketChat\n\nInstall RocketChat\nInstall RocketChat on a server. #### Configure RocketChat Configure RocketChat to work within WorkAdventure.\n\n\n\nSubtask 2.2: Integrate Mattermost\n\nInstall Mattermost\nInstall Mattermost on a server. #### Configure Mattermost Configure Mattermost to work within WorkAdventure.\n\n\n\nSubtask 2.3: Integrate Zulip\n\nInstall Zulip\nInstall Zulip on a server. #### Configure Zulip Configure Zulip to work within WorkAdventure.\n\n\n\nSubtask 2.4: Integrate Matrix\n\nInstall Matrix\nInstall Matrix on a server. #### Configure Matrix Configure Matrix to work within WorkAdventure."
+  },
+  {
+    "objectID": "wiki/Userstories.html#task-3-integrate-open-source-games",
+    "href": "wiki/Userstories.html#task-3-integrate-open-source-games",
+    "title": "# Digital Workplace for Lab",
+    "section": "## Task 3: Integrate Open-Source Games",
+    "text": "## Task 3: Integrate Open-Source Games\n\nSubtask 3.1: Integrate Minecraft: Education Edition\n\nInstall Minecraft: Education Edition\nInstall Minecraft: Education Edition on a server. #### Configure Minecraft Configure Minecraft to work within WorkAdventure.\n\n\n\nSubtask 3.2: Integrate OpenArena\n\nInstall OpenArena\nInstall OpenArena on a server. #### Configure OpenArena Configure OpenArena to work within WorkAdventure.\n\n\n\nSubtask 3.3: Integrate Minetest\n\nInstall Minetest\nInstall Minetest on a server. #### Configure Minetest Configure Minetest to work within WorkAdventure.\n\n\n\nSubtask 3.4: Integrate SuperTuxKart\n\nInstall SuperTuxKart\nInstall SuperTuxKart on a server. #### Configure SuperTuxKart Configure SuperTuxKart to work within WorkAdventure.\n\n\n\nSubtask 3.5: Integrate Warzone 2100\n\nInstall Warzone 2100\nInstall Warzone 2100 on a server. #### Configure Warzone 2100 Configure Warzone 2100 to work within WorkAdventure."
+  },
+  {
+    "objectID": "wiki/Userstories.html#task-4-integrate-productivity-tools",
+    "href": "wiki/Userstories.html#task-4-integrate-productivity-tools",
+    "title": "# Digital Workplace for Lab",
+    "section": "## Task 4: Integrate Productivity Tools",
+    "text": "## Task 4: Integrate Productivity Tools\n\nSubtask 4.1: Integrate Taiga\n\nInstall Taiga\nInstall Taiga on a server. #### Configure Taiga Configure Taiga to work within WorkAdventure.\n\n\n\nSubtask 4.2: Integrate OpenProject\n\nInstall OpenProject\nInstall OpenProject on a server. #### Configure OpenProject Configure OpenProject to work within WorkAdventure.\n\n\n\nSubtask 4.3: Integrate Wiki.js\n\nInstall Wiki.js\nInstall Wiki.js on a server. #### Configure Wiki.js Configure Wiki.js to work within WorkAdventure."
+  },
+  {
+    "objectID": "wiki/Userstories.html#task-5-ensure-interoperability",
+    "href": "wiki/Userstories.html#task-5-ensure-interoperability",
+    "title": "# Digital Workplace for Lab",
+    "section": "## Task 5: Ensure Interoperability",
+    "text": "## Task 5: Ensure Interoperability\n\nSubtask 5.1: Test Tools\nTest each tool individually to ensure it works as expected within WorkAdventure.\n\n\nSubtask 5.2: Test Integration\nTest the integration of each tool with WorkAdventure.\n\n\nSubtask 5.3: Resolve Compatibility Issues\nIdentify and resolve any compatibility issues between tools."
+  },
+  {
+    "objectID": "wiki/Userstories.html#task-6-documentation-and-training",
+    "href": "wiki/Userstories.html#task-6-documentation-and-training",
+    "title": "# Digital Workplace for Lab",
+    "section": "## Task 6: Documentation and Training",
+    "text": "## Task 6: Documentation and Training\n\nSubtask 6.1: Create Documentation\nCreate documentation for the setup and integration process of each tool.\n\n\nSubtask 6.2: Develop Training Plan\nDevelop a training plan for lab users (students and employees).\n\n\nSubtask 6.3: Conduct Training\nConduct training sessions for lab users."
+  },
+  {
+    "objectID": "wiki/Userstories.html#task-7-security-and-backup",
+    "href": "wiki/Userstories.html#task-7-security-and-backup",
+    "title": "# Digital Workplace for Lab",
+    "section": "## Task 7: Security and Backup",
+    "text": "## Task 7: Security and Backup\n\nSubtask 7.1: Implement Security Measures\nImplement security measures to protect the digital workplace from cyber threats.\n\n\nSubtask 7.2: Set up Backup System\nSet up a backup system to ensure data integrity and availability.\n\n\nSubtask 7.3: Test Backup and Recovery\nTest the backup and recovery process to ensure data can be restored in case of a failure."
+  },
+  {
+    "objectID": "wiki/Userstories.html#task-8-monitoring-and-maintenance",
+    "href": "wiki/Userstories.html#task-8-monitoring-and-maintenance",
+    "title": "# Digital Workplace for Lab",
+    "section": "## Task 8: Monitoring and Maintenance",
+    "text": "## Task 8: Monitoring and Maintenance\n\nSubtask 8.1: Set up Monitoring Tools\nSet up monitoring tools to track system performance and identify potential issues.\n\n\nSubtask 8.2: Schedule Maintenance\nSchedule regular maintenance tasks to ensure the system remains stable and secure.\n\n\nSubtask 8.3: Perform Updates and Patches\nPerform updates and patches to ensure the system remains up-to-date and secure."
+  },
+  {
+    "objectID": "wiki/technical-support.html",
+    "href": "wiki/technical-support.html",
+    "title": "Technical Supportnn## IT Supportnn## Maintenance and Updatesnn## Troubleshooting Procedures^n",
+    "section": "",
+    "text": "Technical Supportnn## IT Supportnn## Maintenance and Updatesnn## Troubleshooting Procedures^n"
+  },
+  {
+    "objectID": "wiki/sustainability-environmental.html",
+    "href": "wiki/sustainability-environmental.html",
+    "title": "Sustainability and Environmental Impactnn## Sustainable Practicesnn## Environmental Impact Assessments^n",
+    "section": "",
+    "text": "Sustainability and Environmental Impactnn## Sustainable Practicesnn## Environmental Impact Assessments^n"
+  },
+  {
+    "objectID": "wiki/strategic-plan.html",
+    "href": "wiki/strategic-plan.html",
+    "title": "Strategic Plannn## Core Objectivesnn## Creating Impact^n",
+    "section": "",
+    "text": "Strategic Plannn## Core Objectivesnn## Creating Impact^n"
+  },
+  {
+    "objectID": "wiki/risk-management.html",
+    "href": "wiki/risk-management.html",
+    "title": "Risk Managementnn## Risk Analysisnn## Mitigation Strategies^n",
+    "section": "",
+    "text": "Risk Managementnn## Risk Analysisnn## Mitigation Strategies^n"
+  },
+  {
+    "objectID": "wiki/organizational-structure.html",
+    "href": "wiki/organizational-structure.html",
+    "title": "Organizational Structure^n",
+    "section": "",
+    "text": "Organizational Structure^n"
+  },
+  {
+    "objectID": "wiki/mission-statement.html",
+    "href": "wiki/mission-statement.html",
+    "title": "Mission Statement and Objectives",
+    "section": "",
+    "text": "Creating more Conscious Supply chains\n\n\n\n“Evolutionize global supply chain dynamics by adding extra value in upcycling and good practices ensuring that every link in the chain not only benefits economically but also contributes positively to the environment and society.\nRevolutionizing global value chains working together with local communities and stakeholders to identify challenges and systemic dilemmas and to conscientiously develop positive and socioeconomical and environmentally beneficial change.\n\n\n\nVCR will combine the strengths and resources of various stakeholders enabling more effective and innovative solutions to sustainability challenges. This collective approach accelerates systemic change making it a critical strategy for achieving lasting environmental and social impacts. By working together organizations can pool their efforts to create solutions that are not only more sustainable but also economically viable ensuring that the drive towards sustainability is a shared journey not a solitary endeavor.\nAction Step: Establish and nurture collaborative networks that create a symbiotic ecosystem benefiting all stakeholders involved.\nGoal: Form a community or network with transparent mutual benefits for each member. This means that we need to publish more create active polling and make sure that all our research is open.\n\n\n\nBy reshaping our understanding and attitudes towards sustainability it not only prepares us to innovate within the supply chain but also to act as catalysts for broader societal change. This approach is not just about solving current problems but about preventing future ones by embedding sustainable thinking at the core of our decision-making processes. In essence it’s about securing a livable planet for future generations while ensuring equitable access to resources today. Without this shift in mindset efforts to address environmental and social challenges may remain superficial and short-lived underscoring the critical nature of education and empowerment in achieving lasting change.\nAction Steps: - Engage in deep knowledge exploration and innovative learning methods with students educators and volunteers. - Aim for systemic dependencies by implementing the Patreon system and new agile learning methodologies.\nGoal: Build a self-sustaining educational organization focused on sustainability.\nKPI: Educate 2500 individuals by 2028 creating a community that actively supports sustainable practices.\n\n\n\nTo drive economic viability through upcycling supply chains is rooted in the need to demonstrate their comprehensive benefits—not only in terms of social and environmental impact but also from an economic perspective. By evidencing that sustainable practices like upcycling are not merely ethical choices but also financially beneficial businesses are more likely to adopt these practices.\nAction Steps: - Prove the social environmental and economic benefits of upcycling supply chains to businesses. - Show trough simulation and data gathering why sustainability matters. - Encourage businesses to adopt upcycling solutions by demonstrating their necessity and economic advantage.\nGoal: Produce and disseminate at least 10 detailed case studies and reports that highlight the economic benefits of upcycling practices within supply chains aiming for a 20% increase in adoption rates among targeted industries by 2028.\nCreate chains from mere transactional pathways to transformative forces for global well-being."
+  },
+  {
+    "objectID": "wiki/mission-statement.html#vision",
+    "href": "wiki/mission-statement.html#vision",
+    "title": "Mission Statement and Objectives",
+    "section": "",
+    "text": "Creating more Conscious Supply chains"
+  },
+  {
+    "objectID": "wiki/mission-statement.html#mission",
+    "href": "wiki/mission-statement.html#mission",
+    "title": "Mission Statement and Objectives",
+    "section": "",
+    "text": "“Evolutionize global supply chain dynamics by adding extra value in upcycling and good practices ensuring that every link in the chain not only benefits economically but also contributes positively to the environment and society.\nRevolutionizing global value chains working together with local communities and stakeholders to identify challenges and systemic dilemmas and to conscientiously develop positive and socioeconomical and environmentally beneficial change."
+  },
+  {
+    "objectID": "wiki/mission-statement.html#foster-collaborative-networks",
+    "href": "wiki/mission-statement.html#foster-collaborative-networks",
+    "title": "Mission Statement and Objectives",
+    "section": "",
+    "text": "VCR will combine the strengths and resources of various stakeholders enabling more effective and innovative solutions to sustainability challenges. This collective approach accelerates systemic change making it a critical strategy for achieving lasting environmental and social impacts. By working together organizations can pool their efforts to create solutions that are not only more sustainable but also economically viable ensuring that the drive towards sustainability is a shared journey not a solitary endeavor.\nAction Step: Establish and nurture collaborative networks that create a symbiotic ecosystem benefiting all stakeholders involved.\nGoal: Form a community or network with transparent mutual benefits for each member. This means that we need to publish more create active polling and make sure that all our research is open."
+  },
+  {
+    "objectID": "wiki/mission-statement.html#educate-and-empower",
+    "href": "wiki/mission-statement.html#educate-and-empower",
+    "title": "Mission Statement and Objectives",
+    "section": "",
+    "text": "By reshaping our understanding and attitudes towards sustainability it not only prepares us to innovate within the supply chain but also to act as catalysts for broader societal change. This approach is not just about solving current problems but about preventing future ones by embedding sustainable thinking at the core of our decision-making processes. In essence it’s about securing a livable planet for future generations while ensuring equitable access to resources today. Without this shift in mindset efforts to address environmental and social challenges may remain superficial and short-lived underscoring the critical nature of education and empowerment in achieving lasting change.\nAction Steps: - Engage in deep knowledge exploration and innovative learning methods with students educators and volunteers. - Aim for systemic dependencies by implementing the Patreon system and new agile learning methodologies.\nGoal: Build a self-sustaining educational organization focused on sustainability.\nKPI: Educate 2500 individuals by 2028 creating a community that actively supports sustainable practices."
+  },
+  {
+    "objectID": "wiki/mission-statement.html#drive-economic-viability",
+    "href": "wiki/mission-statement.html#drive-economic-viability",
+    "title": "Mission Statement and Objectives",
+    "section": "",
+    "text": "To drive economic viability through upcycling supply chains is rooted in the need to demonstrate their comprehensive benefits—not only in terms of social and environmental impact but also from an economic perspective. By evidencing that sustainable practices like upcycling are not merely ethical choices but also financially beneficial businesses are more likely to adopt these practices.\nAction Steps: - Prove the social environmental and economic benefits of upcycling supply chains to businesses. - Show trough simulation and data gathering why sustainability matters. - Encourage businesses to adopt upcycling solutions by demonstrating their necessity and economic advantage.\nGoal: Produce and disseminate at least 10 detailed case studies and reports that highlight the economic benefits of upcycling practices within supply chains aiming for a 20% increase in adoption rates among targeted industries by 2028.\nCreate chains from mere transactional pathways to transformative forces for global well-being."
+  },
+  {
+    "objectID": "wiki/marketing-outreach.html",
+    "href": "wiki/marketing-outreach.html",
+    "title": "Marketing and Outreachnn## Target Audience Definitionnn## Marketing Strategiesnn## Communication Plan^n",
+    "section": "",
+    "text": "Marketing and Outreachnn## Target Audience Definitionnn## Marketing Strategiesnn## Communication Plan^n"
+  },
+  {
+    "objectID": "wiki/introduction.html",
+    "href": "wiki/introduction.html",
+    "title": "Introduction",
+    "section": "",
+    "text": "The purpose of this action plan is to outline the steps necessary to implement sustainable practices within supply chains. It aims to provide a comprehensive roadmap for the Value Chain Rebels (VCR) to achieve their goals of economic viability, environmental sustainability, and social responsibility.\n\n\n\nThe Value Chain Rebels is an initiative focused on revolutionizing global supply chains by integrating upcycling and good practices. This initiative works in collaboration with local communities, stakeholders, and various industry partners to identify and address systemic challenges in supply chain dynamics. The scope includes: - Innovating for financial sustainability. - Fostering collaborative networks. - Educating and empowering stakeholders. - Driving economic viability through upcycling."
+  },
+  {
+    "objectID": "wiki/introduction.html#purpose-of-the-action-plan",
+    "href": "wiki/introduction.html#purpose-of-the-action-plan",
+    "title": "Introduction",
+    "section": "",
+    "text": "The purpose of this action plan is to outline the steps necessary to implement sustainable practices within supply chains. It aims to provide a comprehensive roadmap for the Value Chain Rebels (VCR) to achieve their goals of economic viability, environmental sustainability, and social responsibility."
+  },
+  {
+    "objectID": "wiki/introduction.html#scope-of-the-organization",
+    "href": "wiki/introduction.html#scope-of-the-organization",
+    "title": "Introduction",
+    "section": "",
+    "text": "The Value Chain Rebels is an initiative focused on revolutionizing global supply chains by integrating upcycling and good practices. This initiative works in collaboration with local communities, stakeholders, and various industry partners to identify and address systemic challenges in supply chain dynamics. The scope includes: - Innovating for financial sustainability. - Fostering collaborative networks. - Educating and empowering stakeholders. - Driving economic viability through upcycling."
+  },
+  {
+    "objectID": "wiki/index.html",
+    "href": "wiki/index.html",
+    "title": "Supply Chain Mapping",
+    "section": "",
+    "text": "Extracting knowledge from large text documents is not a single step. To retrieve valuable information from these a large document or corpus needs to be chuncked and the task needs to be subdivided in multiple sub-tasks.\n\n\n\n\n\ngraph LR\nstyle PDF fill:#008000, stroke:#000000\nstyle Crawling fill:#ffa500, stroke:#000000\nstyle SEC fill:#ff0000, stroke:#000000\nstyle Wikipedia fill:#ffa500, stroke:#000000\nstyle DuckDuckGo fill:#ffa500, stroke:#000000\nstyle Store fill:#ffff00, stroke:#000000\nstyle Ingestion fill:#008000, stroke:#000000\nstyle Transform fill:#ffff00, stroke:#000000\nstyle Extract fill:#008000, stroke:#000000\nstyle LLM fill:#008000, stroke:#000000\nstyle IndexGraph fill:#ffa500, stroke:#000000\nstyle IndexFact fill:#ffa500, stroke:#000000\nstyle Neo4j fill:#ffa500, stroke:#000000\nstyle Sqlite fill:#ffff00, stroke:#000000\nstyle Markdown fill:#008000, stroke:#000000\nstyle Faiss fill:#ffa500, stroke:#000000\nstyle Chroma fill:#008000, stroke:#000000\nstyle RAG fill:#ffff00, stroke:#000000\nstyle UIAI fill:#ffa500, stroke:#000000\nstyle Query fill:#ffa500, stroke:#000000\nstyle Retrievers fill:#ffa500, stroke:#000000\nstyle Results fill:#ffa500, stroke:#000000\nstyle Visualize fill:#ffa500, stroke:#000000\nstyle Embeddings fill:#ffa500, stroke:#000000\nstyle Structurize fill:#ffa500, stroke:#000000\n\nsubgraph Collect\n    PDF[PDF\\nannual reports] --&gt; Store\n    Crawling[Crawling:\\nWeb Site\\nBrand Site\\nProduct Pages] --&gt; Store\n    SEC[US SEC\\nFilings\\n10-K\\n10-Q] --&gt; Store\n    Wikipedia[Wiki\\nCompany Pages\\nIngredients\\nChemicals] --&gt; Store\n    DuckDuckGo[Search\\nDuckDuckGo] --&gt; Store\n    Store --&gt; Ingestion[Processing\\nIngestion]\nend\n\nsubgraph Ingest\n    Ingestion --&gt; Transform &lt;--&gt; Extract[Extract:\\nNodes, Edges]\n    Transform &lt;--&gt; Structurize[Structurize:\\nCSV, JSON, Markdown]\n    Transform --&gt; Embeddings\n    Structurize --&gt; Knowledge\nend\n\nsubgraph Knowledge\n    Transform --&gt; LLM\n    Extract &lt;--&gt; IndexGraph\n    Extract &lt;--&gt; IndexFact\n    LLM --&gt; Structurize\nend\n\nRAG --&gt; Retrievers\n\nsubgraph GraphDatabase\n    IndexGraph[Graph\\nNodes\\nLinks] --&gt; Neo4j \n    RAG --&gt; Neo4j\nend\n\nsubgraph FactDatabase\n    IndexFact --&gt; Sqlite \n    IndexFact --&gt; Markdown\n    Markdown --&gt; RAG\n    Sqlite --&gt; RAG\nend\n\nsubgraph VectorStores\n    Embeddings --&gt; Faiss\n    Embeddings --&gt; Chroma\n    Faiss --&gt; RAG\n    Chroma --&gt; RAG\nend\n\nsubgraph UI\n    UIAI --&gt; Query --&gt; Retrievers --&gt; Results --&gt; Visualize\n    Query --&gt; Visualize\nend"
+  },
+  {
+    "objectID": "wiki/index.html#map-supply-chains-using-ontologies",
+    "href": "wiki/index.html#map-supply-chains-using-ontologies",
+    "title": "Supply Chain Mapping",
+    "section": "",
+    "text": "Extracting knowledge from large text documents is not a single step. To retrieve valuable information from these a large document or corpus needs to be chuncked and the task needs to be subdivided in multiple sub-tasks.\n\n\n\n\n\ngraph LR\nstyle PDF fill:#008000, stroke:#000000\nstyle Crawling fill:#ffa500, stroke:#000000\nstyle SEC fill:#ff0000, stroke:#000000\nstyle Wikipedia fill:#ffa500, stroke:#000000\nstyle DuckDuckGo fill:#ffa500, stroke:#000000\nstyle Store fill:#ffff00, stroke:#000000\nstyle Ingestion fill:#008000, stroke:#000000\nstyle Transform fill:#ffff00, stroke:#000000\nstyle Extract fill:#008000, stroke:#000000\nstyle LLM fill:#008000, stroke:#000000\nstyle IndexGraph fill:#ffa500, stroke:#000000\nstyle IndexFact fill:#ffa500, stroke:#000000\nstyle Neo4j fill:#ffa500, stroke:#000000\nstyle Sqlite fill:#ffff00, stroke:#000000\nstyle Markdown fill:#008000, stroke:#000000\nstyle Faiss fill:#ffa500, stroke:#000000\nstyle Chroma fill:#008000, stroke:#000000\nstyle RAG fill:#ffff00, stroke:#000000\nstyle UIAI fill:#ffa500, stroke:#000000\nstyle Query fill:#ffa500, stroke:#000000\nstyle Retrievers fill:#ffa500, stroke:#000000\nstyle Results fill:#ffa500, stroke:#000000\nstyle Visualize fill:#ffa500, stroke:#000000\nstyle Embeddings fill:#ffa500, stroke:#000000\nstyle Structurize fill:#ffa500, stroke:#000000\n\nsubgraph Collect\n    PDF[PDF\\nannual reports] --&gt; Store\n    Crawling[Crawling:\\nWeb Site\\nBrand Site\\nProduct Pages] --&gt; Store\n    SEC[US SEC\\nFilings\\n10-K\\n10-Q] --&gt; Store\n    Wikipedia[Wiki\\nCompany Pages\\nIngredients\\nChemicals] --&gt; Store\n    DuckDuckGo[Search\\nDuckDuckGo] --&gt; Store\n    Store --&gt; Ingestion[Processing\\nIngestion]\nend\n\nsubgraph Ingest\n    Ingestion --&gt; Transform &lt;--&gt; Extract[Extract:\\nNodes, Edges]\n    Transform &lt;--&gt; Structurize[Structurize:\\nCSV, JSON, Markdown]\n    Transform --&gt; Embeddings\n    Structurize --&gt; Knowledge\nend\n\nsubgraph Knowledge\n    Transform --&gt; LLM\n    Extract &lt;--&gt; IndexGraph\n    Extract &lt;--&gt; IndexFact\n    LLM --&gt; Structurize\nend\n\nRAG --&gt; Retrievers\n\nsubgraph GraphDatabase\n    IndexGraph[Graph\\nNodes\\nLinks] --&gt; Neo4j \n    RAG --&gt; Neo4j\nend\n\nsubgraph FactDatabase\n    IndexFact --&gt; Sqlite \n    IndexFact --&gt; Markdown\n    Markdown --&gt; RAG\n    Sqlite --&gt; RAG\nend\n\nsubgraph VectorStores\n    Embeddings --&gt; Faiss\n    Embeddings --&gt; Chroma\n    Faiss --&gt; RAG\n    Chroma --&gt; RAG\nend\n\nsubgraph UI\n    UIAI --&gt; Query --&gt; Retrievers --&gt; Results --&gt; Visualize\n    Query --&gt; Visualize\nend"
+  },
+  {
+    "objectID": "wiki/index.html#chunks-chunkin-a-large-document-in-pieces",
+    "href": "wiki/index.html#chunks-chunkin-a-large-document-in-pieces",
+    "title": "Supply Chain Mapping",
+    "section": "Chunks : Chunkin a large document in pieces",
+    "text": "Chunks : Chunkin a large document in pieces\nThis step will take a large document and chuck it in parts using some overlap to ensure that paragraph that would be cut in their middle are also present in the next chunk of text."
+  },
+  {
+    "objectID": "wiki/index.html#preprocess-remove-the-grease",
+    "href": "wiki/index.html#preprocess-remove-the-grease",
+    "title": "Supply Chain Mapping",
+    "section": "Preprocess : Remove the grease",
+    "text": "Preprocess : Remove the grease\nThis step will tranform the larger text chunks to sentences that are focused on facts, named entities, take-aways and essential points removing the grease of what is not relevant to the extraction process, but present in the textual form of the document.\nPre-Process Prompt"
+  },
+  {
+    "objectID": "wiki/index.html#extract-get-tuples-of-knowledge-from-the-text",
+    "href": "wiki/index.html#extract-get-tuples-of-knowledge-from-the-text",
+    "title": "Supply Chain Mapping",
+    "section": "Extract : Get tuples of knowledge from the text",
+    "text": "Extract : Get tuples of knowledge from the text\nWith the reduced text now the model will attempt to make tuples and nodes according to the ontology. Here too divide and conquer will be used, in order to reduce hallucianations it’s better to invoke the model multiple times using a subset of the ontlogy each time. This will yield better results and avoid the model to try to makeup nodes for each class of the ontology.\nExtracting Prompt"
+  },
+  {
+    "objectID": "wiki/index.html#validate-check-facts-deduplicate-ensure-proper-syntax",
+    "href": "wiki/index.html#validate-check-facts-deduplicate-ensure-proper-syntax",
+    "title": "Supply Chain Mapping",
+    "section": "Validate : Check facts, deduplicate ensure proper syntax",
+    "text": "Validate : Check facts, deduplicate ensure proper syntax\nNow we have extracted nodes, we will invoke antoher model to do a quality check on each node, by adding a rag on the actual document this step is able to search back in the document and coroborate different pieces of the document to make the most complete set of tuples and nodes, suppressing normally any hallucinated facts that might have produced by previous steps.\nValidation Prompt"
+  },
+  {
+    "objectID": "wiki/index.html#ingest-incorporate-tuples-and-nodes-to-the-global-graph",
+    "href": "wiki/index.html#ingest-incorporate-tuples-and-nodes-to-the-global-graph",
+    "title": "Supply Chain Mapping",
+    "section": "Ingest : Incorporate tuples and nodes to the global graph",
+    "text": "Ingest : Incorporate tuples and nodes to the global graph\nWith our appured nodes being now filtered and checked for quality we will now query the graph for each of them and add them if they are not a perfect duplicate and reject the nodes that might be too similar using cosine similarity and clustering techniques."
+  },
+  {
+    "objectID": "wiki/index.html#technical-budget",
+    "href": "wiki/index.html#technical-budget",
+    "title": "Supply Chain Mapping",
+    "section": "Technical Budget",
+    "text": "Technical Budget\ntechnical budget"
+  },
+  {
+    "objectID": "wiki/evaluation-improvement.html",
+    "href": "wiki/evaluation-improvement.html",
+    "title": "Evaluation and Improvementnn## Success Metricsnn## Feedback Mechanisms^n",
+    "section": "",
+    "text": "Evaluation and Improvementnn## Success Metricsnn## Feedback Mechanisms^n"
+  },
+  {
+    "objectID": "wiki/data-management.html",
+    "href": "wiki/data-management.html",
+    "title": "Data Managementnn## Data Collectionnn## Data Storage and Backupnn## Data Analysis and Reporting^n",
+    "section": "",
+    "text": "Data Managementnn## Data Collectionnn## Data Storage and Backupnn## Data Analysis and Reporting^n"
+  },
+  {
+    "objectID": "wiki/community-engagement.html",
+    "href": "wiki/community-engagement.html",
+    "title": "Community Engagementnn## Partnerships with Local Communitiesnn## Social Responsibility Initiatives^n",
+    "section": "",
+    "text": "Community Engagementnn## Partnerships with Local Communitiesnn## Social Responsibility Initiatives^n"
+  },
+  {
+    "objectID": "wiki/budget-financing.html",
+    "href": "wiki/budget-financing.html",
+    "title": "Budget and Financingnn## Financial Planningnn## Financing Strategies^n",
+    "section": "",
+    "text": "Budget and Financingnn## Financial Planningnn## Financing Strategies^n"
+  },
+  {
+    "objectID": "wiki/annex-a.html",
+    "href": "wiki/annex-a.html",
+    "title": "ANNEX Ann## Promotion of Labor Practices (in the style of FORD)^n",
+    "section": "",
+    "text": "ANNEX Ann## Promotion of Labor Practices (in the style of FORD)^n"
+  },
+  {
     "objectID": "prompts/knowledge_validate.html",
     "href": "prompts/knowledge_validate.html",
     "title": "Value Chain Hackers",
@@ -476,34 +756,6 @@
     "text": "Github\n  \n  \n    \n     LinkedIn\n  \n  \n    \n     Email\n  \n\n\n\n\nWelcome Value Chain Rebels\nValue Chain Hackers Mission: Value Chain Hackers is dedicated to revolutionizing global supply chain dynamics by introducing innovative practices and technologies that create economic, environmental, and social benefits. Our goal is to transform supply chains from mere transactional pathways into transformative forces for global well-being.\nVision: We aim to foster collaborative networks with industries, academic institutions, NGOs, and governmental bodies to share knowledge, resources, and best practices. By leveraging AI and cutting-edge technologies, we map and optimize supply chains, identify challenges, and develop sustainable, upcycling solutions.\nCore Objectives:\nInnovate for Financial Sustainability: Develop and implement technologies that enhance supply chain accountability and find new streams of value. Foster Collaborative Networks: Establish a global network of over 50 active partnerships by 2025. Educate and Empower: Educate 10,000 individuals by 2028 on upcycling supply chains through programs and workshops. Drive Economic Viability: Showcase the economic benefits of upcycling practices with comprehensive case studies and reports, leading to a 20% increase in adoption among targeted industries by 2028. Focus on Environmental and Social Impact: Ensure all projects have a positive social and environmental impact, driving policy changes to hold companies accountable. Approach:\nConfidentiality Assurance: Prioritize the security of clients’ data with robust protection measures. Independent Facilitation: Act as a neutral third party to facilitate collaboration without bias. Value Creation: Emphasize the value of collaboration for achieving greater efficiency and sustainability. Ethical Standards: Uphold strict ethical principles in all engagements. By focusing on these areas, Value Chain Hackers seeks to improve safety, reduce costs, and create lasting positive changes in global supply chains, benefiting both businesses and society at large.\nPlease feel free to contact me if you have any questions or would like to discuss potential projects.\n\nJoin our digital office"
   },
   {
-    "objectID": "BusinessCase/index.html",
-    "href": "BusinessCase/index.html",
-    "title": "Business Case: Value Chain Hackers",
-    "section": "",
-    "text": "Project Name: Value Chain Hackers\nProject Owner: Value Chain Hackers Team\nDate: 2024-06-13\n\n\n\nThe lack of transparency and collaboration in supply chains leads to inefficiencies, economic losses, and missed opportunities for sustainable practices. No neutral party currently exists to facilitate the improvement of supply chains while safeguarding confidential business information.\n\n\n\n\nRevolutionize global supply chain dynamics by integrating upcycling and best practices.\nInnovate for financial sustainability by developing new value streams within existing supply chains.\nFoster collaborative networks to share knowledge, resources, and best practices.\nEducate and empower stakeholders to champion sustainable supply chains.\nDrive economic viability by demonstrating the financial benefits of upcycling.\nFocus on environmental and social impact to ensure equitable and sustainable supply chains.\n\n\n\n\n\nEnhanced supply chain transparency and efficiency.\nEconomic gains through cost savings and new value streams.\nPositive environmental impact through sustainable practices.\nSocial benefits such as improved worker safety and community engagement.\n\n\n\n\n\n\n\n\nAcademic institutions\nNGOs\nGovernmental bodies\nIndustry leaders\nTechnology providers\n\n\n\n\n\nSupply chain mapping and analysis\nDevelopment of upcycling solutions\nEducational programs and workshops\nCollaboration and networking events\nResearch and case studies\n\n\n\n\n\nExpertise in supply chain management\nAdvanced technological tools (AI, data analytics)\nStrong network of partners and collaborators\nEducational materials and platforms\n\n\n\n\n\nNeutral facilitation of supply chain improvements\nConfidentiality assurance for sensitive business information\nEconomic, environmental, and social benefits\nAccess to cutting-edge technologies and expertise\n\n\n\n\n\nLong-term partnerships with stakeholders\nRegular updates and transparent communication\nCollaborative problem-solving and innovation\n\n\n\n\n\nOnline platform and virtual collaboration spaces\nWorkshops, seminars, and town hall meetings\nPublications and case studies\n\n\n\n\n\nManufacturing companies\nRetail and distribution firms\nEnvironmental organizations\nAcademic and research institutions\nLocal communities\n\n\n\n\n\nTechnology development and maintenance\nStaffing and expert consultations\nMarketing and outreach\nEducational program development\nEvent hosting and logistics\n\n\n\n\n\nMembership fees from partners\nConsulting and advisory services\nSponsorships and grants\nEducational program fees\nLicensing of developed technologies\n\n\n\n\n\n\n\n\nManufacturing and distribution companies seeking supply chain optimization.\nEnvironmental organizations aiming for sustainable practices.\nAcademic institutions looking for practical applications of research.\nLocal communities affected by supply chain practices."
-  },
-  {
-    "objectID": "BusinessCase/index.html#executive-summary",
-    "href": "BusinessCase/index.html#executive-summary",
-    "title": "Business Case: Value Chain Hackers",
-    "section": "",
-    "text": "Project Name: Value Chain Hackers\nProject Owner: Value Chain Hackers Team\nDate: 2024-06-13\n\n\n\nThe lack of transparency and collaboration in supply chains leads to inefficiencies, economic losses, and missed opportunities for sustainable practices. No neutral party currently exists to facilitate the improvement of supply chains while safeguarding confidential business information.\n\n\n\n\nRevolutionize global supply chain dynamics by integrating upcycling and best practices.\nInnovate for financial sustainability by developing new value streams within existing supply chains.\nFoster collaborative networks to share knowledge, resources, and best practices.\nEducate and empower stakeholders to champion sustainable supply chains.\nDrive economic viability by demonstrating the financial benefits of upcycling.\nFocus on environmental and social impact to ensure equitable and sustainable supply chains.\n\n\n\n\n\nEnhanced supply chain transparency and efficiency.\nEconomic gains through cost savings and new value streams.\nPositive environmental impact through sustainable practices.\nSocial benefits such as improved worker safety and community engagement."
-  },
-  {
-    "objectID": "BusinessCase/index.html#business-model-canvas",
-    "href": "BusinessCase/index.html#business-model-canvas",
-    "title": "Business Case: Value Chain Hackers",
-    "section": "",
-    "text": "Academic institutions\nNGOs\nGovernmental bodies\nIndustry leaders\nTechnology providers\n\n\n\n\n\nSupply chain mapping and analysis\nDevelopment of upcycling solutions\nEducational programs and workshops\nCollaboration and networking events\nResearch and case studies\n\n\n\n\n\nExpertise in supply chain management\nAdvanced technological tools (AI, data analytics)\nStrong network of partners and collaborators\nEducational materials and platforms\n\n\n\n\n\nNeutral facilitation of supply chain improvements\nConfidentiality assurance for sensitive business information\nEconomic, environmental, and social benefits\nAccess to cutting-edge technologies and expertise\n\n\n\n\n\nLong-term partnerships with stakeholders\nRegular updates and transparent communication\nCollaborative problem-solving and innovation\n\n\n\n\n\nOnline platform and virtual collaboration spaces\nWorkshops, seminars, and town hall meetings\nPublications and case studies\n\n\n\n\n\nManufacturing companies\nRetail and distribution firms\nEnvironmental organizations\nAcademic and research institutions\nLocal communities\n\n\n\n\n\nTechnology development and maintenance\nStaffing and expert consultations\nMarketing and outreach\nEducational program development\nEvent hosting and logistics\n\n\n\n\n\nMembership fees from partners\nConsulting and advisory services\nSponsorships and grants\nEducational program fees\nLicensing of developed technologies"
-  },
-  {
-    "objectID": "BusinessCase/index.html#business-need",
-    "href": "BusinessCase/index.html#business-need",
-    "title": "Business Case: Value Chain Hackers",
-    "section": "",
-    "text": "Manufacturing and distribution companies seeking supply chain optimization.\nEnvironmental organizations aiming for sustainable practices.\nAcademic institutions looking for practical applications of research.\nLocal communities affected by supply chain practices."
-  },
-  {
     "objectID": "ai/Prompt_Extraction_validation.html",
     "href": "ai/Prompt_Extraction_validation.html",
     "title": "Validation prompt",
@@ -721,88 +973,60 @@
     "text": "Networking\nImportance: Essential for distributed computing and large data transfers, particularly in cloud-based AI environments.\nRecommendations: - High-speed Ethernet: Necessary for fast data transfer and efficient handling of large-scale AI workloads. For extremely high performance, consider Infiniband solutions Source.\nConfiguration 1: Optimized High-End AI Training Server Purpose: Designed for large-scale AI training tasks within the budget.\n\nCPU:\n\nModel: AMD Ryzen Threadripper PRO 5975WX Cores/Threads: 32 cores / 64 threads Price: €3,500 2. GPU:\nModel: NVIDIA RTX 4090 Quantity: 2 GPUs VRAM: 24GB per GPU Price: €1,800 each (Total: €3,600)\n\nRAM:\n\nCapacity: 256GB DDR4 ECC Price: €1,200\n\nStorage:\n\nPrimary: 2TB NVMe SSD (for OS and software) Price: €300 Secondary: 8TB NVMe SSD (for dataset storage and fast access) Price: €1,200\n\nPower Supply:\n\nWattage: 2000W Platinum-rated PSU Price: €400\n\nMotherboard:\n\nModel: ASUS Pro WS WRX80E-SAGE SE WIFI Price: €1,000\n\nNetworking:\n\nEthernet: Dual 10Gb Ethernet ports Price: €300\n\nCooling:\n\nType: Custom liquid cooling Price: €500\n\nChassis:\n\nModel: Fractal Design Define 7 XL Price: €200 Total Cost: €12,200\nConfiguration 2: Optimized Mid-Range AI Development Server Purpose: Ideal for small to medium enterprises and academic institutions focusing on AI development and moderate training tasks.\n\nCPU:\n\nModel: Intel Xeon W-3345 Cores/Threads: 24 cores / 48 threads Price: €3,000 2. GPU:\nModel: NVIDIA RTX 4080 Quantity: 2 GPUs VRAM: 16GB per GPU Price: €1,400 each (Total: €2,800)\n\nRAM:\n\nCapacity: 256GB DDR4 ECC Price: €1,200\n\nStorage:\n\nPrimary: 1TB NVMe SSD (for OS and software) Price: €150 Secondary: 4TB NVMe SSD (for dataset storage and fast access) Price: €600\n\nPower Supply:\n\nWattage: 1500W Gold-rated PSU Price: €300\n\nMotherboard:\n\nModel: ASUS WS C621E Sage Price: €700 7. Networking:\nEthernet: Single 10Gb Ethernet port Price: €150\n\nCooling:\n\nType: High-performance air cooling Price: €200\n\nChassis:\n\nModel: Fractal Design Define 7 XL Price: €200 Total Cost: €9,300\nThese optimized configurations should fit within the specified budget range, providing powerful setups for running advanced AI models.\nConfiguration 1: Optimized High-End AI Training Server CPU: AMD Ryzen Threadripper PRO 5975WX - €3,500 GPU: 2 x NVIDIA RTX 4090 (24GB) - €3,600 RAM: 256GB DDR4 ECC - €1,200 Primary Storage: 2TB NVMe SSD - €300 Secondary Storage: 8TB NVMe SSD - €1,200 Power Supply: 2000W Platinum-rated PSU - €400 Motherboard: ASUS Pro WS WRX80E-SAGE SE WIFI - €1,000 Networking: Dual 10Gb Ethernet ports - €300 Cooling: Custom liquid cooling - €500 Chassis: Fractal Design Define 7 XL - €200 Total Cost: €12,200\nConfiguration 2: Optimized Mid-Range AI Development Server CPU: Intel Xeon W-3345 - €3,000 GPU: 2 x NVIDIA RTX 4080 (16GB) - €2,800 RAM: 256GB DDR4 ECC - €1,200 Primary Storage: 1TB NVMe SSD - €150 Secondary Storage: 4TB NVMe SSD - €600 Power Supply: 1500W Gold-rated PSU - €300 Motherboard: ASUS WS C621E Sage - €700 Networking: Single 10Gb Ethernet port - €150 Cooling: High-performance air cooling - €200 Chassis: Fractal Design Define 7 XL - €200 Total Cost: €9,300"
   },
   {
-    "objectID": "BusinessCase/Userstories.html",
-    "href": "BusinessCase/Userstories.html",
-    "title": "# Digital Workplace for Lab",
+    "objectID": "methodologies/index.html",
+    "href": "methodologies/index.html",
+    "title": "Semester Lab Program",
     "section": "",
-    "text": "Automatic website and Documentation and Presentation building in one flow from one single file: Quarto &gt; van een file &gt; Naar een website"
+    "text": "Duration: 16 weeks\nParticipants:\n\n1-2 teams of 3-4 students from Logistics Management\n1 team from LE\n1 student (TBC) from Law\n\nSchedule: 1-2 days per week\nKick-off day: End of September\nClosing day: Beginning of January\n\n\n\n\n\n\n\nDuration: 1 day\nActivities:\n\nIntroduction: Welcome and introductions of the lead team, student teams, companies, and experts.\nSemester Structure: Overview of the semester structure, including timelines and expectations.\nTheme Introduction: Introduction to the issue/topic/theme of the lab project.\nEmotional Icebreaker: “Journey Map”\n\nEach participant is given a piece of paper and colored markers.\nThey are asked to draw their personal journey to this moment, including significant events or experiences that have shaped their interest in the project.\nAfter completing their journey map, participants share their stories with their team members.\nThis activity encourages empathy, understanding, and connection among team members by exploring their personal motivations and backgrounds.\n\nInitial Commitments: Teams make initial commitments to project goals and deliverables.\nPotential Fun Activities: Icebreakers, team-building exercises, or mini-competitions to energize participants.\nClosing and Call to Action: Recap of the day’s events, reminders of upcoming deadlines, and motivation for the semester ahead.\n\n\n\n\n\n\n\n\n\nDuration: 1 day\nActivities:\n\nOpen Door Event: Inviting stakeholders, faculty, and other students to witness the presentations.\nStudent Presentations: Each student team presents their work, findings, and recommendations.\nFocus Groups/Break-out Rooms: Small group discussions to define next steps, action plans, and potential collaborations.\nCelebration Activity: Dinner, drinks, or a networking event to celebrate the achievements of the semester.\n\n\n\n\n\n\n\n\n\nLead + Student Teams: Regular meetings to discuss general progress, identify and address hurdles, and ensure alignment with project goals according to the SCRUM process:\n\n\n\n\n\nLead + All Students: Monthly cohesion meetings to strengthen teamwork, address any issues, and reinforce project objectives.\nLead + Student Teams + Companies + Research Group: Consortium meetings to share progress, exchange ideas, and receive feedback from external stakeholders.\n\n\n\n\n\nLead + Student Teams + Teachers: Project status updates to assess progress, provide guidance, and prepare for upcoming milestones (kickoff, midterm, and final presentations).\n\n\n\n\n\nLead + All Students: Semester kickoff and closing meetings to set expectations, reflect on achievements, and plan for the future.\nLead + Teachers: Feedback sessions to evaluate the process, identify areas for improvement, and enhance collaboration.\n\n\n\n\n\n\nCommunication:\n\nEmail : NEXTCLOUD For official communication and announcements.\nDiscord: Intergrates with the online world\n\nProject Management:\n\nTaiga: Open-source agile project management platform for managing tasks, sprints, and backlogs.\n\nCollaboration:\n\nNextcloud: Open-source file sharing and collaboration platform for sharing documents, calendars, and tasks.\nEtherpad: Open-source collaborative text editor for real-time document editing.\n\nVersion Control:\n\nGitLab: Open-source Git repository management platform for version control and collaboration.\nSmartGit:\nGitHub: Open-source Git repository hosting service for code collaboration and version control.\n\nDocument Creation:\n\nLibreOffice: Open-source office suite for creating documents, spreadsheets, and presentations.\nQuarto: From Markdown.\nZotero: Open-source reference management software for organizing research sources and citations.\n\nVirtual Meetings:\n\nJitsi: Open-source video conferencing platform for hosting virtual meetings and webinars.\nBigBlueButton: Open-source web conferencing system for online learning and collaboration.\n\nSurvey and Feedback:\n\nLimeSurvey: Open-source online survey software for creating and conducting surveys and assessments.\nMoodle: Open-source learning management system for creating online courses and assessments.\n\nMoodle: Moodle is one of the most widely used open-source LMS platforms. It offers a range of features including course management, assessment tools, collaborative activities, and more. Moodle is highly customizable and has a large community of developers and users providing support and resources.\nCanvas LMS: Canvas is an open-source LMS developed by Instructure. It provides a user-friendly interface, supports multimedia content, and offers features such as course calendars, discussion boards, and grading tools. Canvas is known for its scalability and flexibility.\nChamilo: Chamilo is an open-source e-learning platform designed for schools, universities, and corporate training. It offers features such as course creation, assessments, communication tools, and reporting. Chamilo is user-friendly and supports multiple languages.\nILIAS: ILIAS is an open-source learning management system focused on usability and accessibility. It offers a wide range of features including course management, collaborative tools, e-portfolios, and mobile support. ILIAS is highly customizable and suitable for various educational settings.\nOpen edX: Open edX is an open-source platform developed by edX, the online learning initiative founded by Harvard University and MIT. It provides tools for creating and delivering online courses, including interactive content, assessments, and discussion forums. Open edX is highly scalable and used by institutions worldwide.\nClaroline: Claroline is an open-source e-learning platform that focuses on simplicity and ease of use. It offers features such as course management, collaborative tools, and tracking of learner progress. Claroline is suitable for small to medium-sized organizations and educational institutions.\nATutor: ATutor is an open-source LMS designed with accessibility in mind. It provides features for creating accessible content, adaptive learning, and social interaction. ATutor is suitable for organizations seeking to comply with accessibility standards such as WCAG.\n\n\n\n\n\nStudy Backgrounds: Understand the diverse academic backgrounds of students and leverage their expertise accordingly.\nDepartment Expectations: Align the lab project with the expectations and requirements of relevant departments or academic programs.\nAcademic Rigor: Balance academic rigor with practical application, ensuring the project meets educational standards while addressing real-world challenges.\nStudent Commitments: Recognize and accommodate students’ other commitments, such as coursework, jobs, or extracurricular activities.\nEngagement and Fun: Incorporate engaging activities, team-building exercises, and rewards to keep students motivated and enthusiastic about the project.\nConnection with Students: Maintain open communication channels, provide mentorship and support, and foster a sense of community among participants.\nPriority of the Lab: Emphasize the importance of the lab project as a valuable learning experience and a priority for students’ personal and professional development.\n\n\n\n\n\n\n\nPoint-Based System: Assign points for meeting deadlines, quality of work, teamwork, participation in events, and innovative contributions.\n\n\n\n\n\nCertificates of Achievement: Recognize individual accomplishments and contributions to the project.\nInternship Opportunities: Offer internships with partner companies as a reward for exceptional performance.\nGift Vouchers: Provide gift vouchers or other tangible rewards for outstanding efforts.\n\n\n\n\n\nTeam Outings: Organize team outings or social events to celebrate collective achievements and foster team spirit.\nRecognition at Closing Ceremony: Acknowledge outstanding teams and individuals during the closing ceremony, with certificates or trophies.\nAdditional Resources: Provide additional resources or support for future projects as a reward for exemplary teamwork and performance.\n\n\n\n\n\nKick-off Tradition: Allow each team to create a team name and logo, promoting team identity and unity from the start.\nMidterm Tradition: Organize a mid-semester social event or team-building activity to break the routine and strengthen team bonds.\nClosing Tradition: Host an award ceremony with personalized trophies or plaques, celebrating the successes of the semester and reinforcing a sense of achievement and pride."
   },
   {
-    "objectID": "BusinessCase/Userstories.html#objective-1",
-    "href": "BusinessCase/Userstories.html#objective-1",
-    "title": "# Digital Workplace for Lab",
+    "objectID": "methodologies/index.html#overview",
+    "href": "methodologies/index.html#overview",
+    "title": "Semester Lab Program",
     "section": "",
-    "text": "Automatic website and Documentation and Presentation building in one flow from one single file: Quarto &gt; van een file &gt; Naar een website"
+    "text": "Duration: 16 weeks\nParticipants:\n\n1-2 teams of 3-4 students from Logistics Management\n1 team from LE\n1 student (TBC) from Law\n\nSchedule: 1-2 days per week\nKick-off day: End of September\nClosing day: Beginning of January"
   },
   {
-    "objectID": "BusinessCase/Userstories.html#subjective",
-    "href": "BusinessCase/Userstories.html#subjective",
-    "title": "# Digital Workplace for Lab",
-    "section": "Subjective:",
-    "text": "Subjective:\n(sub objective) Is Jupyter Notebooks intergration into that file, so that we can have local AI, talk to the documents and help us build faster"
+    "objectID": "methodologies/index.html#kick-off",
+    "href": "methodologies/index.html#kick-off",
+    "title": "Semester Lab Program",
+    "section": "",
+    "text": "Duration: 1 day\nActivities:\n\nIntroduction: Welcome and introductions of the lead team, student teams, companies, and experts.\nSemester Structure: Overview of the semester structure, including timelines and expectations.\nTheme Introduction: Introduction to the issue/topic/theme of the lab project.\nEmotional Icebreaker: “Journey Map”\n\nEach participant is given a piece of paper and colored markers.\nThey are asked to draw their personal journey to this moment, including significant events or experiences that have shaped their interest in the project.\nAfter completing their journey map, participants share their stories with their team members.\nThis activity encourages empathy, understanding, and connection among team members by exploring their personal motivations and backgrounds.\n\nInitial Commitments: Teams make initial commitments to project goals and deliverables.\nPotential Fun Activities: Icebreakers, team-building exercises, or mini-competitions to energize participants.\nClosing and Call to Action: Recap of the day’s events, reminders of upcoming deadlines, and motivation for the semester ahead."
   },
   {
-    "objectID": "BusinessCase/Userstories.html#objective-3",
-    "href": "BusinessCase/Userstories.html#objective-3",
-    "title": "# Digital Workplace for Lab",
-    "section": "objective 3:",
-    "text": "objective 3:"
+    "objectID": "methodologies/index.html#closing",
+    "href": "methodologies/index.html#closing",
+    "title": "Semester Lab Program",
+    "section": "",
+    "text": "Duration: 1 day\nActivities:\n\nOpen Door Event: Inviting stakeholders, faculty, and other students to witness the presentations.\nStudent Presentations: Each student team presents their work, findings, and recommendations.\nFocus Groups/Break-out Rooms: Small group discussions to define next steps, action plans, and potential collaborations.\nCelebration Activity: Dinner, drinks, or a networking event to celebrate the achievements of the semester."
   },
   {
-    "objectID": "BusinessCase/Userstories.html#task-1-set-up-workadventure",
-    "href": "BusinessCase/Userstories.html#task-1-set-up-workadventure",
-    "title": "# Digital Workplace for Lab",
-    "section": "## Task 1: Set up WorkAdventure",
-    "text": "## Task 1: Set up WorkAdventure\n\nSubtask 1.1: Install WorkAdventure\nInstall WorkAdventure on a server (e.g., Ubuntu) using Docker.\n\n\nSubtask 1.2: Configure WorkAdventure\nConfigure WorkAdventure to create a virtual world for the lab.\n\n\nSubtask 1.3: Customize WorkAdventure\nCustomize the virtual world to fit the lab’s needs (e.g., add rooms, furniture, and decorations)."
+    "objectID": "methodologies/index.html#period-review",
+    "href": "methodologies/index.html#period-review",
+    "title": "Semester Lab Program",
+    "section": "",
+    "text": "Lead + Student Teams: Regular meetings to discuss general progress, identify and address hurdles, and ensure alignment with project goals according to the SCRUM process:\n\n\n\n\n\nLead + All Students: Monthly cohesion meetings to strengthen teamwork, address any issues, and reinforce project objectives.\nLead + Student Teams + Companies + Research Group: Consortium meetings to share progress, exchange ideas, and receive feedback from external stakeholders.\n\n\n\n\n\nLead + Student Teams + Teachers: Project status updates to assess progress, provide guidance, and prepare for upcoming milestones (kickoff, midterm, and final presentations).\n\n\n\n\n\nLead + All Students: Semester kickoff and closing meetings to set expectations, reflect on achievements, and plan for the future.\nLead + Teachers: Feedback sessions to evaluate the process, identify areas for improvement, and enhance collaboration."
   },
   {
-    "objectID": "BusinessCase/Userstories.html#task-2-integrate-chat-programs",
-    "href": "BusinessCase/Userstories.html#task-2-integrate-chat-programs",
-    "title": "# Digital Workplace for Lab",
-    "section": "## Task 2: Integrate Chat Programs",
-    "text": "## Task 2: Integrate Chat Programs\n\nSubtask 2.1: Integrate RocketChat\n\nInstall RocketChat\nInstall RocketChat on a server. #### Configure RocketChat Configure RocketChat to work within WorkAdventure.\n\n\n\nSubtask 2.2: Integrate Mattermost\n\nInstall Mattermost\nInstall Mattermost on a server. #### Configure Mattermost Configure Mattermost to work within WorkAdventure.\n\n\n\nSubtask 2.3: Integrate Zulip\n\nInstall Zulip\nInstall Zulip on a server. #### Configure Zulip Configure Zulip to work within WorkAdventure.\n\n\n\nSubtask 2.4: Integrate Matrix\n\nInstall Matrix\nInstall Matrix on a server. #### Configure Matrix Configure Matrix to work within WorkAdventure."
+    "objectID": "methodologies/index.html#tools",
+    "href": "methodologies/index.html#tools",
+    "title": "Semester Lab Program",
+    "section": "",
+    "text": "Communication:\n\nEmail : NEXTCLOUD For official communication and announcements.\nDiscord: Intergrates with the online world\n\nProject Management:\n\nTaiga: Open-source agile project management platform for managing tasks, sprints, and backlogs.\n\nCollaboration:\n\nNextcloud: Open-source file sharing and collaboration platform for sharing documents, calendars, and tasks.\nEtherpad: Open-source collaborative text editor for real-time document editing.\n\nVersion Control:\n\nGitLab: Open-source Git repository management platform for version control and collaboration.\nSmartGit:\nGitHub: Open-source Git repository hosting service for code collaboration and version control.\n\nDocument Creation:\n\nLibreOffice: Open-source office suite for creating documents, spreadsheets, and presentations.\nQuarto: From Markdown.\nZotero: Open-source reference management software for organizing research sources and citations.\n\nVirtual Meetings:\n\nJitsi: Open-source video conferencing platform for hosting virtual meetings and webinars.\nBigBlueButton: Open-source web conferencing system for online learning and collaboration.\n\nSurvey and Feedback:\n\nLimeSurvey: Open-source online survey software for creating and conducting surveys and assessments.\nMoodle: Open-source learning management system for creating online courses and assessments.\n\nMoodle: Moodle is one of the most widely used open-source LMS platforms. It offers a range of features including course management, assessment tools, collaborative activities, and more. Moodle is highly customizable and has a large community of developers and users providing support and resources.\nCanvas LMS: Canvas is an open-source LMS developed by Instructure. It provides a user-friendly interface, supports multimedia content, and offers features such as course calendars, discussion boards, and grading tools. Canvas is known for its scalability and flexibility.\nChamilo: Chamilo is an open-source e-learning platform designed for schools, universities, and corporate training. It offers features such as course creation, assessments, communication tools, and reporting. Chamilo is user-friendly and supports multiple languages.\nILIAS: ILIAS is an open-source learning management system focused on usability and accessibility. It offers a wide range of features including course management, collaborative tools, e-portfolios, and mobile support. ILIAS is highly customizable and suitable for various educational settings.\nOpen edX: Open edX is an open-source platform developed by edX, the online learning initiative founded by Harvard University and MIT. It provides tools for creating and delivering online courses, including interactive content, assessments, and discussion forums. Open edX is highly scalable and used by institutions worldwide.\nClaroline: Claroline is an open-source e-learning platform that focuses on simplicity and ease of use. It offers features such as course management, collaborative tools, and tracking of learner progress. Claroline is suitable for small to medium-sized organizations and educational institutions.\nATutor: ATutor is an open-source LMS designed with accessibility in mind. It provides features for creating accessible content, adaptive learning, and social interaction. ATutor is suitable for organizations seeking to comply with accessibility standards such as WCAG."
   },
   {
-    "objectID": "BusinessCase/Userstories.html#task-3-integrate-open-source-games",
-    "href": "BusinessCase/Userstories.html#task-3-integrate-open-source-games",
-    "title": "# Digital Workplace for Lab",
-    "section": "## Task 3: Integrate Open-Source Games",
-    "text": "## Task 3: Integrate Open-Source Games\n\nSubtask 3.1: Integrate Minecraft: Education Edition\n\nInstall Minecraft: Education Edition\nInstall Minecraft: Education Edition on a server. #### Configure Minecraft Configure Minecraft to work within WorkAdventure.\n\n\n\nSubtask 3.2: Integrate OpenArena\n\nInstall OpenArena\nInstall OpenArena on a server. #### Configure OpenArena Configure OpenArena to work within WorkAdventure.\n\n\n\nSubtask 3.3: Integrate Minetest\n\nInstall Minetest\nInstall Minetest on a server. #### Configure Minetest Configure Minetest to work within WorkAdventure.\n\n\n\nSubtask 3.4: Integrate SuperTuxKart\n\nInstall SuperTuxKart\nInstall SuperTuxKart on a server. #### Configure SuperTuxKart Configure SuperTuxKart to work within WorkAdventure.\n\n\n\nSubtask 3.5: Integrate Warzone 2100\n\nInstall Warzone 2100\nInstall Warzone 2100 on a server. #### Configure Warzone 2100 Configure Warzone 2100 to work within WorkAdventure."
+    "objectID": "methodologies/index.html#pay-attention-to",
+    "href": "methodologies/index.html#pay-attention-to",
+    "title": "Semester Lab Program",
+    "section": "",
+    "text": "Study Backgrounds: Understand the diverse academic backgrounds of students and leverage their expertise accordingly.\nDepartment Expectations: Align the lab project with the expectations and requirements of relevant departments or academic programs.\nAcademic Rigor: Balance academic rigor with practical application, ensuring the project meets educational standards while addressing real-world challenges.\nStudent Commitments: Recognize and accommodate students’ other commitments, such as coursework, jobs, or extracurricular activities.\nEngagement and Fun: Incorporate engaging activities, team-building exercises, and rewards to keep students motivated and enthusiastic about the project.\nConnection with Students: Maintain open communication channels, provide mentorship and support, and foster a sense of community among participants.\nPriority of the Lab: Emphasize the importance of the lab project as a valuable learning experience and a priority for students’ personal and professional development."
   },
   {
-    "objectID": "BusinessCase/Userstories.html#task-4-integrate-productivity-tools",
-    "href": "BusinessCase/Userstories.html#task-4-integrate-productivity-tools",
-    "title": "# Digital Workplace for Lab",
-    "section": "## Task 4: Integrate Productivity Tools",
-    "text": "## Task 4: Integrate Productivity Tools\n\nSubtask 4.1: Integrate Taiga\n\nInstall Taiga\nInstall Taiga on a server. #### Configure Taiga Configure Taiga to work within WorkAdventure.\n\n\n\nSubtask 4.2: Integrate OpenProject\n\nInstall OpenProject\nInstall OpenProject on a server. #### Configure OpenProject Configure OpenProject to work within WorkAdventure.\n\n\n\nSubtask 4.3: Integrate Wiki.js\n\nInstall Wiki.js\nInstall Wiki.js on a server. #### Configure Wiki.js Configure Wiki.js to work within WorkAdventure."
-  },
-  {
-    "objectID": "BusinessCase/Userstories.html#task-5-ensure-interoperability",
-    "href": "BusinessCase/Userstories.html#task-5-ensure-interoperability",
-    "title": "# Digital Workplace for Lab",
-    "section": "## Task 5: Ensure Interoperability",
-    "text": "## Task 5: Ensure Interoperability\n\nSubtask 5.1: Test Tools\nTest each tool individually to ensure it works as expected within WorkAdventure.\n\n\nSubtask 5.2: Test Integration\nTest the integration of each tool with WorkAdventure.\n\n\nSubtask 5.3: Resolve Compatibility Issues\nIdentify and resolve any compatibility issues between tools."
-  },
-  {
-    "objectID": "BusinessCase/Userstories.html#task-6-documentation-and-training",
-    "href": "BusinessCase/Userstories.html#task-6-documentation-and-training",
-    "title": "# Digital Workplace for Lab",
-    "section": "## Task 6: Documentation and Training",
-    "text": "## Task 6: Documentation and Training\n\nSubtask 6.1: Create Documentation\nCreate documentation for the setup and integration process of each tool.\n\n\nSubtask 6.2: Develop Training Plan\nDevelop a training plan for lab users (students and employees).\n\n\nSubtask 6.3: Conduct Training\nConduct training sessions for lab users."
-  },
-  {
-    "objectID": "BusinessCase/Userstories.html#task-7-security-and-backup",
-    "href": "BusinessCase/Userstories.html#task-7-security-and-backup",
-    "title": "# Digital Workplace for Lab",
-    "section": "## Task 7: Security and Backup",
-    "text": "## Task 7: Security and Backup\n\nSubtask 7.1: Implement Security Measures\nImplement security measures to protect the digital workplace from cyber threats.\n\n\nSubtask 7.2: Set up Backup System\nSet up a backup system to ensure data integrity and availability.\n\n\nSubtask 7.3: Test Backup and Recovery\nTest the backup and recovery process to ensure data can be restored in case of a failure."
-  },
-  {
-    "objectID": "BusinessCase/Userstories.html#task-8-monitoring-and-maintenance",
-    "href": "BusinessCase/Userstories.html#task-8-monitoring-and-maintenance",
-    "title": "# Digital Workplace for Lab",
-    "section": "## Task 8: Monitoring and Maintenance",
-    "text": "## Task 8: Monitoring and Maintenance\n\nSubtask 8.1: Set up Monitoring Tools\nSet up monitoring tools to track system performance and identify potential issues.\n\n\nSubtask 8.2: Schedule Maintenance\nSchedule regular maintenance tasks to ensure the system remains stable and secure.\n\n\nSubtask 8.3: Perform Updates and Patches\nPerform updates and patches to ensure the system remains up-to-date and secure."
+    "objectID": "methodologies/index.html#game-theory-for-rewards",
+    "href": "methodologies/index.html#game-theory-for-rewards",
+    "title": "Semester Lab Program",
+    "section": "",
+    "text": "Point-Based System: Assign points for meeting deadlines, quality of work, teamwork, participation in events, and innovative contributions.\n\n\n\n\n\nCertificates of Achievement: Recognize individual accomplishments and contributions to the project.\nInternship Opportunities: Offer internships with partner companies as a reward for exceptional performance.\nGift Vouchers: Provide gift vouchers or other tangible rewards for outstanding efforts.\n\n\n\n\n\nTeam Outings: Organize team outings or social events to celebrate collective achievements and foster team spirit.\nRecognition at Closing Ceremony: Acknowledge outstanding teams and individuals during the closing ceremony, with certificates or trophies.\nAdditional Resources: Provide additional resources or support for future projects as a reward for exemplary teamwork and performance.\n\n\n\n\n\nKick-off Tradition: Allow each team to create a team name and logo, promoting team identity and unity from the start.\nMidterm Tradition: Organize a mid-semester social event or team-building activity to break the routine and strengthen team bonds.\nClosing Tradition: Host an award ceremony with personalized trophies or plaques, celebrating the successes of the semester and reinforcing a sense of achievement and pride."
   },
   {
     "objectID": "presentations/13-05-2024 planning.html#demo-what-went-well",
@@ -1020,5 +1244,145 @@
     "title": "Value Chain Hackers",
     "section": "Instructions:",
     "text": "Instructions:\n\nSummary and Extraction Goals:\n\nDO Summarize the given text by extracting key facts, names of persons, brands, names, companies, subsidiaries, accomplishments, locations, affiliates, partnerships, take-aways, and any other relevant context information related to the company and it’s supplychain.\nDO Capture all relevant and valuable information related to supply chains, focusing on the relationships and hierarchies between entities.\nDO NOT add irrelevant details. Ensure all extracted information is directly present in the text.\n\nInformation Categories:\n\nFacts: Extract core facts about supply chain activities, relationships, and processes.\nPersons: Extract names and roles of persons mentioned in the text, their role, position and any other relevant information.\nBrands: Extract names of brands, product-lines, categories as well as the products, their manufacturing process, ingredients or components.\nNames: Extract names of companies, subsidiaries, holdings, organizations, legal entities, affiliates, competitors, and other key entities.\nLocations: Extract locations, addresses, and any other geographical information about plants, offices, headquarters, stores, transportation hubs, routes, warehouses and distribution centers.\nTake-aways: Identify main points, conclusions, or insights presented in the text.\nContext: Extract any additional context that provides clues of indications on the supply chain operations.\n\nFormat:\n\nUse markdown syntaxt with headings and sections.\nDO only use headings corresponding to classes in the ontology.\nEnsure that the information is concise and to the point.\nExtract tables as markdown tables where appropriate.\nUse lists to enumerate elements that are part of groups of collections.\n\nOntology Alignment:\n\nEnsure that the extracted information reffers and can be used to futher extract information with regard to the ontology below:\n\nOutput:\n\nThe output should be organized in markdown format as described in the above mentioned Format instructions.\n\n\n\nTask:\nDO follow the above instructions meticulously to extract and summarize the information from the given text. DO verify the accuracy and relevance of your extractions, if unsure do not extract the information. DO ensure all relevant context information is included when extracting entities or facts. DO NOT invent or guess information, if the information is not explicitelly clear do not extract it. DO NOT start you response with an introduction, do not repeat the task or the above instructions just ouput the required text."
+  },
+  {
+    "objectID": "wiki/academic-programs.html",
+    "href": "wiki/academic-programs.html",
+    "title": "Academic Programs and Curriculumnn## Program Developmentnn## Teaching Methods^n",
+    "section": "",
+    "text": "Academic Programs and Curriculumnn## Program Developmentnn## Teaching Methods^n"
+  },
+  {
+    "objectID": "wiki/background-rationale.html",
+    "href": "wiki/background-rationale.html",
+    "title": "Background and Rationale",
+    "section": "",
+    "text": "The European supply chain management software market is poised for significant growth with projections indicating a 5.26% increase from 2024 to 2028, culminating in a market value of US$5.61 billion. This trend underscores a growing dependency on digital solutions to bolster supply chain efficiency and resilience, highlighting the fertile ground for VCR’s innovative approaches.\n\n\n\nThe landscape of logistics has been marred by unprecedented disruptions, notably in 2020 with a record 27.8% of organizations experiencing over 20 disruptions, a sharp rise from 4.8% in 2019. These disruptions, exacerbated by the pandemic, Brexit, the war in Ukraine, and the decline of the Chinese manufacturing dominance, underscore the urgent need for robust, resilient supply chain solutions. The escalating costs of raw materials, identified by 71% of global companies as a primary threat, alongside the critical demand for rapid delivery, further stress the necessity for innovative, accountable procurement strategies.\n\n\n\nThe adoption of technology in managing supply chain disruptions has seen a significant uptick, with over half of the organizations leveraging technology for disruption analysis and supply chain mapping. This digital shift, however, brings its own set of challenges, notably cybersecurity risks, which have surged during the COVID-19 era, affecting 81% of global organizations. The increasing frequency and sophistication of cyberattacks highlight a critical operational challenge for supply chain management, emphasizing the importance of robust cybersecurity measures.\n\n\n\nThe drive towards sustainability is becoming increasingly pronounced, with 82% of companies willing to invest more for zero-carbon shipping options. This shift not only reflects a growing consumer demand for sustainable practices but also aligns with the potential for cost savings and competitive advantage, further supported by governmental and EU regulatory focuses on sustainable logistics.\n\n\n\nThe Netherlands, with its strategic location and advanced logistics infrastructure, presents an ideal setting for VCR. The country’s logistics sector is expected to grow substantially, offering VCR a prime opportunity to capitalize on its innovative supply chain and logistics solutions. This positioning is bolstered by the broader European market’s openness to digital transformation and sustainable practices, aligning perfectly with VCR’s mission and capabilities."
+  },
+  {
+    "objectID": "wiki/background-rationale.html#growth-trajectory-in-the-european-market",
+    "href": "wiki/background-rationale.html#growth-trajectory-in-the-european-market",
+    "title": "Background and Rationale",
+    "section": "",
+    "text": "The European supply chain management software market is poised for significant growth with projections indicating a 5.26% increase from 2024 to 2028, culminating in a market value of US$5.61 billion. This trend underscores a growing dependency on digital solutions to bolster supply chain efficiency and resilience, highlighting the fertile ground for VCR’s innovative approaches."
+  },
+  {
+    "objectID": "wiki/background-rationale.html#challenges-in-current-logistics-and-supply-chain-dynamics",
+    "href": "wiki/background-rationale.html#challenges-in-current-logistics-and-supply-chain-dynamics",
+    "title": "Background and Rationale",
+    "section": "",
+    "text": "The landscape of logistics has been marred by unprecedented disruptions, notably in 2020 with a record 27.8% of organizations experiencing over 20 disruptions, a sharp rise from 4.8% in 2019. These disruptions, exacerbated by the pandemic, Brexit, the war in Ukraine, and the decline of the Chinese manufacturing dominance, underscore the urgent need for robust, resilient supply chain solutions. The escalating costs of raw materials, identified by 71% of global companies as a primary threat, alongside the critical demand for rapid delivery, further stress the necessity for innovative, accountable procurement strategies."
+  },
+  {
+    "objectID": "wiki/background-rationale.html#technological-adoption-and-cybersecurity-concerns",
+    "href": "wiki/background-rationale.html#technological-adoption-and-cybersecurity-concerns",
+    "title": "Background and Rationale",
+    "section": "",
+    "text": "The adoption of technology in managing supply chain disruptions has seen a significant uptick, with over half of the organizations leveraging technology for disruption analysis and supply chain mapping. This digital shift, however, brings its own set of challenges, notably cybersecurity risks, which have surged during the COVID-19 era, affecting 81% of global organizations. The increasing frequency and sophistication of cyberattacks highlight a critical operational challenge for supply chain management, emphasizing the importance of robust cybersecurity measures."
+  },
+  {
+    "objectID": "wiki/background-rationale.html#the-imperative-for-sustainability-and-efficiency",
+    "href": "wiki/background-rationale.html#the-imperative-for-sustainability-and-efficiency",
+    "title": "Background and Rationale",
+    "section": "",
+    "text": "The drive towards sustainability is becoming increasingly pronounced, with 82% of companies willing to invest more for zero-carbon shipping options. This shift not only reflects a growing consumer demand for sustainable practices but also aligns with the potential for cost savings and competitive advantage, further supported by governmental and EU regulatory focuses on sustainable logistics."
+  },
+  {
+    "objectID": "wiki/background-rationale.html#vcrs-strategic-positioning-in-the-netherlands",
+    "href": "wiki/background-rationale.html#vcrs-strategic-positioning-in-the-netherlands",
+    "title": "Background and Rationale",
+    "section": "",
+    "text": "The Netherlands, with its strategic location and advanced logistics infrastructure, presents an ideal setting for VCR. The country’s logistics sector is expected to grow substantially, offering VCR a prime opportunity to capitalize on its innovative supply chain and logistics solutions. This positioning is bolstered by the broader European market’s openness to digital transformation and sustainable practices, aligning perfectly with VCR’s mission and capabilities."
+  },
+  {
+    "objectID": "wiki/collaboration-tools.html",
+    "href": "wiki/collaboration-tools.html",
+    "title": "Collaboration Toolsnn## Project Management Softwarenn## Communication Platformsnn## Documentation and Knowledge Sharing^n",
+    "section": "",
+    "text": "Collaboration Toolsnn## Project Management Softwarenn## Communication Platformsnn## Documentation and Knowledge Sharing^n"
+  },
+  {
+    "objectID": "wiki/compliance-regulations.html",
+    "href": "wiki/compliance-regulations.html",
+    "title": "Compliance and Regulationsnn## Legal Compliancenn## Regulatory Strategiesnn## Robust Partnership Networksnn## Innovative Research Infrastructurenn## Integration of Sustainability Metrics as a Solution Metric^n",
+    "section": "",
+    "text": "Compliance and Regulationsnn## Legal Compliancenn## Regulatory Strategiesnn## Robust Partnership Networksnn## Innovative Research Infrastructurenn## Integration of Sustainability Metrics as a Solution Metric^n"
+  },
+  {
+    "objectID": "wiki/digital-infrastructure.html",
+    "href": "wiki/digital-infrastructure.html",
+    "title": "Digital Infrastructurenn## Hardware Requirementsnn## Software and Toolsnn## Network and Security^n",
+    "section": "",
+    "text": "Digital Infrastructurenn## Hardware Requirementsnn## Software and Toolsnn## Network and Security^n"
+  },
+  {
+    "objectID": "wiki/ethical-considerations.html",
+    "href": "wiki/ethical-considerations.html",
+    "title": "Ethical Considerationsnn## Data Privacy and Securitynn## Ethical Research Practices^n",
+    "section": "",
+    "text": "Ethical Considerationsnn## Data Privacy and Securitynn## Ethical Research Practices^n"
+  },
+  {
+    "objectID": "wiki/executive-summary.html",
+    "href": "wiki/executive-summary.html",
+    "title": "Executive Summary^n",
+    "section": "",
+    "text": "Executive Summary^n"
+  },
+  {
+    "objectID": "wiki/innovation-future.html",
+    "href": "wiki/innovation-future.html",
+    "title": "Innovation and Future Planningnn## Emerging Technologiesnn## Long-term Vision and Goals^n",
+    "section": "",
+    "text": "Innovation and Future Planningnn## Emerging Technologiesnn## Long-term Vision and Goals^n"
+  },
+  {
+    "objectID": "wiki/leadership-governance.html",
+    "href": "wiki/leadership-governance.html",
+    "title": "Leadership and Governance^n",
+    "section": "",
+    "text": "Leadership and Governance^n"
+  },
+  {
+    "objectID": "wiki/methodology.html",
+    "href": "wiki/methodology.html",
+    "title": "Methodologynn## Inside the Lab^n",
+    "section": "",
+    "text": "Methodologynn## Inside the Lab^n"
+  },
+  {
+    "objectID": "wiki/operational-plan.html",
+    "href": "wiki/operational-plan.html",
+    "title": "Operational Plannn## Phase 1: The Startup^n",
+    "section": "",
+    "text": "Operational Plannn## Phase 1: The Startup^n"
+  },
+  {
+    "objectID": "wiki/staff-policies.html",
+    "href": "wiki/staff-policies.html",
+    "title": "Staff Policies and Faculty Developmentnn## Recruitment and Retentionnn## Professional Development^n",
+    "section": "",
+    "text": "Staff Policies and Faculty Developmentnn## Recruitment and Retentionnn## Professional Development^n"
+  },
+  {
+    "objectID": "wiki/student-affairs.html",
+    "href": "wiki/student-affairs.html",
+    "title": "Student Affairs and Mentorshipnn## Student/Member Wellbeingnn## Group Activities^n",
+    "section": "",
+    "text": "Student Affairs and Mentorshipnn## Student/Member Wellbeingnn## Group Activities^n"
+  },
+  {
+    "objectID": "wiki/teams-departments.html",
+    "href": "wiki/teams-departments.html",
+    "title": "Teams and Departments^n",
+    "section": "",
+    "text": "Teams and Departments^n"
+  },
+  {
+    "objectID": "wiki/training-development.html",
+    "href": "wiki/training-development.html",
+    "title": "Training and Developmentnn## Onboarding Programsnn## Continuous Learning and Skill Developmentnn## Workshops and Seminars^n",
+    "section": "",
+    "text": "Training and Developmentnn## Onboarding Programsnn## Continuous Learning and Skill Developmentnn## Workshops and Seminars^n"
   }
 ]

@@ -1,0 +1,77 @@
+# This file controls the settings for your Quarto template from www.marvinschmitt.com
+
+# website settings
+website:
+  title: "Value Chain Hackers"                                # Your name
+  description: "Radical open initiative"   # A brief slogan (optional)
+  image: img/WorkAdventure.png
+  
+  favicon: img/favicon.png
+  
+  # start of the navigation bar at the top of the website
+  navbar:
+    pinned: true
+    logo: /img/logo.png
+    
+    # your sub-pages
+    left:
+      - text: "Projects"
+        href: projects/index.qmd
+      - text: "A.I Tool"
+        href: ai/index.qmd
+      - text: "Presentations"
+        href: presentations/presentations.qmd
+      - text: "Workings of the Lab"
+        href: Wiki/index2.qmd
+    
+    # your social media handles
+    right:
+      - icon: folder-symlink
+        href: https://www.test.com
+      - icon: twitter
+        href: https://test.com
+      - icon: linkedin
+        href: https://www.linkedin.com/in/christiaanverhoef/
+      - icon: envelope
+        aria-label: email
+        href: "mailto:cg.verhoef@windesheim.nl"  
+  
+  
+
+# Don't touch unless you know what you are doing :) ------------
+  search: 
+    location: navbar
+    type: textbox
+  page-footer: 
+    left: |
+      <span class="faux-block">&#169; 2024 Value Chain Hackers</span>
+    center: |
+      <span class="faux-block"><a href="https://valuechainhackers.xyz"></a></span>
+    right: |
+      <span class="faux-block"><a href="https://github.com/Value-Chain-Hackers/Website-VHC">View source on GitHub</a></span>
+
+project:
+  type: website
+  output-dir: docs
+
+  preview: 
+    port: 22222
+    browser: true
+    watch-inputs: true
+    navigate: true
+
+execute:
+  freeze: true
+
+format:
+  html:
+    fontsize: 1.1em
+    theme: 
+      - pulse
+      - html/styles.scss
+    toc: false
+    code-link: true
+    anchor-sections: true
+    fig-cap-location: margin
+    reference-location: margin
+    footnotes-hover: true

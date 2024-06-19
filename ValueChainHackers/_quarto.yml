@@ -21,8 +21,11 @@ website:
         href: ai/index.qmd
       - text: "Presentations"
         href: presentations/presentations.qmd
-      - text: "businesscase"
-        href: BusinessCase/index.qmd
+      - text: "Workings of the Lab"
+        href: wiki/index.qmd
+      - text: "testing"
+        href: presentations/presentations.qmd
+
     
     # your social media handles
     right:
@@ -36,9 +39,9 @@ website:
         aria-label: email
         href: "mailto:cg.verhoef@windesheim.nl"  
   
-  
 
-# Don't touch unless you know what you are doing :) ------------
+
+  # Don't touch unless you know what you are doing :) ------------
   search: 
     location: navbar
     type: textbox
