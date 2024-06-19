@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Value Chain Hackers - Presentations</title>
+<title>Value Chain Hackers - Supply Chain Mapping</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -65,6 +65,9 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script src="../site_libs/quarto-diagram/mermaid.min.js"></script>
+<script src="../site_libs/quarto-diagram/mermaid-init.js"></script>
+<link href="../site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 
 
 </head>
@@ -98,7 +101,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">A.I Tool</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="../presentations/presentations.html" aria-current="page"> 
+    <a class="nav-link" href="../presentations/presentations.html"> 
 <span class="menu-text">Presentations</span></a>
   </li>  
   <li class="nav-item">
@@ -106,7 +109,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Workings of the Lab</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../wiki2/index.html"> 
+    <a class="nav-link active" href="../wiki2/index.html" aria-current="page"> 
 <span class="menu-text">testing</span></a>
   </li>  
 </ul>
@@ -148,7 +151,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Presentations</h1>
+<h1 class="title">Supply Chain Mapping</h1>
 </div>
 
 
@@ -165,53 +168,123 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="planning" class="level3">
-<h3 class="anchored" data-anchor-id="planning">13-06-2024 planning</h3>
-<ul>
-<li><strong>Date:</strong> june 13, 2024</li>
-<li><strong>Description:</strong> This presentation coveres the <strong>planning</strong> to do the first infrastructure launch</li>
-<li><a href="../presentations/13-05-2024 planning.html">View Slides</a></li>
-</ul>
-</section>
-<section id="planning-1" class="level3">
-<h3 class="anchored" data-anchor-id="planning-1">30-05-2024 Planning</h3>
-<ul>
-<li><strong>Date:</strong> May 30, 2024</li>
-<li><strong>Description:</strong> planning from Sprint 1 with sebastien</li>
-<li><a href="./30-05-2024 Planning.html">View Slides</a></li>
-</ul>
-</section>
-<section id="presentation" class="level3">
-<h3 class="anchored" data-anchor-id="presentation">22-05-2024 presentation</h3>
-<ul>
-<li><strong>Date:</strong> May 30, 2024</li>
-<li><strong>Description:</strong> This presentation covers the planning phase for our upcoming projects.</li>
-<li><a href="../presentations/22-05-2024 presentation2.html">View Slides</a></li>
-</ul>
-<pre class="mermaid"><code>graph TD
-style Requirements fill:#ffa500, stroke:#000000
-style Backlog fill:#ffff00, stroke:#000000
-style SprintPlanning fill:#ffa500, stroke:#000000
-style Sprint fill:#008000, stroke:#000000
-style DailyScrum fill:#ffa500, stroke:#000000
-style Development fill:#008000, stroke:#000000
-style Testing fill:#008000, stroke:#000000
-style Review fill:#ffa500, stroke:#000000
-style Retrospective fill:#ffa500, stroke:#000000
-style ProductRelease fill:#ff0000, stroke:#000000
+<section id="map-supply-chains-using-ontologies" class="level2">
+<h2 class="anchored" data-anchor-id="map-supply-chains-using-ontologies">Map Supply Chains using ontologies</h2>
+<p>Extracting knowledge from large text documents is not a single step. To retrieve valuable information from these a large document or corpus needs to be chuncked and the task needs to be subdivided in multiple sub-tasks.</p>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">graph LR
+style PDF fill:#008000, stroke:#000000
+style Crawling fill:#ffa500, stroke:#000000
+style SEC fill:#ff0000, stroke:#000000
+style Wikipedia fill:#ffa500, stroke:#000000
+style DuckDuckGo fill:#ffa500, stroke:#000000
+style Store fill:#ffff00, stroke:#000000
+style Ingestion fill:#008000, stroke:#000000
+style Transform fill:#ffff00, stroke:#000000
+style Extract fill:#008000, stroke:#000000
+style LLM fill:#008000, stroke:#000000
+style IndexGraph fill:#ffa500, stroke:#000000
+style IndexFact fill:#ffa500, stroke:#000000
+style Neo4j fill:#ffa500, stroke:#000000
+style Sqlite fill:#ffff00, stroke:#000000
+style Markdown fill:#008000, stroke:#000000
+style Faiss fill:#ffa500, stroke:#000000
+style Chroma fill:#008000, stroke:#000000
+style RAG fill:#ffff00, stroke:#000000
+style UIAI fill:#ffa500, stroke:#000000
+style Query fill:#ffa500, stroke:#000000
+style Retrievers fill:#ffa500, stroke:#000000
+style Results fill:#ffa500, stroke:#000000
+style Visualize fill:#ffa500, stroke:#000000
+style Embeddings fill:#ffa500, stroke:#000000
+style Structurize fill:#ffa500, stroke:#000000
 
-subgraph AgileDevelopment
-    Requirements[Requirements] --&gt; Backlog[Product Backlog]
-    Backlog --&gt; SprintPlanning[Sprint Planning]
-    SprintPlanning --&gt; Sprint[Sprint]
-    Sprint --&gt; DailyScrum[Daily Scrum]
-    Sprint --&gt; Development[Development]
-    Development --&gt; Testing[Testing]
-    Testing --&gt; Review[Sprint Review]
-    Review --&gt; Retrospective[Sprint Retrospective]
-    Retrospective --&gt; Backlog
-    Review --&gt; ProductRelease[Product Release]
-end</code></pre>
+subgraph Collect
+    PDF[PDF\nannual reports] --&gt; Store
+    Crawling[Crawling:\nWeb Site\nBrand Site\nProduct Pages] --&gt; Store
+    SEC[US SEC\nFilings\n10-K\n10-Q] --&gt; Store
+    Wikipedia[Wiki\nCompany Pages\nIngredients\nChemicals] --&gt; Store
+    DuckDuckGo[Search\nDuckDuckGo] --&gt; Store
+    Store --&gt; Ingestion[Processing\nIngestion]
+end
+
+subgraph Ingest
+    Ingestion --&gt; Transform &lt;--&gt; Extract[Extract:\nNodes, Edges]
+    Transform &lt;--&gt; Structurize[Structurize:\nCSV, JSON, Markdown]
+    Transform --&gt; Embeddings
+    Structurize --&gt; Knowledge
+end
+
+subgraph Knowledge
+    Transform --&gt; LLM
+    Extract &lt;--&gt; IndexGraph
+    Extract &lt;--&gt; IndexFact
+    LLM --&gt; Structurize
+end
+
+RAG --&gt; Retrievers
+
+subgraph GraphDatabase
+    IndexGraph[Graph\nNodes\nLinks] --&gt; Neo4j 
+    RAG --&gt; Neo4j
+end
+
+subgraph FactDatabase
+    IndexFact --&gt; Sqlite 
+    IndexFact --&gt; Markdown
+    Markdown --&gt; RAG
+    Sqlite --&gt; RAG
+end
+
+subgraph VectorStores
+    Embeddings --&gt; Faiss
+    Embeddings --&gt; Chroma
+    Faiss --&gt; RAG
+    Chroma --&gt; RAG
+end
+
+subgraph UI
+    UIAI --&gt; Query --&gt; Retrievers --&gt; Results --&gt; Visualize
+    Query --&gt; Visualize
+end
+
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+</section>
+<section id="chunks-chunkin-a-large-document-in-pieces" class="level2">
+<h2 class="anchored" data-anchor-id="chunks-chunkin-a-large-document-in-pieces">Chunks : Chunkin a large document in pieces</h2>
+<p>This step will take a large document and chuck it in parts using some overlap to ensure that paragraph that would be cut in their middle are also present in the next chunk of text.</p>
+</section>
+<section id="preprocess-remove-the-grease" class="level2">
+<h2 class="anchored" data-anchor-id="preprocess-remove-the-grease">Preprocess : Remove the grease</h2>
+<p>This step will tranform the larger text chunks to sentences that are focused on facts, named entities, take-aways and essential points removing the grease of what is not relevant to the extraction process, but present in the textual form of the document.</p>
+<p><a href="./Prompt_Extraction_preprocess.qmd">Pre-Process Prompt</a></p>
+</section>
+<section id="extract-get-tuples-of-knowledge-from-the-text" class="level2">
+<h2 class="anchored" data-anchor-id="extract-get-tuples-of-knowledge-from-the-text">Extract : Get tuples of knowledge from the text</h2>
+<p>With the reduced text now the model will attempt to make tuples and nodes according to the ontology. Here too <code>divide and conquer</code> will be used, in order to reduce hallucianations it’s better to invoke the model multiple times using a subset of the ontlogy each time. This will yield better results and avoid the model to try to makeup nodes for each class of the ontology.</p>
+<p><a href="./Prompt_Extraction.qmd">Extracting Prompt</a></p>
+</section>
+<section id="validate-check-facts-deduplicate-ensure-proper-syntax" class="level2">
+<h2 class="anchored" data-anchor-id="validate-check-facts-deduplicate-ensure-proper-syntax">Validate : Check facts, deduplicate ensure proper syntax</h2>
+<p>Now we have extracted nodes, we will invoke antoher model to do a quality check on each node, by adding a rag on the actual document this step is able to search back in the document and coroborate different pieces of the document to make the most complete set of tuples and nodes, suppressing normally any hallucinated facts that might have produced by previous steps.</p>
+<p><a href="./Prompt_Extraction_validation.qmd">Validation Prompt</a></p>
+</section>
+<section id="ingest-incorporate-tuples-and-nodes-to-the-global-graph" class="level2">
+<h2 class="anchored" data-anchor-id="ingest-incorporate-tuples-and-nodes-to-the-global-graph">Ingest : Incorporate tuples and nodes to the global graph</h2>
+<p>With our appured nodes being now filtered and checked for quality we will now query the graph for each of them and add them if they are not a perfect duplicate and reject the nodes that might be too similar using cosine similarity and clustering techniques.</p>
+</section>
+<section id="technical-budget" class="level2">
+<h2 class="anchored" data-anchor-id="technical-budget">Technical Budget</h2>
+<p><a href="./technicalbudget.qmd">technical budget</a></p>
 
 
 </section>
