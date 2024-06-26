@@ -1,0 +1,1015 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.4.554">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Value Chain Hackers</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../img/favicon.png" rel="icon" type="image/png">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-fixed fullcontent">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../img/logo.png" alt="" class="navbar-logo">
+    </a>
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">Value Chain Hackers</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../projects/index.html"> 
+<span class="menu-text">Projects</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../ai/index.html"> 
+<span class="menu-text">A.I Tool</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../presentations/presentations.html"> 
+<span class="menu-text">Presentations</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../wiki/index.html"> 
+<span class="menu-text">Workings of the Lab</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../wiki2/index.html"> 
+<span class="menu-text">documents</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://www.test.com"> <i class="bi bi-folder-symlink" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://test.com"> <i class="bi bi-twitter" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://www.linkedin.com/in/christiaanverhoef/"> <i class="bi bi-linkedin" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="mailto:cg.verhoef@windesheim.nl"> <i class="bi bi-envelope" role="img" aria-label="email">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+          <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+
+
+
+<section id="semester-lab-program" class="level1">
+<h1>Semester Lab Program</h1>
+<section id="why" class="level2">
+<h2 class="anchored" data-anchor-id="why">Why</h2>
+<section id="empowering-value-chain-hackers" class="level3">
+<h3 class="anchored" data-anchor-id="empowering-value-chain-hackers">Empowering Value Chain Hackers</h3>
+<p>Hey everyone! I’m Christiaan Verhoef, and as the leader of Value Chain Hackers, I’m thrilled to share our vision with you. We’re on a mission to make a real impact in the world of supply chain management. To do that, we need to arm our participants with all the tools they need to succeed. By providing the necessary resources and building strong, agile teams, we ensure that our participants can make meaningful contributions to the field of supply chain management. Let’s innovate together, learn from each other, and create something truly impactful!</p>
+</section>
+</section>
+<section id="how" class="level2">
+<h2 class="anchored" data-anchor-id="how">How</h2>
+<section id="ensuring-seriousness-and-engagement" class="level3">
+<h3 class="anchored" data-anchor-id="ensuring-seriousness-and-engagement">Ensuring Seriousness and Engagement</h3>
+<ol type="1">
+<li><strong>Regular Feedback Mechanisms</strong>:
+<ul>
+<li>Let’s have structured feedback sessions to keep everything on track.</li>
+<li>Use tools like LimeSurvey for anonymous feedback so everyone feels heard.</li>
+</ul></li>
+<li><strong>Frequent Reporting</strong>:
+<ul>
+<li>Regular updates through project management tools like Taiga.</li>
+<li>Schedule bi-weekly SCRUM meetings to keep us all aligned and moving forward.</li>
+</ul></li>
+<li><strong>Teacher Involvement</strong>:
+<ul>
+<li>Embrace the Roman patron model where teachers act as mentors and patrons, guiding students through their projects and providing invaluable insights.</li>
+<li>Schedule regular mentorship sessions where teachers and students can discuss progress, challenges, and solutions.</li>
+<li>Encourage teacher-coaches to participate actively and provide continuous support and feedback.</li>
+<li>Schedule consortium meetings with teachers and students for that extra guidance.</li>
+</ul></li>
+<li><strong>Student Motivation</strong>:
+<ul>
+<li>Implement a point-based reward system.</li>
+<li>Offer internships, certificates, and cool tangible rewards for standout performances.</li>
+</ul></li>
+</ol>
+</section>
+<section id="practical-steps-for-implementation" class="level3">
+<h3 class="anchored" data-anchor-id="practical-steps-for-implementation">Practical Steps for Implementation</h3>
+<ol type="1">
+<li><strong>Open-Source Tools Selection</strong>:
+<ul>
+<li>Pick tools that suit the roles and tasks of our students.</li>
+<li>Ensure they’re user-friendly and have solid community support.</li>
+</ul></li>
+<li><strong>Training and Onboarding</strong>:
+<ul>
+<li>Run workshops and training sessions on using our chosen tools.</li>
+<li>Provide detailed documentation and support to help everyone get up to speed.</li>
+</ul></li>
+<li><strong>Monitoring and Evaluation</strong>:
+<ul>
+<li>Regularly check how we’re using the tools and their effectiveness.</li>
+<li>Gather feedback and adjust as needed to keep everything running smoothly.</li>
+</ul></li>
+</ol>
+</section>
+</section>
+<section id="what" class="level2">
+<h2 class="anchored" data-anchor-id="what">What</h2>
+<section id="inspired-by-roman-greek-education" class="level3">
+<h3 class="anchored" data-anchor-id="inspired-by-roman-greek-education">Inspired by Roman-Greek Education</h3>
+<ul>
+<li>Focus on holistic development.</li>
+<li>Encourage critical thinking, collaboration, and practical application.</li>
+</ul>
+</section>
+<section id="overview" class="level3">
+<h3 class="anchored" data-anchor-id="overview">Overview</h3>
+<ul>
+<li><strong>Duration</strong>: 16 weeks</li>
+<li><strong>Participants</strong>:
+<ul>
+<li>1-2 teams of 3-4 students from Logistics Management</li>
+<li>1 team from LE</li>
+<li>1 student (TBC) from Law</li>
+</ul></li>
+<li><strong>Schedule</strong>: 1-2 days per week</li>
+<li><strong>Kick-off day</strong>: End of September</li>
+<li><strong>Closing day</strong>: Beginning of January</li>
+</ul>
+</section>
+<section id="kick-off" class="level3">
+<h3 class="anchored" data-anchor-id="kick-off">Kick-off</h3>
+<section id="hackathon-or-ideation-session" class="level4">
+<h4 class="anchored" data-anchor-id="hackathon-or-ideation-session">Hackathon or Ideation Session</h4>
+<ul>
+<li><strong>Duration</strong>: 1 day</li>
+<li><strong>Activities</strong>:
+<ul>
+<li><strong>Introduction</strong>: Welcome and introductions of the lead team, student teams, companies, and experts.</li>
+<li><strong>Semester Structure</strong>: Overview of the semester structure, including timelines and expectations.</li>
+<li><strong>Theme Introduction</strong>: Introduction to the issue/topic/theme of the lab project.</li>
+<li><strong>Emotional Icebreaker</strong>: “Journey Map”
+<ul>
+<li>Each participant is given a piece of paper and colored markers.</li>
+<li>They are asked to draw their personal journey to this moment, including significant events or experiences that have shaped their interest in the project.</li>
+<li>After completing their journey map, participants share their stories with their team members.</li>
+<li>This activity encourages empathy, understanding, and connection among team members by exploring their personal motivations and backgrounds.</li>
+</ul></li>
+<li><strong>Initial Commitments</strong>: Teams make initial commitments to project goals and deliverables.</li>
+<li><strong>Potential Fun Activities</strong>: Icebreakers, team-building exercises, or mini-competitions to energize participants.</li>
+<li><strong>Closing and Call to Action</strong>: Recap of the day’s events, reminders of upcoming deadlines, and motivation for the semester ahead.</li>
+</ul></li>
+</ul>
+</section>
+</section>
+<section id="closing" class="level3">
+<h3 class="anchored" data-anchor-id="closing">Closing</h3>
+<section id="un-conference-symposium-or-ceremony" class="level4">
+<h4 class="anchored" data-anchor-id="un-conference-symposium-or-ceremony">(Un-)Conference, Symposium, or Ceremony</h4>
+<ul>
+<li><strong>Duration</strong>: 1 day</li>
+<li><strong>Activities</strong>:
+<ul>
+<li><strong>Open Door Event</strong>: Inviting stakeholders, faculty, and other students to witness the presentations.</li>
+<li><strong>Student Presentations</strong>: Each student team presents their work, findings, and recommendations.</li>
+<li><strong>Focus Groups/Break-out Rooms</strong>: Small group discussions to define next steps, action plans, and potential collaborations.</li>
+<li><strong>Celebration Activity</strong>: Dinner, drinks, or a networking event to celebrate the achievements of the semester.</li>
+</ul></li>
+</ul>
+</section>
+</section>
+<section id="period-review" class="level3">
+<h3 class="anchored" data-anchor-id="period-review">Period Review</h3>
+<section id="bi-weekly" class="level4">
+<h4 class="anchored" data-anchor-id="bi-weekly">Bi-Weekly</h4>
+<ul>
+<li><strong>Lead + Student Teams</strong>: Regular meetings to discuss general progress, identify and address hurdles, and ensure alignment with project goals according to the SCRUM process.</li>
+</ul>
+</section>
+<section id="monthly" class="level4">
+<h4 class="anchored" data-anchor-id="monthly">Monthly</h4>
+<ul>
+<li><p><strong>Lead + All Students</strong>: Monthly cohesion meetings to strengthen teamwork, address any issues, and reinforce project objectives.</p></li>
+<li><p><strong>Lead + Student Teams + Companies + Research Group</strong>: Consortium meetings to share progress, exchange ideas, and receive feedback from external stakeholders.</p></li>
+</ul>
+</section>
+<section id="quarterly" class="level4">
+<h4 class="anchored" data-anchor-id="quarterly">Quarterly</h4>
+<ul>
+<li><strong>Lead + Student Teams + Teachers</strong>: Project status updates to assess progress, provide guidance, and prepare for upcoming milestones (kickoff, midterm, and final presentations).</li>
+</ul>
+</section>
+<section id="semesterly" class="level4">
+<h4 class="anchored" data-anchor-id="semesterly">Semesterly</h4>
+<ul>
+<li><p><strong>Lead + All Students</strong>: Semester kickoff and closing meetings to set expectations, reflect on achievements, and plan for the future.</p></li>
+<li><p><strong>Lead + Teachers</strong>: Feedback sessions to evaluate the process, identify areas for improvement, and enhance collaboration.</p></li>
+</ul>
+</section>
+</section>
+<section id="student-engagement-with-digital-tracking" class="level3">
+<h3 class="anchored" data-anchor-id="student-engagement-with-digital-tracking">Student Engagement with Digital Tracking</h3>
+<ul>
+<li><strong>Digital Workspace</strong>: Use tools like Nextcloud and Taiga to create a digital workspace where students can track their projects.</li>
+<li><strong>Project Tracking</strong>: Each team will have a dedicated project space where they can update their progress, share documents, and collaborate in real-time.</li>
+<li><strong>Milestone Tracking</strong>: Set clear milestones and deadlines within the digital workspace to ensure that everyone stays on track and can easily see the progress being made.</li>
+<li><strong>Progress Reports</strong>: Regularly scheduled progress reports that can be shared with teachers and mentors for feedback and guidance.</li>
+</ul>
+</section>
+<section id="tools" class="level3">
+<h3 class="anchored" data-anchor-id="tools">Tools</h3>
+<p>https://edraw.srv.viridis.info/ https://penpot.srv.viridis.info/ https://etherpad.srv.viridis.info https://privnote.srv.viridis.info</p>
+<section id="communication" class="level4">
+<h4 class="anchored" data-anchor-id="communication">Communication</h4>
+<ul>
+<li><strong>Email</strong>: NEXTCLOUD for official communication and announcements.</li>
+<li><strong>Discord</strong>: Integrates with the online world for quick, informal communication.</li>
+</ul>
+</section>
+<section id="project-management" class="level4">
+<h4 class="anchored" data-anchor-id="project-management">Project Management</h4>
+<ul>
+<li><strong>Taiga</strong>: Open-source agile project management platform for managing tasks, sprints, and backlogs.</li>
+</ul>
+</section>
+<section id="collaboration" class="level4">
+<h4 class="anchored" data-anchor-id="collaboration">Collaboration</h4>
+<ul>
+<li><strong>Nextcloud</strong>: Open-source file sharing and collaboration platform for sharing documents, calendars, and tasks.</li>
+<li><strong>Etherpad</strong>: Open-source collaborative text editor for real-time document editing.</li>
+</ul>
+</section>
+<section id="version-control" class="level4">
+<h4 class="anchored" data-anchor-id="version-control">Version Control</h4>
+<ul>
+<li><strong>GitLab</strong>: Open-source Git repository management platform for version control and collaboration.</li>
+<li><strong>SmartGit</strong>: Graphical Git client.</li>
+<li><strong>GitHub</strong>: Open-source Git repository hosting service for code collaboration and version control.</li>
+</ul>
+</section>
+<section id="document-creation" class="level4">
+<h4 class="anchored" data-anchor-id="document-creation">Document Creation</h4>
+<ul>
+<li><strong>LibreOffice</strong>: Open-source office suite for creating documents, spreadsheets, and presentations.</li>
+<li><strong>Quarto</strong>: Open-source scientific and technical publishing system from Markdown.</li>
+<li><strong>Zotero</strong>: Open-source reference management software for organizing research sources and citations.</li>
+</ul>
+</section>
+<section id="virtual-meetings" class="level4">
+<h4 class="anchored" data-anchor-id="virtual-meetings">Virtual Meetings</h4>
+<ul>
+<li><strong>Jitsi</strong>: Open-source video conferencing platform for hosting virtual meetings and webinars.</li>
+<li><strong>BigBlueButton</strong>: Open-source web conferencing system for online learning and collaboration.</li>
+</ul>
+</section>
+<section id="survey-and-feedback" class="level4">
+<h4 class="anchored" data-anchor-id="survey-and-feedback">Survey and Feedback</h4>
+<ul>
+<li><strong>LimeSurvey</strong>: Open-source online survey software for creating and conducting surveys and assessments.</li>
+<li><strong>Moodle</strong>: Open-source learning management system for creating online courses and assessments.</li>
+</ul>
+</section>
+<section id="learning-management-systems" class="level4">
+<h4 class="anchored" data-anchor-id="learning-management-systems">Learning Management Systems</h4>
+<ul>
+<li><strong>Moodle</strong>: One of the most widely used open-source LMS platforms, offering a range of features including course management, assessment tools, collaborative activities, and more. Highly customizable with a large community of developers and users providing support and resources.</li>
+<li><strong>Canvas LMS</strong>: An open-source LMS developed by Instructure, known for its user-friendly interface, multimedia content support, and features such as course calendars, discussion boards, and grading tools.</li>
+<li><strong>Chamilo</strong>: Designed for schools, universities, and corporate training, offering features such as course creation, assessments, communication tools, and reporting. User-friendly and supports multiple languages.</li>
+<li><strong>ILIAS</strong>: Focused on usability and accessibility, offering a wide range of features including course management, collaborative tools, e-portfolios, and mobile support. Highly customizable and suitable for various educational settings.</li>
+<li><strong>Open edX</strong>: Developed by edX, the online learning initiative founded by Harvard University and MIT, providing tools for creating and delivering online courses, including interactive content, assessments, and discussion forums. Highly scalable and used by institutions worldwide.</li>
+<li><strong>Claroline</strong>: Focuses on simplicity and ease of use, offering features such as course management, collaborative tools, and tracking of learner progress. Suitable for small to medium-sized organizations and educational institutions.</li>
+<li><strong>ATutor</strong>: Designed with accessibility in mind, providing features for creating accessible content, adaptive learning, and social interaction. Suitable for organizations seeking to comply with accessibility standards such as WCAG.</li>
+</ul>
+</section>
+</section>
+<section id="pay-attention-to" class="level3">
+<h3 class="anchored" data-anchor-id="pay-attention-to">Pay Attention To</h3>
+<ul>
+<li><strong>Study Backgrounds</strong>: Understand the diverse academic backgrounds of students and leverage their expertise accordingly.</li>
+<li><strong>Department Expectations</strong>: Align the lab project with the expectations and requirements of relevant departments or academic programs.</li>
+<li><strong>Academic Rigor</strong>: Balance academic rigor with practical application, ensuring the project meets educational standards while addressing real-world challenges.</li>
+<li><strong>Student Commitments</strong>: Recognize and accommodate students’ other commitments, such as coursework, jobs, or extracurricular activities.</li>
+<li><strong>Engagement and Fun</strong>: Incorporate engaging activities, team-building exercises, and rewards to keep students motivated and enthusiastic about the project.</li>
+<li><strong>Connection with Students</strong>: Maintain open communication channels, provide mentorship and support, and foster a sense of community among participants.</li>
+<li><strong>Priority of the Lab</strong>: Emphasize the importance of the lab project as a valuable learning experience and a priority for students’ personal and professional development.</li>
+</ul>
+</section>
+<section id="game-theory-for-rewards" class="level3">
+<h3 class="anchored" data-anchor-id="game-theory-for-rewards">Game Theory for Rewards</h3>
+<section id="reward-system" class="level4">
+<h4 class="anchored" data-anchor-id="reward-system">Reward System</h4>
+<ul>
+<li><strong>Point-Based System</strong>: Assign points for meeting deadlines, quality of work, teamwork, participation in events, and innovative contributions.</li>
+</ul>
+</section>
+<section id="individual-rewards" class="level4">
+<h4 class="anchored" data-anchor-id="individual-rewards">Individual Rewards</h4>
+<ul>
+<li><strong>Certificates of Achievement</strong>: Recognize individual accomplishments and contributions to the project.</li>
+<li><strong>Internship Opportunities</strong>: Offer internships with partner companies as a reward for exceptional performance.</li>
+<li><strong>Gift Vouchers</strong>: Provide gift vouchers or other tangible rewards for outstanding efforts.</li>
+</ul>
+</section>
+<section id="team-rewards" class="level4">
+<h4 class="anchored" data-anchor-id="team-rewards">Team Rewards</h4>
+<ul>
+<li><strong>Team Outings</strong>: Organize team outings or social events to celebrate collective achievements and foster team spirit.</li>
+<li><strong>Recognition at Closing Ceremony</strong>: Acknowledge outstanding teams and individuals during the closing ceremony, with certificates or trophies.</li>
+<li><strong>Additional Resources</strong>: Provide additional resources or support for future projects as a reward for exemplary teamwork and performance.</li>
+</ul>
+</section>
+<section id="traditions" class="level4">
+<h4 class="anchored" data-anchor-id="traditions">Traditions</h4>
+<ul>
+<li><strong>Kick-off Tradition</strong>: Allow each team to create a team name and logo, promoting team identity and unity from the start.</li>
+<li><strong>Midterm Tradition</strong>: Organize a mid-semester social event or team-building activity to break the routine and strengthen team bonds.</li>
+<li><strong>Closing Tradition</strong>: Host an award ceremony with personalized trophies or plaques, celebrating the successes of the semester and reinforcing a sense of achievement and pride.</li>
+</ul>
+<hr>
+</section>
+</section>
+</section>
+</section>
+<section id="detailed-curriculum" class="level1">
+<h1>Detailed Curriculum</h1>
+<section id="weeks-1-2-kick-off-and-introduction" class="level2">
+<h2 class="anchored" data-anchor-id="weeks-1-2-kick-off-and-introduction">Weeks 1-2: Kick-off and Introduction</h2>
+<p><strong>Objective</strong>: Set the stage for the semester, build teams, and introduce the project themes.</p>
+<ul>
+<li><strong>Day 1: Kick-off Hackathon</strong>
+<ul>
+<li><strong>Introduction</strong>: Welcome by lead team, introductions of student teams, teachers, and industry partners.</li>
+<li><strong>Semester Overview</strong>: Presentation on semester goals, key milestones, and expectations.</li>
+<li><strong>Theme Introduction</strong>: Detailed brief on the semester’s central issue/topic/theme.</li>
+<li><strong>Emotional Icebreaker - Journey Map</strong>:
+<ul>
+<li>Activity: Each participant draws their personal journey to this moment, sharing significant events or experiences.</li>
+<li>Outcome: Foster empathy, understanding, and connection among team members.</li>
+</ul></li>
+<li><strong>Team Formation and Initial Brainstorming</strong>:
+<ul>
+<li>Activity: Form teams and start brainstorming initial ideas related to the project theme.</li>
+<li>Deliverable: Initial project concept and team goals.</li>
+</ul></li>
+</ul></li>
+</ul>
+</section>
+<section id="weeks-3-4-research-and-problem-definition" class="level2">
+<h2 class="anchored" data-anchor-id="weeks-3-4-research-and-problem-definition">Weeks 3-4: Research and Problem Definition</h2>
+<p><strong>Objective</strong>: Conduct in-depth research and define the problem statement clearly.</p>
+<ul>
+<li><strong>Week 3: Research Phase</strong>
+<ul>
+<li><strong>Activities</strong>:
+<ul>
+<li>Literature Review: Using Zotero to organize and manage research sources.</li>
+<li>Market Analysis: Identifying current solutions and gaps in the market.</li>
+</ul></li>
+<li><strong>Deliverables</strong>:
+<ul>
+<li>Annotated Bibliography: Compiled and reviewed literature relevant to the project.</li>
+<li>Market Analysis Report: Insights from the market analysis.</li>
+</ul></li>
+</ul></li>
+<li><strong>Week 4: Problem Definition</strong>
+<ul>
+<li><strong>Activities</strong>:
+<ul>
+<li>Problem Statement Workshop: Guided session to help teams articulate their problem statement.</li>
+<li>Feedback Session: Present problem statements to mentors and peers for feedback.</li>
+</ul></li>
+<li><strong>Deliverable</strong>: Refined Problem Statement Document.</li>
+</ul></li>
+</ul>
+</section>
+<section id="weeks-5-8-solution-development-and-prototyping" class="level2">
+<h2 class="anchored" data-anchor-id="weeks-5-8-solution-development-and-prototyping">Weeks 5-8: Solution Development and Prototyping</h2>
+<p><strong>Objective</strong>: Develop and prototype potential solutions.</p>
+<ul>
+<li><strong>Week 5: Ideation and Concept Development</strong>
+<ul>
+<li><strong>Activities</strong>:
+<ul>
+<li>Brainstorming Sessions: Use collaborative tools like Etherpad for real-time idea sharing.</li>
+<li>Concept Sketches: Teams create initial sketches and outlines of their proposed solutions.</li>
+</ul></li>
+<li><strong>Deliverable</strong>: Concept Development Document with sketches and detailed descriptions.</li>
+</ul></li>
+<li><strong>Week 6-7: Prototyping</strong>
+<ul>
+<li><strong>Activities</strong>:
+<ul>
+<li>Building Prototypes: Using tools like Blender (for 3D models) and GIMP (for graphics).</li>
+<li>Testing and Iteration: Initial testing of prototypes and iterating based on feedback.</li>
+</ul></li>
+<li><strong>Deliverables</strong>:
+<ul>
+<li>Prototype Models: Physical or digital models of the proposed solutions.</li>
+<li>Testing Reports: Documented results from prototype testing sessions.</li>
+</ul></li>
+</ul></li>
+<li><strong>Week 8: Midterm Review</strong>
+<ul>
+<li><strong>Activities</strong>:
+<ul>
+<li>Midterm Presentations: Teams present their progress, prototypes, and testing results.</li>
+<li>Feedback and Iteration Planning: Receive feedback from mentors and peers, plan next steps.</li>
+</ul></li>
+<li><strong>Deliverable</strong>: Midterm Review Report summarizing feedback and planned iterations.</li>
+</ul></li>
+</ul>
+</section>
+<section id="weeks-9-12-implementation-and-refinement" class="level2">
+<h2 class="anchored" data-anchor-id="weeks-9-12-implementation-and-refinement">Weeks 9-12: Implementation and Refinement</h2>
+<p><strong>Objective</strong>: Implement the refined solutions and prepare for final presentation.</p>
+<ul>
+<li><strong>Week 9-10: Detailed Implementation</strong>
+<ul>
+<li><strong>Activities</strong>:
+<ul>
+<li>Finalizing Designs: Detailed design work using Inkscape (for vector graphics) and LibreOffice (for documentation).</li>
+<li>Building Final Prototypes: Enhanced prototypes incorporating midterm feedback.</li>
+</ul></li>
+<li><strong>Deliverable</strong>: Finalized Design and Prototype Document.</li>
+</ul></li>
+<li><strong>Week 11: Testing and Quality Assurance</strong>
+<ul>
+<li><strong>Activities</strong>:
+<ul>
+<li>Comprehensive Testing: Rigorous testing of final prototypes.</li>
+<li>Quality Assurance: Ensuring all aspects of the solution meet the project requirements.</li>
+</ul></li>
+<li><strong>Deliverable</strong>: Testing and QA Report.</li>
+</ul></li>
+<li><strong>Week 12: Preparation for Final Presentation</strong>
+<ul>
+<li><strong>Activities</strong>:
+<ul>
+<li>Presentation Development: Creating compelling presentations using tools like LibreOffice Impress.</li>
+<li>Rehearsals: Practice sessions for final presentations.</li>
+</ul></li>
+<li><strong>Deliverable</strong>: Final Presentation Deck.</li>
+</ul></li>
+</ul>
+</section>
+<section id="weeks-13-16-final-presentations-and-reflection" class="level2">
+<h2 class="anchored" data-anchor-id="weeks-13-16-final-presentations-and-reflection">Weeks 13-16: Final Presentations and Reflection</h2>
+<p><strong>Objective</strong>: Present final projects, reflect on the learning experience, and celebrate achievements.</p>
+<ul>
+<li><strong>Week 13-14: Final Presentations</strong>
+<ul>
+<li><strong>Activities</strong>:
+<ul>
+<li>Presentation to Stakeholders: Formal presentations to industry partners, teachers, and peers.</li>
+<li>Q&amp;A Sessions: Interactive Q&amp;A with the audience.</li>
+</ul></li>
+<li><strong>Deliverable</strong>: Final Project Presentation.</li>
+</ul></li>
+<li><strong>Week 15: Reflection and Feedback</strong>
+<ul>
+<li><strong>Activities</strong>:
+<ul>
+<li>Reflection Workshops: Teams reflect on their learning experiences, challenges, and successes.</li>
+<li>Feedback Collection: Gather feedback from all participants to improve future iterations of the program.</li>
+</ul></li>
+<li><strong>Deliverable</strong>: Reflection Report.</li>
+</ul></li>
+<li><strong>Week 16: Celebration and Closing Ceremony</strong>
+<ul>
+<li><strong>Activities</strong>:
+<ul>
+<li>Award Ceremony: Recognize outstanding teams and individuals with certificates and trophies.</li>
+<li>Celebration Event: Dinner, drinks, and networking to celebrate the achievements of the semester.</li>
+</ul></li>
+<li><strong>Outcome</strong>: Strengthen the community and celebrate the hard work and accomplishments of all participants.</li>
+</ul></li>
+</ul>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp("https:\/\/Value-Chain-Hackers\.github\.io\/Website-VHC\/");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p><span class="faux-block">© 2024 Value Chain Hackers</span></p>
+</div>   
+    <div class="nav-footer-center">
+<p><span class="faux-block"><a href="https://valuechainhackers.xyz"></a></span></p>
+</div>
+    <div class="nav-footer-right">
+<p><span class="faux-block"><a href="https://github.com/Value-Chain-Hackers/Website-VHC">View source on GitHub</a></span></p>
+</div>
+  </div>
+</footer>
+
+
+
+
+</body></html>
