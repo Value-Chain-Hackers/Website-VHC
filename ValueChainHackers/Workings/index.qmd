@@ -1,0 +1,183 @@
+---
+title: "Workings of the lab"
+---
+# Semester Lab Program
+
+## Why
+
+### Empowering Value Chain Hackers
+
+Hey everyone! I’m Christiaan Verhoef, and as the leader of Value Chain Hackers, I’m thrilled to share our vision with you. We’re on a mission to make a real impact in the world of supply chain management. To do that, we need to arm our participants with all the tools they need to succeed. By providing the necessary resources and building strong, agile teams, we ensure that our participants can make meaningful contributions to the field of supply chain management. Let's innovate together, learn from each other, and create something truly impactful!
+
+## How
+
+### Ensuring Seriousness and Engagement
+
+**Regular Feedback Mechanisms:**
+- Let's have structured feedback sessions to keep everything on track.
+- Use tools like LimeSurvey for anonymous feedback so everyone feels heard.
+
+**Frequent Reporting:**
+- Regular updates through project management tools like Taiga.
+- Schedule bi-weekly SCRUM meetings to keep us all aligned and moving forward.
+
+**Teacher Involvement:**
+- Embrace the Roman patron model where teachers act as mentors and patrons, guiding students through their projects and providing invaluable insights.
+- Schedule regular mentorship sessions where teachers and students can discuss progress, challenges, and solutions.
+- Encourage teacher-coaches to participate actively and provide continuous support and feedback.
+- Schedule consortium meetings with teachers and students for that extra guidance.
+
+**Student Motivation:**
+- Implement a point-based reward system.
+- Offer internships, certificates, and cool tangible rewards for standout performances.
+
+## Practical Steps for Implementation
+
+### Open-Source Tools Selection:
+- Pick tools that suit the roles and tasks of our students.
+- Ensure they’re user-friendly and have solid community support.
+
+### Training and Onboarding:
+- Run workshops and training sessions on using our chosen tools.
+- Provide detailed documentation and support to help everyone get up to speed.
+
+### Monitoring and Evaluation:
+- Regularly check how we’re using the tools and their effectiveness.
+- Gather feedback and adjust as needed to keep everything running smoothly.
+
+## What
+
+### Inspired by Roman-Greek Education
+- Focus on holistic development.
+- Encourage critical thinking, collaboration, and practical application.
+
+### Overview
+- **Duration:** 16 weeks
+- **Participants:**
+  - 1-2 teams of 3-4 students from Logistics Management
+  - 1 team from LE
+  - 1 student (TBC) from Law
+- **Schedule:** 1-2 days per week
+- **Kick-off day:** End of September
+- **Closing day:** Beginning of January
+
+### Kick-off
+
+**Hackathon or Ideation Session:**
+- **Duration:** 1 day
+- **Activities:**
+  - Introduction: Welcome and introductions of the lead team, student teams, companies, and experts.
+  - Semester Structure: Overview of the semester structure, including timelines and expectations.
+  - Theme Introduction: Introduction to the issue/topic/theme of the lab project.
+  - Emotional Icebreaker: "Journey Map"
+    - Each participant is given a piece of paper and colored markers.
+    - They are asked to draw their personal journey to this moment, including significant events or experiences that have shaped their interest in the project.
+    - After completing their journey map, participants share their stories with their team members.
+    - This activity encourages empathy, understanding, and connection among team members by exploring their personal motivations and backgrounds.
+  - Initial Commitments: Teams make initial commitments to project goals and deliverables.
+  - Potential Fun Activities: Icebreakers, team-building exercises, or mini-competitions to energize participants.
+  - Closing and Call to Action: Recap of the day's events, reminders of upcoming deadlines, and motivation for the semester ahead.
+
+### Closing
+
+**(Un-)Conference, Symposium, or Ceremony:**
+- **Duration:** 1 day
+- **Activities:**
+  - Open Door Event: Inviting stakeholders, faculty, and other students to witness the presentations.
+  - Student Presentations: Each student team presents their work, findings, and recommendations.
+  - Focus Groups/Break-out Rooms: Small group discussions to define next steps, action plans, and potential collaborations.
+  - Celebration Activity: Dinner, drinks, or a networking event to celebrate the achievements of the semester.
+
+### Period Review
+
+**Bi-Weekly**
+- Lead + Student Teams: Regular meetings to discuss general progress, identify and address hurdles, and ensure alignment with project goals according to the SCRUM process.
+
+**Monthly**
+- Lead + All Students: Monthly cohesion meetings to strengthen teamwork, address any issues, and reinforce project objectives.
+- Lead + Student Teams + Companies + Research Group: Consortium meetings to share progress, exchange ideas, and receive feedback from external stakeholders.
+
+**Quarterly**
+- Lead + Student Teams + Teachers: Project status updates to assess progress, provide guidance, and prepare for upcoming milestones (kickoff, midterm, and final presentations).
+
+**Semesterly**
+- Lead + All Students: Semester kickoff and closing meetings to set expectations, reflect on achievements, and plan for the future.
+- Lead + Teachers: Feedback sessions to evaluate the process, identify areas for improvement, and enhance collaboration.
+
+## Student Engagement with Digital Tracking
+
+**Digital Workspace:** Use tools like Nextcloud and Taiga to create a digital workspace where students can track their projects.
+**Project Tracking:** Each team will have a dedicated project space where they can update their progress, share documents, and collaborate in real-time.
+**Milestone Tracking:** Set clear milestones and deadlines within the digital workspace to ensure that everyone stays on track and can easily see the progress being made.
+**Progress Reports:** Regularly scheduled progress reports that can be shared with teachers and mentors for feedback and guidance.
+
+## Tools
+
+**Communication**
+- Email: NEXTCLOUD for official communication and announcements.
+- Discord: Integrates with the online world for quick, informal communication.
+
+**Project Management**
+- Taiga: Open-source agile project management platform for managing tasks, sprints, and backlogs.
+
+**Collaboration**
+- Nextcloud: Open-source file sharing and collaboration platform for sharing documents, calendars, and tasks.
+- Etherpad: Open-source collaborative text editor for real-time document editing.
+
+**Version Control**
+- GitLab: Open-source Git repository management platform for version control and collaboration.
+- SmartGit: Graphical Git client.
+- GitHub: Open-source Git repository hosting service for code collaboration and version control.
+
+**Document Creation**
+- LibreOffice: Open-source office suite for creating documents, spreadsheets, and presentations.
+- Quarto: Open-source scientific and technical publishing system from Markdown.
+- Zotero: Open-source reference management software for organizing research sources and citations.
+
+**Virtual Meetings**
+- Jitsi: Open-source video conferencing platform for hosting virtual meetings and webinars.
+- BigBlueButton: Open-source web conferencing system for online learning and collaboration.
+
+**Survey and Feedback**
+- LimeSurvey: Open-source online survey software for creating and conducting surveys and assessments.
+- Moodle: Open-source learning management system for creating online courses and assessments.
+
+**Learning Management Systems**
+- Moodle: One of the most widely used open-source LMS platforms, offering a range of features including course management, assessment tools, collaborative activities, and more. Highly customizable with a large community of developers and users providing support and resources.
+- Canvas LMS: An open-source LMS developed by Instructure, known for its user-friendly interface, multimedia content support, and features such as course calendars, discussion boards, and grading tools.
+- Chamilo: Designed for schools, universities, and corporate training, offering features such as course creation, assessments, communication tools, and reporting. User-friendly and supports multiple languages.
+- ILIAS: Focused on usability and accessibility, offering a wide range of features including course management, collaborative tools, e-portfolios, and mobile support. Highly customizable and suitable for various educational settings.
+- Open edX: Developed by edX, the online learning initiative founded by Harvard University and MIT, providing tools for creating and delivering online courses, including interactive content, assessments, and discussion forums. Highly scalable and used by institutions worldwide.
+- Claroline: Focuses on simplicity and ease of use, offering features such as course management, collaborative tools, and tracking of learner progress. Suitable for small to medium-sized organizations and educational institutions.
+- ATutor: Designed with accessibility in mind, providing features for creating accessible content, adaptive learning, and social interaction. Suitable for organizations seeking to comply with accessibility standards such as WCAG.
+
+## Pay Attention To
+
+**Study Backgrounds:** Understand the diverse academic backgrounds of students and leverage their expertise accordingly.
+**Department Expectations:** Align the lab project with the expectations and requirements of relevant departments or academic programs.
+**Academic Rigor:** Balance academic rigor with practical application, ensuring the project meets educational standards while addressing real-world challenges.
+**Student Commitments:** Recognize and accommodate students' other commitments, such as coursework, jobs, or extracurricular activities.
+**Engagement and Fun:** Incorporate engaging activities, team-building exercises, and rewards to keep students motivated and enthusiastic about the project.
+**Connection with Students:** Maintain open communication channels, provide mentorship and support, and foster a sense of community among participants.
+**Priority of the Lab:** Emphasize the importance of the lab project as a valuable learning experience and a priority for students' personal and professional development.
+
+## Game Theory for Rewards
+
+**Reward System**
+- **Point-Based System:** Assign points for meeting deadlines, quality of work, teamwork, participation in events, and innovative contributions.
+
+**Individual Rewards**
+- Certificates of Achievement: Recognize individual accomplishments and contributions to the project.
+- Internship Opportunities: Offer internships with partner companies as a reward for exceptional performance.
+- Gift Vouchers: Provide gift vouchers or other tangible rewards for outstanding efforts.
+
+**Team Rewards**
+- Team Outings: Organize team outings or social events to celebrate collective achievements and foster team spirit.
+- Recognition at Closing Ceremony: Acknowledge outstanding teams and individuals during the closing ceremony, with certificates or trophies.
+- Additional Resources: Provide additional resources or support for future projects as a reward for exemplary teamwork and performance.
+
+## Traditions
+
+- **Kick-off Tradition:** Allow each team to create a team name and logo, promoting team identity and unity from the start.
+- **Midterm Tradition:** Organize a mid-semester social event or team-building activity to break the routine and strengthen team bonds.
+- **Closing Tradition:** Host an award ceremony with personalized trophies or plaques, celebrating the successes of the semester and reinforcing a sense of achievement and pride.
