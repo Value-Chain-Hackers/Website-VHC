@@ -17,7 +17,7 @@ about:
 
 ::: {#about-block}
 :::
- test not uploaded
+ test not uploaded uploaded now
 # Welcome Value Chain Rebels
 
 Value Chain Hackers

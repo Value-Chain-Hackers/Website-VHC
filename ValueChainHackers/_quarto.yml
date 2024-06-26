@@ -24,7 +24,7 @@ website:
       - text: "Workings of the Lab"
         href: wiki/index.qmd
       - text: "testing"
-        href: presentations/presentations.qmd
+        href: wiki2/index.qmd
 
     
     # your social media handles
