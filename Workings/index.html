@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Value Chain Hackers - Cost-Effective Server Setup for AI Models in Supply Chain Mapping</title>
+<title>Value Chain Hackers - Workings of the lab</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -148,7 +148,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Cost-Effective Server Setup for AI Models in Supply Chain Mapping</h1>
+<h1 class="title">Workings of the lab</h1>
 </div>
 
 
@@ -165,118 +165,121 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="cost-effective-server-setup-for-ai-models-in-supply-chain-mapping" class="level1">
-<h1>Cost-Effective Server Setup for AI Models in Supply Chain Mapping</h1>
-<section id="introduction" class="level2">
-<h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
+<section id="semester-lab-program" class="level1">
+<h1>Semester Lab Program</h1>
+<section id="why" class="level2">
+<h2 class="anchored" data-anchor-id="why">Why</h2>
+<section id="empowering-value-chain-hackers" class="level3">
+<h3 class="anchored" data-anchor-id="empowering-value-chain-hackers">Empowering Value Chain Hackers</h3>
+<p>Hey everyone! I’m Christiaan Verhoef, and as the leader of Value Chain Hackers, I’m thrilled to share our vision with you. We’re on a mission to make a real impact in the world of supply chain management. To do that, we need to arm our participants with all the tools they need to succeed. By providing the necessary resources and building strong, agile teams, we ensure that our participants can make meaningful contributions to the field of supply chain management. Let’s innovate together, learn from each other, and create something truly impactful!</p>
 </section>
 </section>
-<section id="hardware-requirements-for-running-ai-models" class="level1">
-<h1>Hardware Requirements for Running AI Models</h1>
-<section id="gpus-graphics-processing-units" class="level2">
-<h2 class="anchored" data-anchor-id="gpus-graphics-processing-units">GPUs (Graphics Processing Units)</h2>
-<p><strong>Importance:</strong> GPUs are essential for the heavy computational tasks required by AI models. They handle parallel processing much better than CPUs.</p>
-<p><strong>Top Picks:</strong> - <strong>NVIDIA GeForce RTX 4090 (24GB VRAM):</strong> This is the top consumer-grade GPU for AI, providing excellent performance for large language models and deep learning tasks. It can handle high output quality and large context windows, making it ideal for intensive AI workloads <a href="https://techtactician.com/best-gpus-for-local-llms-in-2024">Source</a>. - <strong>NVIDIA A100 and H100:</strong> Used in large-scale AI infrastructures like Meta’s, these GPUs are designed for high throughput and efficiency in AI training and inference <a href="https://engineering.fb.com/2024/01/01/ai-research/generative-ai-infrastructure/">Source</a>. - <strong>Dual GPU Setups:</strong> For models like Mixtral 8x7B, dual RTX 3090 or RTX 4090 setups are recommended to achieve high performance without CPU offloading <a href="https://www.hardware-corner.net/mixtral-llm-hardware-requirements/">Source</a>.</p>
-<p><strong>Why NVIDIA?</strong> - <strong>CUDA Support:</strong> NVIDIA GPUs are favored due to their CUDA support, which is essential for many AI frameworks and applications. This makes them more efficient and easier to use compared to AMD GPUs <a href="https://techtactician.com/best-gpus-for-local-llms-in-2024">Source</a>.</p>
+<section id="how" class="level2">
+<h2 class="anchored" data-anchor-id="how">How</h2>
+<section id="ensuring-seriousness-and-engagement" class="level3">
+<h3 class="anchored" data-anchor-id="ensuring-seriousness-and-engagement">Ensuring Seriousness and Engagement</h3>
+<p><strong>Regular Feedback Mechanisms:</strong> - Let’s have structured feedback sessions to keep everything on track. - Use tools like LimeSurvey for anonymous feedback so everyone feels heard.</p>
+<p><strong>Frequent Reporting:</strong> - Regular updates through project management tools like Taiga. - Schedule bi-weekly SCRUM meetings to keep us all aligned and moving forward.</p>
+<p><strong>Teacher Involvement:</strong> - Embrace the Roman patron model where teachers act as mentors and patrons, guiding students through their projects and providing invaluable insights. - Schedule regular mentorship sessions where teachers and students can discuss progress, challenges, and solutions. - Encourage teacher-coaches to participate actively and provide continuous support and feedback. - Schedule consortium meetings with teachers and students for that extra guidance.</p>
+<p><strong>Student Motivation:</strong> - Implement a point-based reward system. - Offer internships, certificates, and cool tangible rewards for standout performances.</p>
 </section>
-<section id="cpus-central-processing-units" class="level2">
-<h2 class="anchored" data-anchor-id="cpus-central-processing-units">CPUs (Central Processing Units)</h2>
-<p><strong>Importance:</strong> While GPUs handle the bulk of the processing, CPUs are crucial for managing data preprocessing, orchestration, and tasks that GPUs are less suited for.</p>
-<p><strong>Recommended CPUs:</strong> - <strong>Intel Xeon W and AMD Threadripper Pro:</strong> These CPUs are preferred for their high core counts and the ability to support multiple GPUs due to their extensive PCIe lanes. They also offer excellent memory performance, which is vital for AI workloads <a href="https://www.pugetsystems.com/recommendations/hardware-recommendations-for-machine-learning/">Source</a>.</p>
-<p><strong>Core Requirements:</strong> - At least 16 cores for balanced performance with multiple GPUs. For more CPU-intensive tasks, 32 or even 64 cores might be necessary <a href="https://www.pugetsystems.com/recommendations/hardware-recommendations-for-machine-learning/">Source</a>.</p>
 </section>
-<section id="ram-random-access-memory" class="level2">
-<h2 class="anchored" data-anchor-id="ram-random-access-memory">RAM (Random Access Memory)</h2>
-<p><strong>Importance:</strong> Adequate RAM is crucial for holding large datasets and model parameters during processing.</p>
-<p><strong>Recommendations:</strong> - <strong>Minimum 32GB:</strong> Suitable for smaller models and lighter workloads. - <strong>64GB to 128GB:</strong> Recommended for more intensive tasks and larger datasets. High RAM capacity ensures smooth operation without bottlenecks <a href="https://www.hardware-corner.net/mixtral-llm-hardware-requirements/">Source</a> <a href="https://www.pugetsystems.com/recommendations/hardware-recommendations-for-machine-learning/">Source</a>.</p>
+<section id="practical-steps-for-implementation" class="level2">
+<h2 class="anchored" data-anchor-id="practical-steps-for-implementation">Practical Steps for Implementation</h2>
+<section id="open-source-tools-selection" class="level3">
+<h3 class="anchored" data-anchor-id="open-source-tools-selection">Open-Source Tools Selection:</h3>
+<ul>
+<li>Pick tools that suit the roles and tasks of our students.</li>
+<li>Ensure they’re user-friendly and have solid community support.</li>
+</ul>
 </section>
-<section id="storage" class="level2">
-<h2 class="anchored" data-anchor-id="storage">Storage</h2>
-<p><strong>Importance:</strong> Fast and reliable storage is necessary for handling large datasets and quick data access.</p>
-<p><strong>Recommendations:</strong> - <strong>NVMe SSDs:</strong> These offer the fastest read/write speeds, which significantly reduce data loading times. High-capacity SSDs are essential for large-scale AI projects <a href="https://engineering.fb.com/2024/01/01/ai-research/generative-ai-infrastructure/">Source</a>.</p>
+<section id="training-and-onboarding" class="level3">
+<h3 class="anchored" data-anchor-id="training-and-onboarding">Training and Onboarding:</h3>
+<ul>
+<li>Run workshops and training sessions on using our chosen tools.</li>
+<li>Provide detailed documentation and support to help everyone get up to speed.</li>
+</ul>
 </section>
-<section id="power-supply-unit-psu" class="level2">
-<h2 class="anchored" data-anchor-id="power-supply-unit-psu">Power Supply Unit (PSU)</h2>
-<p><strong>Importance:</strong> Ensures stable and sufficient power to all components, especially when using multiple high-performance GPUs.</p>
-<p><strong>Recommendation:</strong> - <strong>1000W or Higher:</strong> A high-wattage PSU is necessary to support the power demands of GPUs and CPUs under heavy load <a href="https://www.windowscentral.com/best-pcs-for-ai-and-machine-learning">Source</a>.</p>
+<section id="monitoring-and-evaluation" class="level3">
+<h3 class="anchored" data-anchor-id="monitoring-and-evaluation">Monitoring and Evaluation:</h3>
+<ul>
+<li>Regularly check how we’re using the tools and their effectiveness.</li>
+<li>Gather feedback and adjust as needed to keep everything running smoothly.</li>
+</ul>
 </section>
-<section id="motherboard" class="level2">
-<h2 class="anchored" data-anchor-id="motherboard">Motherboard</h2>
-<p><strong>Importance:</strong> Connects all components and ensures compatibility and efficient communication.</p>
-<p><strong>Recommendations:</strong> - <strong>Support for Multiple GPUs:</strong> Choose a motherboard with adequate PCIe slots and support for multiple GPUs. This ensures that you can fully utilize your GPU setup without performance bottlenecks <a href="https://www.pugetsystems.com/recommendations/hardware-recommendations-for-machine-learning/">Source</a>.</p>
 </section>
-<section id="networking" class="level2">
-<h2 class="anchored" data-anchor-id="networking">Networking</h2>
-<p><strong>Importance:</strong> Essential for distributed computing and large data transfers, particularly in cloud-based AI environments.</p>
-<p><strong>Recommendations:</strong> - <strong>High-speed Ethernet:</strong> Necessary for fast data transfer and efficient handling of large-scale AI workloads. For extremely high performance, consider Infiniband solutions <a href="https://engineering.fb.com/2024/01/01/ai-research/generative-ai-infrastructure/">Source</a>.</p>
-<p>Configuration 1: Optimized High-End AI Training Server Purpose: Designed for large-scale AI training tasks within the budget.</p>
-<ol type="1">
-<li>CPU:</li>
-</ol>
-<p>Model: AMD Ryzen Threadripper PRO 5975WX Cores/Threads: 32 cores / 64 threads Price: €3,500 2. GPU:</p>
-<p>Model: NVIDIA RTX 4090 Quantity: 2 GPUs VRAM: 24GB per GPU Price: €1,800 each (Total: €3,600)</p>
-<ol start="3" type="1">
-<li>RAM:</li>
-</ol>
-<p>Capacity: 256GB DDR4 ECC Price: €1,200</p>
-<ol start="4" type="1">
-<li>Storage:</li>
-</ol>
-<p>Primary: 2TB NVMe SSD (for OS and software) Price: €300 Secondary: 8TB NVMe SSD (for dataset storage and fast access) Price: €1,200</p>
-<ol start="5" type="1">
-<li>Power Supply:</li>
-</ol>
-<p>Wattage: 2000W Platinum-rated PSU Price: €400</p>
-<ol start="6" type="1">
-<li>Motherboard:</li>
-</ol>
-<p>Model: ASUS Pro WS WRX80E-SAGE SE WIFI Price: €1,000</p>
-<ol start="7" type="1">
-<li>Networking:</li>
-</ol>
-<p>Ethernet: Dual 10Gb Ethernet ports Price: €300</p>
-<ol start="8" type="1">
-<li>Cooling:</li>
-</ol>
-<p>Type: Custom liquid cooling Price: €500</p>
-<ol start="9" type="1">
-<li>Chassis:</li>
-</ol>
-<p>Model: Fractal Design Define 7 XL Price: €200 Total Cost: €12,200</p>
-<p>Configuration 2: Optimized Mid-Range AI Development Server Purpose: Ideal for small to medium enterprises and academic institutions focusing on AI development and moderate training tasks.</p>
-<ol type="1">
-<li>CPU:</li>
-</ol>
-<p>Model: Intel Xeon W-3345 Cores/Threads: 24 cores / 48 threads Price: €3,000 2. GPU:</p>
-<p>Model: NVIDIA RTX 4080 Quantity: 2 GPUs VRAM: 16GB per GPU Price: €1,400 each (Total: €2,800)</p>
-<ol start="3" type="1">
-<li>RAM:</li>
-</ol>
-<p>Capacity: 256GB DDR4 ECC Price: €1,200</p>
-<ol start="4" type="1">
-<li>Storage:</li>
-</ol>
-<p>Primary: 1TB NVMe SSD (for OS and software) Price: €150 Secondary: 4TB NVMe SSD (for dataset storage and fast access) Price: €600</p>
-<ol start="5" type="1">
-<li>Power Supply:</li>
-</ol>
-<p>Wattage: 1500W Gold-rated PSU Price: €300</p>
-<ol start="6" type="1">
-<li>Motherboard:</li>
-</ol>
-<p>Model: ASUS WS C621E Sage Price: €700 7. Networking:</p>
-<p>Ethernet: Single 10Gb Ethernet port Price: €150</p>
-<ol start="8" type="1">
-<li>Cooling:</li>
-</ol>
-<p>Type: High-performance air cooling Price: €200</p>
-<ol start="9" type="1">
-<li>Chassis:</li>
-</ol>
-<p>Model: Fractal Design Define 7 XL Price: €200 Total Cost: €9,300</p>
-<p>These optimized configurations should fit within the specified budget range, providing powerful setups for running advanced AI models.</p>
-<p>Configuration 1: Optimized High-End AI Training Server CPU: AMD Ryzen Threadripper PRO 5975WX - €3,500 GPU: 2 x NVIDIA RTX 4090 (24GB) - €3,600 RAM: 256GB DDR4 ECC - €1,200 Primary Storage: 2TB NVMe SSD - €300 Secondary Storage: 8TB NVMe SSD - €1,200 Power Supply: 2000W Platinum-rated PSU - €400 Motherboard: ASUS Pro WS WRX80E-SAGE SE WIFI - €1,000 Networking: Dual 10Gb Ethernet ports - €300 Cooling: Custom liquid cooling - €500 Chassis: Fractal Design Define 7 XL - €200 Total Cost: €12,200</p>
-<p>Configuration 2: Optimized Mid-Range AI Development Server CPU: Intel Xeon W-3345 - €3,000 GPU: 2 x NVIDIA RTX 4080 (16GB) - €2,800 RAM: 256GB DDR4 ECC - €1,200 Primary Storage: 1TB NVMe SSD - €150 Secondary Storage: 4TB NVMe SSD - €600 Power Supply: 1500W Gold-rated PSU - €300 Motherboard: ASUS WS C621E Sage - €700 Networking: Single 10Gb Ethernet port - €150 Cooling: High-performance air cooling - €200 Chassis: Fractal Design Define 7 XL - €200 Total Cost: €9,300</p>
+<section id="what" class="level2">
+<h2 class="anchored" data-anchor-id="what">What</h2>
+<section id="inspired-by-roman-greek-education" class="level3">
+<h3 class="anchored" data-anchor-id="inspired-by-roman-greek-education">Inspired by Roman-Greek Education</h3>
+<ul>
+<li>Focus on holistic development.</li>
+<li>Encourage critical thinking, collaboration, and practical application.</li>
+</ul>
+</section>
+<section id="overview" class="level3">
+<h3 class="anchored" data-anchor-id="overview">Overview</h3>
+<ul>
+<li><strong>Duration:</strong> 16 weeks</li>
+<li><strong>Participants:</strong>
+<ul>
+<li>1-2 teams of 3-4 students from Logistics Management</li>
+<li>1 team from LE</li>
+<li>1 student (TBC) from Law</li>
+</ul></li>
+<li><strong>Schedule:</strong> 1-2 days per week</li>
+<li><strong>Kick-off day:</strong> End of September</li>
+<li><strong>Closing day:</strong> Beginning of January</li>
+</ul>
+</section>
+<section id="kick-off" class="level3">
+<h3 class="anchored" data-anchor-id="kick-off">Kick-off</h3>
+<p><strong>Hackathon or Ideation Session:</strong> - <strong>Duration:</strong> 1 day - <strong>Activities:</strong> - Introduction: Welcome and introductions of the lead team, student teams, companies, and experts. - Semester Structure: Overview of the semester structure, including timelines and expectations. - Theme Introduction: Introduction to the issue/topic/theme of the lab project. - Emotional Icebreaker: “Journey Map” - Each participant is given a piece of paper and colored markers. - They are asked to draw their personal journey to this moment, including significant events or experiences that have shaped their interest in the project. - After completing their journey map, participants share their stories with their team members. - This activity encourages empathy, understanding, and connection among team members by exploring their personal motivations and backgrounds. - Initial Commitments: Teams make initial commitments to project goals and deliverables. - Potential Fun Activities: Icebreakers, team-building exercises, or mini-competitions to energize participants. - Closing and Call to Action: Recap of the day’s events, reminders of upcoming deadlines, and motivation for the semester ahead.</p>
+</section>
+<section id="closing" class="level3">
+<h3 class="anchored" data-anchor-id="closing">Closing</h3>
+<p><strong>(Un-)Conference, Symposium, or Ceremony:</strong> - <strong>Duration:</strong> 1 day - <strong>Activities:</strong> - Open Door Event: Inviting stakeholders, faculty, and other students to witness the presentations. - Student Presentations: Each student team presents their work, findings, and recommendations. - Focus Groups/Break-out Rooms: Small group discussions to define next steps, action plans, and potential collaborations. - Celebration Activity: Dinner, drinks, or a networking event to celebrate the achievements of the semester.</p>
+</section>
+<section id="period-review" class="level3">
+<h3 class="anchored" data-anchor-id="period-review">Period Review</h3>
+<p><strong>Bi-Weekly</strong> - Lead + Student Teams: Regular meetings to discuss general progress, identify and address hurdles, and ensure alignment with project goals according to the SCRUM process.</p>
+<p><strong>Monthly</strong> - Lead + All Students: Monthly cohesion meetings to strengthen teamwork, address any issues, and reinforce project objectives. - Lead + Student Teams + Companies + Research Group: Consortium meetings to share progress, exchange ideas, and receive feedback from external stakeholders.</p>
+<p><strong>Quarterly</strong> - Lead + Student Teams + Teachers: Project status updates to assess progress, provide guidance, and prepare for upcoming milestones (kickoff, midterm, and final presentations).</p>
+<p><strong>Semesterly</strong> - Lead + All Students: Semester kickoff and closing meetings to set expectations, reflect on achievements, and plan for the future. - Lead + Teachers: Feedback sessions to evaluate the process, identify areas for improvement, and enhance collaboration.</p>
+</section>
+</section>
+<section id="student-engagement-with-digital-tracking" class="level2">
+<h2 class="anchored" data-anchor-id="student-engagement-with-digital-tracking">Student Engagement with Digital Tracking</h2>
+<p><strong>Digital Workspace:</strong> Use tools like Nextcloud and Taiga to create a digital workspace where students can track their projects. <strong>Project Tracking:</strong> Each team will have a dedicated project space where they can update their progress, share documents, and collaborate in real-time. <strong>Milestone Tracking:</strong> Set clear milestones and deadlines within the digital workspace to ensure that everyone stays on track and can easily see the progress being made. <strong>Progress Reports:</strong> Regularly scheduled progress reports that can be shared with teachers and mentors for feedback and guidance.</p>
+</section>
+<section id="tools" class="level2">
+<h2 class="anchored" data-anchor-id="tools">Tools</h2>
+<p><strong>Communication</strong> - Email: NEXTCLOUD for official communication and announcements. - Discord: Integrates with the online world for quick, informal communication.</p>
+<p><strong>Project Management</strong> - Taiga: Open-source agile project management platform for managing tasks, sprints, and backlogs.</p>
+<p><strong>Collaboration</strong> - Nextcloud: Open-source file sharing and collaboration platform for sharing documents, calendars, and tasks. - Etherpad: Open-source collaborative text editor for real-time document editing.</p>
+<p><strong>Version Control</strong> - GitLab: Open-source Git repository management platform for version control and collaboration. - SmartGit: Graphical Git client. - GitHub: Open-source Git repository hosting service for code collaboration and version control.</p>
+<p><strong>Document Creation</strong> - LibreOffice: Open-source office suite for creating documents, spreadsheets, and presentations. - Quarto: Open-source scientific and technical publishing system from Markdown. - Zotero: Open-source reference management software for organizing research sources and citations.</p>
+<p><strong>Virtual Meetings</strong> - Jitsi: Open-source video conferencing platform for hosting virtual meetings and webinars. - BigBlueButton: Open-source web conferencing system for online learning and collaboration.</p>
+<p><strong>Survey and Feedback</strong> - LimeSurvey: Open-source online survey software for creating and conducting surveys and assessments. - Moodle: Open-source learning management system for creating online courses and assessments.</p>
+<p><strong>Learning Management Systems</strong> - Moodle: One of the most widely used open-source LMS platforms, offering a range of features including course management, assessment tools, collaborative activities, and more. Highly customizable with a large community of developers and users providing support and resources. - Canvas LMS: An open-source LMS developed by Instructure, known for its user-friendly interface, multimedia content support, and features such as course calendars, discussion boards, and grading tools. - Chamilo: Designed for schools, universities, and corporate training, offering features such as course creation, assessments, communication tools, and reporting. User-friendly and supports multiple languages. - ILIAS: Focused on usability and accessibility, offering a wide range of features including course management, collaborative tools, e-portfolios, and mobile support. Highly customizable and suitable for various educational settings. - Open edX: Developed by edX, the online learning initiative founded by Harvard University and MIT, providing tools for creating and delivering online courses, including interactive content, assessments, and discussion forums. Highly scalable and used by institutions worldwide. - Claroline: Focuses on simplicity and ease of use, offering features such as course management, collaborative tools, and tracking of learner progress. Suitable for small to medium-sized organizations and educational institutions. - ATutor: Designed with accessibility in mind, providing features for creating accessible content, adaptive learning, and social interaction. Suitable for organizations seeking to comply with accessibility standards such as WCAG.</p>
+</section>
+<section id="pay-attention-to" class="level2">
+<h2 class="anchored" data-anchor-id="pay-attention-to">Pay Attention To</h2>
+<p><strong>Study Backgrounds:</strong> Understand the diverse academic backgrounds of students and leverage their expertise accordingly. <strong>Department Expectations:</strong> Align the lab project with the expectations and requirements of relevant departments or academic programs. <strong>Academic Rigor:</strong> Balance academic rigor with practical application, ensuring the project meets educational standards while addressing real-world challenges. <strong>Student Commitments:</strong> Recognize and accommodate students’ other commitments, such as coursework, jobs, or extracurricular activities. <strong>Engagement and Fun:</strong> Incorporate engaging activities, team-building exercises, and rewards to keep students motivated and enthusiastic about the project. <strong>Connection with Students:</strong> Maintain open communication channels, provide mentorship and support, and foster a sense of community among participants. <strong>Priority of the Lab:</strong> Emphasize the importance of the lab project as a valuable learning experience and a priority for students’ personal and professional development.</p>
+</section>
+<section id="game-theory-for-rewards" class="level2">
+<h2 class="anchored" data-anchor-id="game-theory-for-rewards">Game Theory for Rewards</h2>
+<p><strong>Reward System</strong> - <strong>Point-Based System:</strong> Assign points for meeting deadlines, quality of work, teamwork, participation in events, and innovative contributions.</p>
+<p><strong>Individual Rewards</strong> - Certificates of Achievement: Recognize individual accomplishments and contributions to the project. - Internship Opportunities: Offer internships with partner companies as a reward for exceptional performance. - Gift Vouchers: Provide gift vouchers or other tangible rewards for outstanding efforts.</p>
+<p><strong>Team Rewards</strong> - Team Outings: Organize team outings or social events to celebrate collective achievements and foster team spirit. - Recognition at Closing Ceremony: Acknowledge outstanding teams and individuals during the closing ceremony, with certificates or trophies. - Additional Resources: Provide additional resources or support for future projects as a reward for exemplary teamwork and performance.</p>
+</section>
+<section id="traditions" class="level2">
+<h2 class="anchored" data-anchor-id="traditions">Traditions</h2>
+<ul>
+<li><strong>Kick-off Tradition:</strong> Allow each team to create a team name and logo, promoting team identity and unity from the start.</li>
+<li><strong>Midterm Tradition:</strong> Organize a mid-semester social event or team-building activity to break the routine and strengthen team bonds.</li>
+<li><strong>Closing Tradition:</strong> Host an award ceremony with personalized trophies or plaques, celebrating the successes of the semester and reinforcing a sense of achievement and pride.</li>
+</ul>
 
 
 </section>
