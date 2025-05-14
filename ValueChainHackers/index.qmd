@@ -17,7 +17,9 @@ about:
 
 ::: {#about-block}
 :::
- test not uploaded uploaded now
+
+Test upload 2025 - 06 - 04
+
 # Welcome Value Chain Rebels
 
 Value Chain Hackers
